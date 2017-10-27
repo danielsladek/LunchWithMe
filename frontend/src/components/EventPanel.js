@@ -1,0 +1,37 @@
+import React, { Component } from 'react';
+import { EventLunchBuddiesList } from './EventLunchBuddiesList';
+import { Row, Col, Button, Form } from 'reactstrap';
+import { EventComments } from './EventComments';
+
+export class EventPanel extends Component {
+  render() {
+    const { maximumLunchBuddies, eventId, eventName, eventCreator, eventDate, eventAttendees, comments, eventDescription } = this.props.event;
+
+    return (
+      <Row className="eventPanel">
+        <Col>
+          <Row>
+            <Col lg="6" className="eventCreatorName">
+              {eventCreator.name} {eventCreator.surname}
+            </Col>
+            <Col lg="6" className="eventDateCreated">
+              {eventDate}
+            </Col>
+          </Row>
+          <Row>
+            <Col className="eventDateCreated">
+              <h1 className="eventName">{eventName}</h1>
+              <span>Lunch buddies (max. {maximumLunchBuddies}):</span>
+              <EventLunchBuddiesList eventAttendees={eventAttendees} />
+              <p className="description">{eventDescription}</p>
+              <Form name="addMeToEvent">
+                <Button type="submit" color="primary">Lunch with {eventCreator.name}</Button>
+              </Form>
+            </Col>
+          </Row>
+          <EventComments comments={comments} />
+        </Col>
+      </Row>
+    );
+  }
+}
