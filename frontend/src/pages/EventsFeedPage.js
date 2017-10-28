@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { EventPanel } from '../components/EventPanel';
 import { Row, Col } from 'reactstrap';
 
-export class EventDetailsPage extends Component {
+export class EventsFeedPage extends Component {
   render() {
     /*
     // Sample events array

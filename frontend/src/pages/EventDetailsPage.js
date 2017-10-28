@@ -66,7 +66,7 @@ export class EventDetailsPage extends Component {
     return (
       <Row className="eventDetailsPage">
         <Col md="8" sm="12">
-          <EventPanel event={event} key={event.eventId} />
+          <EventPanel event={event} displayComments={true} key={event.eventId} />
         </Col>
       </Row>
     );

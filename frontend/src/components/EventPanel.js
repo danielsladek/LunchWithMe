@@ -6,6 +6,11 @@ import { EventComments } from './EventComments';
 export class EventPanel extends Component {
   render() {
     const { maximumLunchBuddies, eventName, eventCreator, eventDate, eventAttendees, comments, eventDescription } = this.props.event;
+    var displayComments = false;
+
+    if (typeof this.props.displayComments != 'undefined' && this.props.displayComments === true) {
+      displayComments = true;
+    }
 
     return (
       <Row className="eventPanel">
@@ -31,7 +36,7 @@ export class EventPanel extends Component {
               </Form>
             </Col>
           </Row>
-          <EventComments comments={comments} />
+          { displayComments && <EventComments comments={comments} /> }
         </Col>
       </Row>
     );
