@@ -5,16 +5,16 @@ import { EventComments } from './EventComments';
 
 export class EventPanel extends Component {
   render() {
-    const { maximumLunchBuddies, eventId, eventName, eventCreator, eventDate, eventAttendees, comments, eventDescription } = this.props.event;
+    const { maximumLunchBuddies, eventName, eventCreator, eventDate, eventAttendees, comments, eventDescription } = this.props.event;
 
     return (
       <Row className="eventPanel">
         <Col>
           <Row>
-            <Col lg="6" className="eventCreatorName">
+            <Col xs="6" className="eventCreatorName">
               {eventCreator.name} {eventCreator.surname}
             </Col>
-            <Col lg="6" className="eventDateCreated">
+            <Col xs="6" className="eventDateCreated">
               {eventDate}
             </Col>
           </Row>
@@ -23,7 +23,9 @@ export class EventPanel extends Component {
               <h1 className="eventName">{eventName}</h1>
               <span>Lunch buddies (max. {maximumLunchBuddies}):</span>
               <EventLunchBuddiesList eventAttendees={eventAttendees} />
-              <p className="description">{eventDescription}</p>
+              <div className="description">
+                {eventDescription}
+              </div>
               <Form name="addMeToEvent">
                 <Button type="submit" color="primary">Lunch with {eventCreator.name}</Button>
               </Form>

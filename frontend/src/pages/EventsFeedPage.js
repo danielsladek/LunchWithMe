@@ -61,12 +61,14 @@ export class EventDetailsPage extends Component {
         ]
       }
     ];*/
-    const { event } = this.props;
+    const { events } = this.props;
 
     return (
-      <Row className="eventDetailsPage">
+      <Row className="eventsFeedPage">
         <Col md="8" sm="12">
-          <EventPanel event={event} key={event.eventId} />
+          {events.map((event, i) => (
+            <EventPanel event={event} key={event.eventId} />
+          ))}
         </Col>
       </Row>
     );
