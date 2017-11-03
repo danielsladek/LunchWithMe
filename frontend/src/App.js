@@ -11,13 +11,15 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <Router history={browserHistory}>
-        <Route path="/">
-          <IndexRoute  component={Landing} />
-          <Route path="reg" component={RegistrationPage} />
-          <Route path="feed" component={EventsFeedPage} />
-        </Route>
-      </Router>
+      <div className="App">
+        <Router history={browserHistory}>
+          <Route path="/">
+            <IndexRoute  component={Landing} />
+            <Route path="reg" component={RegistrationPage} />
+            <Route path="feed" component={EventsFeedPage} />
+          </Route>
+        </Router>
+      </div>
     );
   }
 }

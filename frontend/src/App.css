@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+
 }
 
 .App-logo {
@@ -16,6 +16,27 @@
 
 .App-intro {
   font-size: large;
+}
+
+.hero {
+  background: url("hero.jpg");
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  padding-top: 200px;
+}
+
+.hero-title {
+  font-size: 60px;
+}
+
+.title-text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.space-left {
+  margin-left: 20px;
 }
 
 @keyframes App-logo-spin {
