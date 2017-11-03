@@ -7,7 +7,11 @@ export class FBLogin extends React.Component {
 
     function responseFacebook(response) {
       console.log(response);
-      window.location.replace("/feed");
+      
+      if(response.status !== 'unknown') { 
+        window.location.replace("/feed");
+      }
+      
     }
 
     return (
