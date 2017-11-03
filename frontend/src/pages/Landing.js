@@ -22,8 +22,9 @@ class Landing extends Component {
         <br></br>
         <Row>
           <Col>
-            <Button color="primary">Create a new account</Button>
-          <Link to="/reg">Reg</Link>
+            <Link to="/reg">
+              <Button color="primary">Create a new account</Button>
+            </Link>
           </Col>
         </Row>
         <br></br>

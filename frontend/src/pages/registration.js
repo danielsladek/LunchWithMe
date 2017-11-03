@@ -1,6 +1,7 @@
 import React from 'react';
 import { RegisterForm } from 'reactstrap';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Link } from 'react-router'
 
 export class RegistrationPage extends React.Component {
 
@@ -19,7 +20,10 @@ export class RegistrationPage extends React.Component {
                         <Label for="password">Your password:</Label>
                         <Input id="password" type="password" />
                     </FormGroup>
-                    <Button color="primary" type="submit">Create a new account</Button>
+
+                    <Link to="feed">
+                      <Button color="primary" type="submit">Create a new account</Button>
+                    </Link>
                 </Form>
             </div>
         )
