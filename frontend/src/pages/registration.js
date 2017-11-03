@@ -1,14 +1,15 @@
 import React from 'react';
 import { RegisterForm } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
-export class Registration extends React.Component {
+export class RegistrationPage extends React.Component {
 
     render() {
 
         return (
             <div className="register">
                 <h1>Create a new account</h1>
-                <p>Already have and account? <a>Log in</a></p> 
+                <p>Already have and account? <a>Log in</a></p>
                 <Form>
                     <FormGroup>
                         <Label for="email">Your e-mail address:</Label>
