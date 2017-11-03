@@ -4,6 +4,20 @@ import { Row, Col, Button, Form } from 'reactstrap';
 import { EventComments } from './EventComments';
 
 export class EventPanel extends Component {
+  constructor(props) {
+      super(props);
+      this.toggleBtn= this.toggleBtn.bind(this);
+      this.state = {
+          activeBtn: false,
+      };
+  }
+  toggleBtn(e) {
+      e.preventDefault();
+      const currentState = this.state.activeBtn;
+      this.setState({ activeBtn: !currentState });
+  };
+
+
   render() {
     const { maximumLunchBuddies, eventName, eventCreator, eventDate, eventAttendees, comments, eventDescription } = this.props.event;
     var displayComments = false;
@@ -30,7 +44,12 @@ export class EventPanel extends Component {
             {eventDescription}
           </div>
           <Form name="addMeToEvent">
-            <Button type="submit" color="primary" size="lg">Lunch with {eventCreator.name}</Button>
+            {this.state.activeBtn
+              ?
+              <Button onClick={this.toggleBtn}  type="submit" color="success" size="lg">Going with {eventCreator.name}</Button>
+              :
+              <Button onClick={this.toggleBtn} type="submit" color="primary" size="lg">Lunch with {eventCreator.name}</Button>}
+
           </Form>
           { displayComments && <EventComments comments={comments} /> }
         </Col>
