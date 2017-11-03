@@ -3,10 +3,15 @@ import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 
 export class RegisterForm extends React.Component {
 
+    handleSubmit() {
+        console.log('Bla');
+    }
+
+
     render() {
 
         return (
-            <Form>
+            <Form onSubmit={this.handleSubmit}>
                 <FormGroup>
                     <Label for="email">Your e-mail address:</Label>
                     <Input id="email" type="email" />

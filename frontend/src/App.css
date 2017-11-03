@@ -1,5 +1,12 @@
+body {
+  background: url("hero.jpg");
+  background-size: cover;
+  height: 100vh;
+  color: #fff !important;
+}
+
 .App {
-  text-align: center;
+
 }
 
 .App-logo {
@@ -16,6 +23,52 @@
 
 .App-intro {
   font-size: large;
+}
+
+.hero {
+  padding-top: 200px;
+}
+
+.register {
+  padding-top: 0;
+}
+
+.hero-title {
+  font-size: 60px;
+}
+
+.title-text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.space-left {
+  margin-left: 20px;
+}
+
+.eventPanel {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  padding: 20px;
+  margin: 30px 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.eventPanel .description {
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+.eventPanel .name {
+  float: left;
+}
+
+.eventPanel .date {
+  float: right;
+}
+
+.budy-btn {
+  margin-right: 10px;
 }
 
 @keyframes App-logo-spin {
