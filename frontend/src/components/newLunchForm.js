@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import { Form, FormGroup, Label, Input, Button, Col } from 'reactstrap';
 
 
 export class NewLunchForm extends React.Component {

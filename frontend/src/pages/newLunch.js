@@ -1,16 +1,17 @@
 import React from 'react';
 import { NewLunchForm } from '../components/newLunchForm';
+import { Container } from 'reactstrap';
 
 
-export class NewLunch extends React.Component {
+export class NewLunchPage extends React.Component {
 
     render() {
 
         return (
-            <div className="newLunch">
+            <Container>
                 <h1>Create a new lunch event</h1> 
                 <NewLunchForm />
-            </div>
+            </Container>
         )
 
     }
