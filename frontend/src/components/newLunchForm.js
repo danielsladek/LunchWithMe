@@ -1,4 +1,6 @@
 import React from 'react';
+import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
+
 
 export class NewLunchForm extends React.Component {
 
@@ -6,42 +8,44 @@ export class NewLunchForm extends React.Component {
 
         return (
             <div className="newLunch">
-                <h1>Create a new lunch event</h1> 
-                <div className="form-group">
-                    <label for="name">Name:</label>
-                    <input id="name" className="form-control" type="text" />
-                </div>
-                <div className="row">
-                    <div className="col">
-                        <div className="form-group">
-                            <label for="date">Date:</label>
-                            <input id="date" type="text" className="form-control" />
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="form-group">
-                            <label for="time">Time:</label>
-                            <input id="time" type="text" className="form-control" />
-                        </div>
-                    </div>
-                </div>
-                <div className="form-group">
-                    <label for="description">Description:</label>
-                    <textarea id="description" className="form-control"></textarea>
-                </div>
-                <div className="form-group">
-                    <label for="lunchevent">Lunch event type:</label>
-                    <select id="lunchevent" className="form-control">
-                        <option>Only for invited</option>
-                        <option>Only for my friends</option>
-                        <option>Public</option>
-                    </select>
-                </div>
-                <div className="form-group">
-                    <label for="invitations">Invitations:</label>
-                    <input id="invitations" className="form-control" type="text"/>
-                </div>
-                <button className="btn btn-primary" type="submit">Create a new lunch</button>
+                <Form>
+                    <h1>Create a new lunch event</h1> 
+                    <FormGroup>
+                        <Label for="name">Name:</Label>
+                        <Input id="name" type="text" />
+                    </FormGroup>
+                    <FormGroup>
+                        <Col>
+                            <FormGroup>
+                                <Label for="date">Date:</Label>
+                                <Input id="date" type="text" />
+                            </FormGroup>
+                        </Col>
+                        <Col>
+                            <FormGroup>
+                                <Label for="time">Time:</Label>
+                                <Input id="time" type="text" />
+                            </FormGroup>
+                        </Col>
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="description">Description:</Label>
+                        <Input type="textarea" id="description" />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="lunchevent">Lunch event type:</Label>
+                        <Input type="select" id="lunchevent">
+                            <option>Only for invited</option>
+                            <option>Only for my friends</option>
+                            <option>Public</option>
+                        </Input>
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="invitations">Invitations:</Label>
+                        <Input id="invitations" type="text"/>
+                    </FormGroup>
+                    <Button color="primary" type="submit">Create a new lunch</Button>
+                </Form>
             </div>
         )
 

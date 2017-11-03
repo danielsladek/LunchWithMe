@@ -7,8 +7,9 @@
     "react-scripts": "0.4.3"
   },
   "dependencies": {
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "reactstrap": "^5.0.0-alpha.3"
   },
   "scripts": {
     "start": "react-scripts start",
