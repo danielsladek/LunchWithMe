@@ -7,46 +7,43 @@ export class NewLunchForm extends React.Component {
     render() {
 
         return (
-            <div className="newLunch">
-                <Form>
-                    <h1>Create a new lunch event</h1> 
-                    <FormGroup>
-                        <Label for="name">Name:</Label>
-                        <Input id="name" type="text" />
-                    </FormGroup>
-                    <FormGroup>
-                        <Col>
-                            <FormGroup>
-                                <Label for="date">Date:</Label>
-                                <Input id="date" type="text" />
-                            </FormGroup>
-                        </Col>
-                        <Col>
-                            <FormGroup>
-                                <Label for="time">Time:</Label>
-                                <Input id="time" type="text" />
-                            </FormGroup>
-                        </Col>
-                    </FormGroup>
-                    <FormGroup>
-                        <Label for="description">Description:</Label>
-                        <Input type="textarea" id="description" />
-                    </FormGroup>
-                    <FormGroup>
-                        <Label for="lunchevent">Lunch event type:</Label>
-                        <Input type="select" id="lunchevent">
-                            <option>Only for invited</option>
-                            <option>Only for my friends</option>
-                            <option>Public</option>
-                        </Input>
-                    </FormGroup>
-                    <FormGroup>
-                        <Label for="invitations">Invitations:</Label>
-                        <Input id="invitations" type="text"/>
-                    </FormGroup>
-                    <Button color="primary" type="submit">Create a new lunch</Button>
-                </Form>
-            </div>
+            <Form>
+                <FormGroup>
+                    <Label for="name">Name:</Label>
+                    <Input id="name" type="text" />
+                </FormGroup>
+                <FormGroup>
+                    <Col>
+                        <FormGroup>
+                            <Label for="date">Date:</Label>
+                            <Input id="date" type="text" />
+                        </FormGroup>
+                    </Col>
+                    <Col>
+                        <FormGroup>
+                            <Label for="time">Time:</Label>
+                            <Input id="time" type="text" />
+                        </FormGroup>
+                    </Col>
+                </FormGroup>
+                <FormGroup>
+                    <Label for="description">Description:</Label>
+                    <Input type="textarea" id="description" />
+                </FormGroup>
+                <FormGroup>
+                    <Label for="lunchevent">Lunch event type:</Label>
+                    <Input type="select" id="lunchevent">
+                        <option>Only for invited</option>
+                        <option>Only for my friends</option>
+                        <option>Public</option>
+                    </Input>
+                </FormGroup>
+                <FormGroup>
+                    <Label for="invitations">Invitations:</Label>
+                    <Input id="invitations" type="text"/>
+                </FormGroup>
+                <Button color="primary" type="submit">Create a new lunch</Button>
+            </Form>
         )
 
     }
