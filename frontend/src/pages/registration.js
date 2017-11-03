@@ -1,7 +1,7 @@
 import React from 'react';
 import { RegisterForm } from 'reactstrap';
 
-export class Registration extends React.Component {
+export class RegistrationPage extends React.Component {
 
     render() {
 
