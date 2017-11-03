@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { EventPanel } from '../components/EventPanel';
-import { Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 export class EventsFeedPage extends Component {
   render() {
@@ -64,13 +64,15 @@ export class EventsFeedPage extends Component {
     const { events } = this.props;
 
     return (
-      <Row className="eventsFeedPage">
-        <Col md="8" sm="12">
-          {sampleEventsArray.map((event, i) => (
-            <EventPanel event={event} key={event.eventId} />
-          ))}
-        </Col>
-      </Row>
+      <Container>
+        <Row className="eventsFeedPage">
+          <Col md="8" sm="12">
+            {sampleEventsArray.map((event, i) => (
+              <EventPanel event={event} key={event.eventId} />
+            ))}
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
