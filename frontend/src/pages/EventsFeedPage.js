@@ -4,7 +4,7 @@ import { Row, Col } from 'reactstrap';
 
 export class EventsFeedPage extends Component {
   render() {
-    /*
+
     // Sample events array
     var sampleEventsArray = [
       {
@@ -60,13 +60,13 @@ export class EventsFeedPage extends Component {
           },
         ]
       }
-    ];*/
+    ];
     const { events } = this.props;
 
     return (
       <Row className="eventsFeedPage">
         <Col md="8" sm="12">
-          {events.map((event, i) => (
+          {sampleEventsArray.map((event, i) => (
             <EventPanel event={event} key={event.eventId} />
           ))}
         </Col>

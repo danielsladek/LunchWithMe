@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
+import { Link } from 'react-router'
 
 class Landing extends Component {
   render() {
+    const { children } = this.props;
     return (
       <Container className="landing">
         <Row>
@@ -20,7 +22,9 @@ class Landing extends Component {
         <br></br>
         <Row>
           <Col>
-            <Button color="primary">Create a new account</Button>
+            <Link to="/reg">
+              <Button color="primary">Create a new account</Button>
+            </Link>
           </Col>
         </Row>
         <br></br>
@@ -29,6 +33,7 @@ class Landing extends Component {
             <Button color="secondary">Login</Button>
           </Col>
         </Row>
+        {children}
       </Container>
     );
   }
