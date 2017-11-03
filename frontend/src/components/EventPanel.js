@@ -15,27 +15,23 @@ export class EventPanel extends Component {
     return (
       <Row className="eventPanel">
         <Col>
-          <Row>
-            <Col xs="6" className="eventCreatorName">
-              {eventCreator.name} {eventCreator.surname}
-            </Col>
-            <Col xs="6" className="eventDateCreated">
-              {eventDate}
-            </Col>
-          </Row>
-          <Row>
-            <Col className="eventDateCreated">
-              <h1 className="eventName">{eventName}</h1>
-              <span>Lunch buddies (max. {maximumLunchBuddies}):</span>
-              <EventLunchBuddiesList eventAttendees={eventAttendees} />
-              <div className="description">
-                {eventDescription}
-              </div>
-              <Form name="addMeToEvent">
-                <Button type="submit" color="primary">Lunch with {eventCreator.name}</Button>
-              </Form>
-            </Col>
-          </Row>
+          <div className="name">
+            {eventCreator.name} {eventCreator.surname}
+          </div>
+          <div className="date">
+            {eventDate}
+          </div>
+          <br/>
+
+          <h1 className="eventName">{eventName}</h1>
+          <span>Lunch buddies (max. {maximumLunchBuddies}):</span>
+          <EventLunchBuddiesList eventAttendees={eventAttendees} />
+          <div className="description">
+            {eventDescription}
+          </div>
+          <Form name="addMeToEvent">
+            <Button type="submit" color="primary" size="lg">Lunch with {eventCreator.name}</Button>
+          </Form>
           { displayComments && <EventComments comments={comments} /> }
         </Col>
       </Row>
