@@ -1,11 +1,13 @@
 import { Router } from 'express';
 
-import contactRoutes from './modules/contacts/routes';
-import productRoutes from './modules/products/routes';
+import eventRoutes from './modules/events/routes';
+import placeRoutes from './modules/places/routes';
+import userRoutes from './modules/users/routes';
 
 const router = Router();
 
-router.use('/contacts', contactRoutes);
-router.use('/products', productRoutes);
+router.use('/events', eventRoutes);
+router.use('/users', userRoutes);
+router.use('/places', placeRoutes);
 
 export default router;

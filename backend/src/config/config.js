@@ -1,16 +1,16 @@
 module.exports = {
   "development": {
-    "username": "xnovm184",
-    "password": "xc4c94x6aebk65s9",
-    "database": "user_xnovm184",
-    "host": "vse.handson.pro",
+    "username": "root",
+    "password": "",
+    "database": "lunchwithme",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
-    "username": "xnovm184",
-    "password": "xc4c94x6aebk65s9",
-    "database": "user_xnovm184",
-    "host": "vse.handson.pro",
+    "username": "root",
+    "password": "",
+    "database": "luchwithme",
+    "host": "localhost",
     "dialect": "mysql"
   }
 };

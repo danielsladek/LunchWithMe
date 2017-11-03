@@ -21,7 +21,7 @@ if (config.use_env_variable) {
 }
 
 // Remember to require all model files here:
-const modelModules = [require('./product'), require('./productcategory')];
+const modelModules = [require('./place'), require('./user'), require('./event')];
 
 modelModules.forEach(function(modelModule) {
   const model = modelModule(sequelize, DataTypes);
