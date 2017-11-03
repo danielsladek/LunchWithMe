@@ -1,0 +1,25 @@
+{
+	"contacts": [
+    {
+      "id": 1,
+      "name": "Karel Karamel",
+      "email": "karamel@example.com",
+			"image": "https://images.pexels.com/photos/428339/pexels-photo-428339.jpeg",
+			"department": "sales"
+    },
+    {
+      "id": 2,
+      "name": "Ota Lopata",
+      "email": "lopata@example.com",
+			"image": "https://images.pexels.com/photos/423364/pexels-photo-423364.jpeg",
+			"department": "sales"
+    },
+		{
+      "id": 3,
+      "name": "Tomas Marny",
+      "email": "marny@example.com",
+			"image": "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg",
+			"department": "marketing"
+    }
+  ]
+}
