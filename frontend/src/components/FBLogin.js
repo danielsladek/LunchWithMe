@@ -16,8 +16,8 @@ export class FBLogin extends React.Component {
         autoLoad={true}
         fields="name,email,picture"
         callback={responseFacebook}
-        cssClass="fb-button"
-        icon="fa-facebook"
+        cssClass="btn btn-primary"
+        icon=""
       />
     );
   }
