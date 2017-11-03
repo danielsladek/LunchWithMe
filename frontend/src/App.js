@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import Landing from './pages/Landing.js';
-import { RegistrationPage } from './pages/Registration.js';
+import { RegistrationPage } from './pages/registration.js';
 import { EventsFeedPage } from './pages/EventsFeedPage.js';
 
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-import { Link } from 'react-router'
+import { Link } from 'react-router';
+import { FBLogin } from '../components/FBLogin.js';
 
 class Landing extends Component {
   render() {
@@ -25,10 +26,7 @@ class Landing extends Component {
           <br></br><br></br><br></br>
           <Row>
             <Col>
-              <Link to="/reg">
-                <Button color="success" size="lg">Create a new account</Button>
-              </Link>
-              <Button className="space-left" size="lg" color="secondary">Login</Button>
+              <FBLogin />
             </Col>
           </Row>
 
