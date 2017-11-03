@@ -2,7 +2,7 @@ import React from 'react';
 import { LoginForm } from '../components/loginForm';
 
 
-export class LoginForm extends React.Component {
+export class LoginPage extends React.Component {
 
     render() {
 
