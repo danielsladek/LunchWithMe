@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, FormGroup, Label, Input, Button, Col } from 'reactstrap';
+import { Form, FormGroup, Label, Input, Button, Col, Row } from 'reactstrap';
 
 
 export class NewLunchForm extends React.Component {
@@ -12,7 +12,7 @@ export class NewLunchForm extends React.Component {
                     <Label for="name">Name:</Label>
                     <Input id="name" type="text" />
                 </FormGroup>
-                <FormGroup>
+                <Row>
                     <Col>
                         <FormGroup>
                             <Label for="date">Date:</Label>
@@ -25,7 +25,7 @@ export class NewLunchForm extends React.Component {
                             <Input id="time" type="text" />
                         </FormGroup>
                     </Col>
-                </FormGroup>
+                </Row>
                 <FormGroup>
                     <Label for="description">Description:</Label>
                     <Input type="textarea" id="description" />
