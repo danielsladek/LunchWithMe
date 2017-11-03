@@ -7,29 +7,29 @@ export class NewLunchForm extends React.Component {
         return (
             <div className="newLunch">
                 <h1>Create a new lunch event</h1> 
-                <div class="form-group">
+                <div className="form-group">
                     <label for="name">Name:</label>
                     <input id="name" className="form-control" type="text" />
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
+                <div className="row">
+                    <div className="col">
+                        <div className="form-group">
                             <label for="date">Date:</label>
                             <input id="date" type="text" className="form-control" />
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group">
+                    <div className="col">
+                        <div className="form-group">
                             <label for="time">Time:</label>
                             <input id="time" type="text" className="form-control" />
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                     <label for="description">Description:</label>
                     <textarea id="description" className="form-control"></textarea>
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                     <label for="lunchevent">Lunch event type:</label>
                     <select id="lunchevent" className="form-control">
                         <option>Only for invited</option>
@@ -37,7 +37,7 @@ export class NewLunchForm extends React.Component {
                         <option>Public</option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                     <label for="invitations">Invitations:</label>
                     <input id="invitations" className="form-control" type="text"/>
                 </div>
