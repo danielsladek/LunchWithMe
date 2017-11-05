@@ -6,13 +6,3 @@ export const actions = {
 export const eventFeedFetch = () => ({
     type: actions.EVENTS_FEED_FETCH
 });
-
-
-
-export const startEventsFeedFetch = () => (dispatch,getStore,{api}) =>{
-
-    
-
-
-}
-
