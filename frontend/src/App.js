@@ -7,7 +7,7 @@ import logo from './logo.svg';
 import Landing from './pages/Landing.js';
 import {RegistrationPage} from './pages/registration.js';
 import EventsFeedPage from './pages/EventFeedPage/EventsFeedPage';
-import {NewLunchPage} from './pages/newLunch.js';
+import { NewLunchPage } from './pages/AddLunchPage/newLunch.js';
 
 import './App.css';
 

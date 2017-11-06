@@ -1,5 +1,5 @@
 import React from 'react';
-import { NewLunchForm } from '../components/newLunchForm';
+import { NewLunchForm } from '../../components/newLunchForm';
 import { Container } from 'reactstrap';
 
 
