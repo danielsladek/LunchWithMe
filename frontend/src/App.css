@@ -63,12 +63,58 @@ body {
   float: left;
 }
 
+.eventPanel .name > span,
 .eventPanel .date {
-  float: right;
+  opacity: 0.5;
+}
+
+.eventPanel .date {
+  position: relative;
+  bottom: 10px;
+}
+
+.eventLunchBuddiesList {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .budy-btn {
-  margin-right: 10px;
+  margin: 4px 5px 0px;
+  display: inline-block;
+  padding: 2px 4px;
+  border: 1px solid #337ab7;
+  border-radius: 10px;
+}
+
+.widget-box {
+  margin-top: 30px;
+  background: #28a745;
+  padding: 10px 20px 20px;
+}
+
+.fake-nav {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.logo-wrap {
+  float: left;
+  margin-left: 30px;
+}
+
+.nav-btn {
+  float: right;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.new-lunch-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.eventPanel.true {
+  outline: 5px solid #28a745;
 }
 
 @keyframes App-logo-spin {

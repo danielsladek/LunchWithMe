@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, FormGroup, Label, Input, Button, Col, Row } from 'reactstrap';
+import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 
 
 export class NewLunchForm extends React.Component {
@@ -7,19 +8,20 @@ export class NewLunchForm extends React.Component {
     render() {
 
         return (
-            <Form>
+            <Form className="new-lunch-form">
+              <h1>Create a new lunch event</h1>
                 <FormGroup>
-                    <Label for="name">Name:</Label>
+                    <Label for="name">Place:</Label>
                     <Input id="name" type="text" />
                 </FormGroup>
                 <Row>
-                    <Col>
+                    <Col md="6">
                         <FormGroup>
                             <Label for="date">Date:</Label>
                             <Input id="date" type="text" />
                         </FormGroup>
                     </Col>
-                    <Col>
+                    <Col md="6">
                         <FormGroup>
                             <Label for="time">Time:</Label>
                             <Input id="time" type="text" />
@@ -27,22 +29,12 @@ export class NewLunchForm extends React.Component {
                     </Col>
                 </Row>
                 <FormGroup>
-                    <Label for="description">Description:</Label>
-                    <Input type="textarea" id="description" />
-                </FormGroup>
-                <FormGroup>
-                    <Label for="lunchevent">Lunch event type:</Label>
-                    <Input type="select" id="lunchevent">
-                        <option>Only for invited</option>
-                        <option>Only for my friends</option>
-                        <option>Public</option>
-                    </Input>
-                </FormGroup>
-                <FormGroup>
                     <Label for="invitations">Invitations:</Label>
                     <Input id="invitations" type="text"/>
                 </FormGroup>
-                <Button color="primary" type="submit">Create a new lunch</Button>
+                <Link to="feed2">
+                  <Button color="primary" type="submit">Create a new lunch</Button>
+                </Link>
             </Form>
         )
 

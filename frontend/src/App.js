@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import Landing from './pages/Landing.js';
 import { RegistrationPage } from './pages/registration.js';
 import { EventsFeedPage } from './pages/EventsFeedPage.js';
+import { EventsFeedPageSecond } from './pages/EventsFeedPageSecond.js';
 import { NewLunchPage } from './pages/newLunch.js';
 
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
@@ -19,6 +20,7 @@ class App extends Component {
             <Route path="reg" component={RegistrationPage} />
             <Route path="addLunch" component={NewLunchPage} />
             <Route path="feed" component={EventsFeedPage} />
+            <Route path="feed2" component={EventsFeedPageSecond} />
           </Route>
         </Router>
       </div>
