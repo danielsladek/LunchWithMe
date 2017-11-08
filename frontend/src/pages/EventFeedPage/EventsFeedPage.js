@@ -29,7 +29,8 @@ export class EventsFeedPage extends Component {
 }
 
 const mapStateToProps = (storeState) => {
-  //pouziju selecty definovany v reduceru. Je to hezci, kdyz si pak budem upravovat model, odpadne spoustu problemu.
+  // pouziju selecty definovany v reduceru. Je to hezci, kdyz si pak budem
+  // upravovat model, odpadne spoustu problemu.
 
   const eventListState = getEventFeedState(storeState);
 
