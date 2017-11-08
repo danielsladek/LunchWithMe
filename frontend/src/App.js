@@ -8,17 +8,23 @@ import Landing from './pages/Landing.js';
 import {RegistrationPage} from './pages/registration.js';
 import EventsFeedPage from './pages/EventFeedPage/EventsFeedPage';
 import {NewLunchPage} from './pages/newLunch.js';
+import createSagaMiddleware from 'redux-saga'
+import  rootSaga  from './sagas/rootSaga'
 
 import './App.css';
+
+const sagaMiddleware = createSagaMiddleware()
+
 
 class App extends Component {
   render() {
     const store = configureStore();
-
-    return (
+    //run rootSaga
+    sagaMiddleware.run(rootSaga);
+    return ( 
       <div className="App">
           <Provider store={store}>
-        <Router history={browserHistory}>
+        <Router history={browserHistory}> 
           <Route path="/">
             <IndexRoute component={Landing}/>
             <Route path="reg" component={RegistrationPage}/>
