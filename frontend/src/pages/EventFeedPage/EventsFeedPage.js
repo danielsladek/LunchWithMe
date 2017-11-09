@@ -35,6 +35,7 @@ const mapStateToProps = storeState => {
   // upravovat model, odpadne spoustu problemu.
   const eventListState = getEventFeedState(storeState);
   return { events: getEvents(eventListState) };
+
 };
 
 

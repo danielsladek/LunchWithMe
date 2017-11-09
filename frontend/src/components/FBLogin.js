@@ -6,7 +6,8 @@ export class FBLogin extends React.Component {
   render() {
 
     function responseFacebook(response) {
-    
+    //response.token asi
+    //a dalsi infa.
       if(response.status !== 'unknown') { 
         window.location.replace("/feed");
       }
