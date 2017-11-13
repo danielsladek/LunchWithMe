@@ -8,14 +8,14 @@ import actions ,{eventFeedSucces} from "./actions";
 function* eventFeedPageFetchSaga(action) {
   console.log("saga1");
   yield takeLatest(actions.EVENTS_FEED_FETCH,tests);
-    
-  
 
- 
+
+
+
 
   yield take(actions.EVENTS_FEED_FETCH);
   console.log("saga1 -a action run");
- 
+
 
 //   try {
 //     console.log("SAGA");
@@ -25,11 +25,11 @@ function* eventFeedPageFetchSaga(action) {
 //   }
 }
 function* tests() {
-  
+
 
   try {
     //api
-    yield delay(5000);
+    //yield delay(5000);
 
 
     yield put({ type: actions.EVENTS_FEED_SUCCESS });
@@ -43,7 +43,7 @@ function* tests() {
 
 
     console.log("------------------saga2");
-   
+
   }
 
 

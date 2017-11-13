@@ -17,7 +17,8 @@ const initialState = {
                     name: 'Franta',
                     surname: 'Omáčka'
                 }
-            ]
+            ],
+            willAttend: false,
         }
     ],
     isLoading: false,

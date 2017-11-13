@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {EventLunchBuddiesList} from './EventLunchBuddiesList';
 import {Row, Col, Button, Form} from 'reactstrap';
 import {EventComments} from './EventComments';
+import {AttendToEventButton} from './AttendToEventButton/AttendToEventButton';
 
 export class EventPanel extends Component {
   constructor(props) {
@@ -29,7 +30,9 @@ export class EventPanel extends Component {
       eventDate,
       eventAttendees,
       comments,
-      eventDescription
+      eventDescription,
+      willAttend,
+      eventId
     } = this.props.event;
     var displayComments = false;
 
@@ -55,12 +58,7 @@ export class EventPanel extends Component {
           <div className="description">
             {eventDescription}
           </div>
-          <Form name="addMeToEvent">
-            {this.state.activeBtn
-              ? <Button onClick={this.toggleBtn} type="submit" color="success" size="lg">Going with {user.name}</Button>
-              : <Button onClick={this.toggleBtn} type="submit" color="primary" size="lg">Lunch with {user.name}</Button>}
-
-          </Form>
+          <AttendToEventButton eventId={eventId} willAttend={willAttend} organizator={user} />
           {displayComments && <EventComments comments={comments}/>}
         </Col>
       </Row>
