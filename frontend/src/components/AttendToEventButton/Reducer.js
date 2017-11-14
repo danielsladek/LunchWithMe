@@ -3,12 +3,14 @@ import {actions} from "./Actions";
 const initialState = {};
 
 export const AttendToEventButtonReducer = (state = initialState, action) => {
+    console.log("reducer funguje");
     switch (action.type) {
         case actions.CHANGE_EVENT_ATTENDANCE:
+
           return {
             ...state,
-              willAttend: !state.willAttend
-          };
+              test: 1
+          }
 
         default: {
           return state;

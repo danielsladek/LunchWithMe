@@ -32,7 +32,7 @@ export class EventPanel extends Component {
       comments,
       eventDescription,
       willAttend,
-      eventId
+      id
     } = this.props.event;
     var displayComments = false;
 
@@ -58,7 +58,7 @@ export class EventPanel extends Component {
           <div className="description">
             {eventDescription}
           </div>
-          <AttendToEventButton eventId={eventId} willAttend={willAttend} organizator={user} />
+          <AttendToEventButton eventId={id} />
           {displayComments && <EventComments comments={comments}/>}
         </Col>
       </Row>
