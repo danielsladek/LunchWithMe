@@ -28,14 +28,17 @@ const initialState = {
 export const eventFeedReducer = (state = initialState, action) => {
     switch (action.type) {
         case actions.EVENTS_FEED_FETCH:
+        
             return {
                 ...state,
+                
                 isLoading: true
             }
 
         case actions.EVENTS_FEED_SUCCESS:
             return {
                 ...state,
+                events: action.payload.events,
                 isLoading: false,
                 succes: true
             }

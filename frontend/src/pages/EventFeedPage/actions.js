@@ -4,13 +4,14 @@ export const actions = {
 };
 
 export const eventFeedFetch = () => {
-  console.log("Actiona bezi", actions.EVENTS_FEED_FETCH);
-  return {type: actions.EVENTS_FEED_FETCH};
+  return { type: actions.EVENTS_FEED_FETCH };
 };
 
-export const eventFeedSucces = () => {
-  console.log("Success jupiiii", actions.EVENTS_FEED_SUCCESS);
-  return {type: actions.EVENTS_FEED_SUCCESS};
+export const eventFeedSucces = payload => {
+  return {
+    type: actions.EVENTS_FEED_SUCCESS,
+    payload: payload
+  };
 };
 
 export default actions;
