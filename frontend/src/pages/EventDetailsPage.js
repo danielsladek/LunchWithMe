@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { EventPanel } from '../components/EventPanel';
+import { EventPanel } from '../components/EventPanel/EventPanel';
 import { Row, Col } from 'reactstrap';
 
 export class EventDetailsPage extends Component {

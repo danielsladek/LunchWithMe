@@ -29,15 +29,24 @@ module.exports = {
       ],
       {}
     );
-    
-    return Promise.all([userPromise, placePromise, eventPromise]);
+
+    const attendancePromise = queryInterface.bulkInsert(
+      'Attendances',
+      [
+        { createdAt: new Date(), updatedAt: new Date(), userId: 1, eventId: 1, invited: 0, willAttend: 1 },
+      ],
+      {}
+    );
+
+    return Promise.all([userPromise, placePromise, eventPromise, attendancePromise]);
   },
 
   down: (queryInterface, Sequelize) => {
     return Promise.all([
       queryInterface.bulkDelete('Events', null, {}),
       queryInterface.bulkDelete('Users', null, {}),
-      queryInterface.bulkDelete('Places', null, {})
+      queryInterface.bulkDelete('Places', null, {}),
+      queryInterface.bulkDelete('Attendances', null, {})
     ]);
   },
 };

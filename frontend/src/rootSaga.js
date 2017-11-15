@@ -2,6 +2,7 @@ import { delay } from "redux-saga";
 import { all, take } from "redux-saga/effects";
 
 import eventFeedPageFetchSaga from "./pages/EventFeedPage/saga";
+//import EventPanelSaga from "./components/EventPanel/Saga";
 
 // single entry point to start all Sagas at once
 //tady se pisou vsechny sagy, podobne jako rootReducer
@@ -11,6 +12,6 @@ export default function* rootSaga() {
 
   yield all([
     eventFeedPageFetchSaga(),
-    
+  //  AttendToEventButtonSaga(),
   ]);
 }

@@ -2,12 +2,17 @@ import expressAsyncAwait from 'express-async-await';
 import { Router } from 'express';
 
 import {
-  usersController,
-  userDetailController,
+  getUsersController,
+  getUserDetailController,
+  postUserController,
+  deleteUserController,
+  putUserController,
 } from './usersController';
 
 const router = expressAsyncAwait(Router());
-router.get('/', usersController);
-router.get('/:id', userDetailController);
-
+router.get('/', getUsersController);
+router.get('/:id', getUserDetailController);
+router.post('/', postUserController);
+router.delete('/:id', deleteUserController);
+router.put('/:id', putUserController);
 export default router;

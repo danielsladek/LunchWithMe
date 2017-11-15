@@ -2,12 +2,18 @@ import expressAsyncAwait from 'express-async-await';
 import { Router } from 'express';
 
 import {
-  eventsController,
-  eventDetailController,
+  getEventsController,
+  getEventDetailController,
+  postEventController,
+  deleteEventController,
+  putEventController,
 } from './eventsController';
 
 const router = expressAsyncAwait(Router());
-router.get('/', eventsController);
-router.get('/:id', eventDetailController);
+router.get('/', getEventsController);
+router.get('/:id', getEventDetailController);
+router.post('/', postEventController);
+router.delete('/:id', deleteEventController);
+router.put('/:id', putEventController);
 
 export default router;

@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { EventPanel } from "../../components/EventPanel";
+import { EventPanel } from "../../components/EventPanel/EventPanel";
 import { Container, Row, Col } from "reactstrap";
 import { eventFeedFetch } from "./actions";
 import { getEventFeedState, getEvents } from "./reducer";
-
 
 
 export class EventsFeedPage extends Component {
@@ -22,7 +21,7 @@ export class EventsFeedPage extends Component {
       <Container>
         <Row className="eventsFeedPage">
           <Col md="8" sm="12">
-            {events.map(event => <EventPanel event={event} key={event.id} />)}
+            {events.map(event => <EventPanel eventId={event.id} event={event} key={event.id} />)}
           </Col>
         </Row>
       </Container>

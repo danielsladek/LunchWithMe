@@ -19,6 +19,7 @@ const initialState = {
                 }
             ],
             willAttend: false,
+            maximumLunchBuddies: 5,
         }
     ],
     isLoading: false,
