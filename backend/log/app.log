@@ -2375,3 +2375,4 @@ notNull Violation: timeEnd cannot be null
     at trim_prefix (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\router\index.js:317:13)
     at C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\router\index.js:284:7
     at Function.process_params (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\router\index.js:335:12)
+[2017-11-15 23:18:29.901] [INFO] console - Server started on http://localhost:3001!
