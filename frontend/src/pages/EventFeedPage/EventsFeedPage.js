@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { EventPanel } from "../../components/EventPanel/EventPanel";
 import { Container, Row, Col } from "reactstrap";
-import { eventFeedFetch } from "./actions";
-import { getEventFeedState, getEvents } from "./reducer";
+import { eventFeedFetch } from "./Actions";
+import { getEventFeedState, getEvents } from "./Reducer";
 
 
 export class EventsFeedPage extends Component {

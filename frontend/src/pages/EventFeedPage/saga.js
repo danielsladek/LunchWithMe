@@ -1,27 +1,36 @@
-import { takeLatest, take, put } from "redux-saga/effects";
-import {delay} from 'redux-saga';
-//import Api from "../../api";
-import actions, {eventFeedSucces} from "./actions";
-import axios from 'axios';
+import { takeLatest, take, put } from 'redux-saga/effects';
+import Api from '../../Api';
+import actions from './Actions';
 
 // worker Saga: will be fired on USER_FETCH_REQUESTED actions
 function* eventFeedPageFetchSaga(action) {
-  yield takeLatest(actions.EVENTS_FEED_FETCH,tests);
+  yield takeLatest(actions.EVENTS_FEED_FETCH, fetchEvents);
   yield take(actions.EVENTS_FEED_FETCH);
 }
 
-function* tests() {
+function* fetchEvents() {
   try {
-    const events = axios({
-      method: 'get',
-      url: 'http://localhost:3001/events/',
+    const client = new Api();
+    const events = yield client.getEvents();
+
+    var eventsWithAttendees = events.map((event, i) => {
+      const eventAttendees = client.getEventAttendees(event.id);
+      console.log(eventAttendees);
+      event = {
+        ...event,
+          eventAttendees: eventAttendees,
+      }
     });
-    yield put({ type: actions.EVENTS_FEED_SUCCESS });
+
+    console.log(eventsWithAttendees);
+
+    yield put({
+      type: actions.EVENTS_FEED_SUCCESS,
+      payload: events,
+    });
   } catch (e) {
-    //Kdyz neco hodi error
-    //vetsinou dat put a redux akci na error
+
   }
 }
-
 
 export default eventFeedPageFetchSaga;

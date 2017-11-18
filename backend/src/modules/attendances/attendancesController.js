@@ -7,8 +7,38 @@ export const getAttendancesController = async (req, res) => {
   res.json({ attendances });
 };
 
+export const getUserAttendanceController = async (req, res) => {
+  const attendance = await db.Attendance.findAll({
+    where: {
+      userId: req.params.userId,
+    }
+  });
+
+  res.json({ attendance });
+};
+
+export const getEventAttendanceController = async (req, res) => {
+  const attendance = await db.Attendance.findAll({
+    include: [{
+        model: db.User,
+        as: "user",
+        required: false,
+    }],
+    where: {
+      eventId: req.params.eventId,
+    }
+  });
+
+  res.json({ attendance });
+};
+
 export const getAttendanceDetailController = async (req, res) => {
-  const attendance = await db.Attendance.findById(req.params.id);
+  const attendance = await db.Attendance.findAll({
+    where: {
+      userId: req.params.userId,
+      eventId: req.params.eventId,
+    }
+  });
 
   res.json({ attendance });
 };
@@ -16,7 +46,8 @@ export const getAttendanceDetailController = async (req, res) => {
 export const deleteAttendanceController = async (req, res) => {
   const attendanceDeleted = await db.Attendance.destroy({
     where: {
-      id: req.params.id,
+      userId: req.params.userId,
+      eventId: req.params.eventId,
     }
   });
 

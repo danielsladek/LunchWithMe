@@ -1,7 +1,7 @@
-import {actions} from "./actions";
+import {actions} from "./Actions";
 
 const initialState = {
-    events: [
+    /*events: [
         {
             id: 1,
             description: "Lorem Ipsum ",
@@ -23,17 +23,16 @@ const initialState = {
         }
     ],
     isLoading: false,
-    error: null
+    error: null*/
 };
 
 //Reducer Vrati upraveny state podle toho co mu pride za typ akce
 export const eventFeedReducer = (state = initialState, action) => {
     switch (action.type) {
         case actions.EVENTS_FEED_FETCH:
-        
+
             return {
                 ...state,
-                
                 isLoading: true
             }
 

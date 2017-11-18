@@ -2,6 +2,12 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Attendances', {
+      id: {
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+        type: Sequelize.INTEGER,
+      },
       userId: { type: Sequelize.INTEGER, allowNull: false, unique: 'attendanceIndex' },
       eventId: { type: Sequelize.INTEGER, allowNull: false, unique: 'attendanceIndex' },
       willAttend: { type: Sequelize.BOOLEAN, allowNull: false },
