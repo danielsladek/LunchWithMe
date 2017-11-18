@@ -10,6 +10,7 @@ module.exports = {
       },
       description: { type: Sequelize.STRING, allowNull: false },
       organizerId: { type: Sequelize.INTEGER, allowNull: false },
+      maximumLunchBuddies: { type: Sequelize.INTEGER, allowNull: true },
       timeStart: { type: Sequelize.DATE, allowNull: false },
       timeEnd: { type: Sequelize.DATE, allowNull: false },
       placeId: { type: Sequelize.INTEGER, allowNull: false },
@@ -18,6 +19,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Event');
+    return queryInterface.dropTable('Events');
   },
 };

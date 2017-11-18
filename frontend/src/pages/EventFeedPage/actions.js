@@ -14,4 +14,11 @@ export const eventFeedSucces = payload => {
   };
 };
 
+export const eventFeedFail = payload => {
+  return {
+    type: actions.EVENTS_FEED_FAIL,
+    payload: payload
+  };
+};
+
 export default actions;

@@ -10,17 +10,5 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
 
-  Attendance.associate = function(models) {
-    Attendance.belongsTo(models.User, {
-      foreignKey: 'userId',
-      as: 'user',
-    });
-
-    Attendance.belongsTo(models.Event, {
-      foreignKey: 'eventId',
-      as: 'event',
-    });
-  };
-
   return Attendance;
 };

@@ -4,11 +4,15 @@ export const getEventsController = async (req, res) => {
   const events = await db.Event.findAll({
     include: [{
         model: db.User,
-        as: "user",
+        as: "organizator",
         required: false,
     },{
         model: db.Place,
         as: "place",
+        required: false,
+    },{
+        model: db.User,
+        as: "eventAttendees",
         required: false,
     }],
   });

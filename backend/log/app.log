@@ -5626,3 +5626,2360 @@ notNull Violation: timeEnd cannot be null
     at readableAddChunk (_stream_readable.js:176:18)
     at Socket.Readable.push (_stream_readable.js:134:10)
     at TCP.onread (net.js:547:20)
+[2017-11-18 17:05:07.070] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:12:09.881] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:14:32.226] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:16:03.690] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:16:25.846] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:16:28.215] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:16:28.287] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:16:30.121] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:16:30.136] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:16:30.516] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:16:30.546] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:16:30.953] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:16:30.964] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:16:31.357] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:16:31.373] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:16:31.878] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:16:31.893] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:16:32.359] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:16:32.373] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:16:32.863] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:16:32.876] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:16:33.592] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:16:33.607] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:16:34.260] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:16:34.271] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:16:34.997] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:16:35.015] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:18:28.298] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:18:32.537] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:18:32.595] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:19:23.425] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:19:23.753] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:19:23.808] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:19:23.927] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:19:23.947] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:19:24.256] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:19:24.279] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:19:24.653] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:19:24.665] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:19:24.971] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:19:25.000] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:19:25.245] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:19:25.254] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:19:25.535] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:19:25.548] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:19:25.844] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:19:25.870] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:19:26.181] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:19:26.197] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:19:26.513] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:19:26.526] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:19:26.871] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:19:26.887] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:19:27.109] [INFO] console - [ { dataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _previousDataValues: 
+     { id: 1,
+       description: 'Default event description.',
+       timeStart: 2017-11-18T16:04:46.000Z,
+       timeEnd: 2017-11-18T16:33:43.000Z,
+       createdAt: 2017-11-18T16:04:46.000Z,
+       updatedAt: 2017-11-18T16:04:46.000Z,
+       organizerId: 1,
+       placeId: 1,
+       user: [Object],
+       place: [Object] },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: null,
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       include: [Object],
+       includeNames: [Object],
+       includeMap: [Object],
+       includeValidated: true,
+       attributes: [Object],
+       raw: true },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false,
+    user: 
+     User {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    place: 
+     Place {
+       dataValues: [Object],
+       _previousDataValues: [Object],
+       _changed: {},
+       _modelOptions: [Object],
+       _options: [Object],
+       __eagerlyLoadedAssociations: [],
+       isNewRecord: false },
+    eventAttendees: 
+     Promise {
+       _bitField: 0,
+       _fulfillmentHandler0: undefined,
+       _rejectionHandler0: undefined,
+       _promise0: undefined,
+       _receiver0: undefined } } ]
+[2017-11-18 18:19:27.124] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:37:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:151:361
+[2017-11-18 18:20:06.809] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:28:34.037] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:28:34.533] [ERROR] console - TypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:1119:12)
+    at ServerResponse.json (C:\Develop\4it445\semestralka_redux\backend\node_modules\express\lib\response.js:260:14)
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:34:7)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:599:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:599:361
+[2017-11-18 18:31:52.151] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:32:46.200] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:36:55.556] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:37:36.958] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:40:44.293] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:42:21.033] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:43:53.255] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:47:36.778] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:48:09.772] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 18:48:48.298] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 19:27:15.335] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 19:27:17.746] [ERROR] console - TypeError: Cannot set property 'eventAttendees' of undefined
+    at Object._callee$ (C:\Develop\4it445\semestralka_redux\backend\build\webpack:\src\modules\events\eventsController.js:31:3)
+    at tryCatch (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at GeneratorFunctionPrototype.invoke [as _invoke] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at GeneratorFunctionPrototype.prototype.(anonymous function) [as next] (C:\Develop\4it445\semestralka_redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\4it445\semestralka_redux\backend\build\main.js:599:191)
+    at C:\Develop\4it445\semestralka_redux\backend\build\main.js:599:361
+[2017-11-18 19:28:01.090] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 19:33:08.254] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 19:33:09.023] [ERROR] console - SequelizeEagerLoadingError: Attendance is not associated to Event!
+    at Function._getIncludedAssociation (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:575:13)
+    at Function._validateIncludedElement (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:491:53)
+    at options.include.options.include.map.include (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:387:37)
+    at Array.map (native)
+    at Function._validateIncludedElements (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:383:39)
+    at Promise.try.then.then (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:1528:14)
+    at tryCatcher (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+[2017-11-18 19:44:57.721] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 19:45:02.495] [ERROR] console - SequelizeEagerLoadingError: Attendance is not associated to Event!
+    at Function._getIncludedAssociation (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:575:13)
+    at Function._validateIncludedElement (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:491:53)
+    at options.include.options.include.map.include (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:387:37)
+    at Array.map (native)
+    at Function._validateIncludedElements (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:383:39)
+    at Promise.try.then.then (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:1528:14)
+    at tryCatcher (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+[2017-11-18 20:00:17.076] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 20:00:41.192] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 20:00:45.933] [ERROR] console - TypeError: Cannot read property 'getTableName' of undefined
+    at Function._validateIncludedElement (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:457:29)
+    at options.include.options.include.map.include (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:387:37)
+    at Array.map (native)
+    at Function._validateIncludedElements (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:383:39)
+    at Promise.try.then.then (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:1528:14)
+    at tryCatcher (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+[2017-11-18 20:00:47.005] [ERROR] console - TypeError: Cannot read property 'getTableName' of undefined
+    at Function._validateIncludedElement (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:457:29)
+    at options.include.options.include.map.include (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:387:37)
+    at Array.map (native)
+    at Function._validateIncludedElements (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:383:39)
+    at Promise.try.then.then (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:1528:14)
+    at tryCatcher (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+[2017-11-18 20:00:47.371] [ERROR] console - TypeError: Cannot read property 'getTableName' of undefined
+    at Function._validateIncludedElement (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:457:29)
+    at options.include.options.include.map.include (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:387:37)
+    at Array.map (native)
+    at Function._validateIncludedElements (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:383:39)
+    at Promise.try.then.then (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:1528:14)
+    at tryCatcher (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+[2017-11-18 20:00:47.595] [ERROR] console - TypeError: Cannot read property 'getTableName' of undefined
+    at Function._validateIncludedElement (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:457:29)
+    at options.include.options.include.map.include (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:387:37)
+    at Array.map (native)
+    at Function._validateIncludedElements (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:383:39)
+    at Promise.try.then.then (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:1528:14)
+    at tryCatcher (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+[2017-11-18 23:52:41.805] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 23:52:46.582] [ERROR] console - SequelizeEagerLoadingError: Attendance is not associated to Event!
+    at Function._getIncludedAssociation (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:575:13)
+    at Function._validateIncludedElement (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:491:53)
+    at options.include.options.include.map.include (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:387:37)
+    at Array.map (native)
+    at Function._validateIncludedElements (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:383:39)
+    at Promise.try.then.then (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:1528:14)
+    at tryCatcher (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+[2017-11-18 23:52:55.858] [ERROR] console - SequelizeEagerLoadingError: Attendance is not associated to Event!
+    at Function._getIncludedAssociation (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:575:13)
+    at Function._validateIncludedElement (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:491:53)
+    at options.include.options.include.map.include (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:387:37)
+    at Array.map (native)
+    at Function._validateIncludedElements (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:383:39)
+    at Promise.try.then.then (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:1528:14)
+    at tryCatcher (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+[2017-11-18 23:56:19.533] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 23:59:24.241] [INFO] console - Server started on http://localhost:3001!
+[2017-11-18 23:59:29.355] [ERROR] console - SequelizeEagerLoadingError: User is associated to Event multiple times. To identify the correct association, you must use the 'as' keyword to specify the alias of the association you want to include.
+    at Function._getIncludedAssociation (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:590:15)
+    at Function._validateIncludedElement (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:491:53)
+    at options.include.options.include.map.include (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:387:37)
+    at Array.map (native)
+    at Function._validateIncludedElements (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:383:39)
+    at Promise.try.then.then (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\model.js:1528:14)
+    at tryCatcher (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+[2017-11-18 23:59:53.556] [INFO] console - Server started on http://localhost:3001!
+[2017-11-19 00:01:24.629] [INFO] console - Server started on http://localhost:3001!
+[2017-11-19 00:12:00.970] [INFO] console - Server started on http://localhost:3001!
+[2017-11-19 00:45:56.994] [INFO] console - Server started on http://localhost:3001!
+[2017-11-19 00:50:14.904] [INFO] console - Server started on http://localhost:3001!
+[2017-11-19 00:50:33.297] [ERROR] console - SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+    at Utils.Promise.tap.then.catch.err (C:\Develop\4it445\semestralka_redux\backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:139:19)
+    at tryCatcher (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\promise.js:689:18)
+    at Async._drainQueue (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\4it445\semestralka_redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)

@@ -41,7 +41,15 @@ export const eventFeedReducer = (state = initialState, action) => {
                 ...state,
                 events: action.payload.events,
                 isLoading: false,
-                succes: true
+                success: true
+            }
+
+        case actions.EVENTS_FEED_FAIL:
+            return {
+                ...state,
+                events: {},
+                isLoading: false,
+                success: false
             }
 
         default:

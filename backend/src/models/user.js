@@ -12,5 +12,9 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
 
+  User.associate = function(models) {
+    User.belongsToMany(models.Event, { as: 'attendances', through: models.Attendance });
+  };
+
   return User;
 };

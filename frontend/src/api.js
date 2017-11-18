@@ -7,43 +7,58 @@ export default class Api {
     this.baseURL = 'http://localhost:3001';
   }
 
-  getEvents() {
+  getEvents () {
     return axios.get(this.baseURL + '/events/').then(
       (response) => response.data
     );
   }
 
-  getEventById(eventId) {
+  switchAttendance (eventId, userId, currState) {
+    console.log(currState);
+    var willAttend = false;
+
+    if (currState) willAttend = true;
+
+    const reqBody = {
+      willAttend: willAttend,
+    };
+
+    return axios.put(this.baseURL + '/attendances/event/' + eventId + '/user/' + userId, reqBody).then(
+      (response) => response.data
+    );
+  }
+
+  getEventById (eventId) {
     return axios.get(this.baseURL + '/events/' + eventId).then(
       (response) => response.data
     );
   }
 
-  getUserById(userId) {
+  getUserById (userId) {
     return axios.get(this.baseURL + '/users/' + userId).then(
       (response) => response.data
     );
   }
 
-  getPlaceById(placeId) {
+  getPlaceById (placeId) {
     return axios.get(this.baseURL + '/events/' + placeId).then(
       (response) => response.data
     );
   }
 
-  getEventAttendees(eventId) {
+  getEventAttendees (eventId) {
     return axios.get(this.baseURL + '/attendances/event/' + eventId).then(
       (response) => response.data
     );
   }
 
-  getUserAttendance(userId) {
+  getUserAttendance (userId) {
     return axios.get(this.baseURL + '/attendances/user/' + userId).then(
       (response) => response.data
     );
   }
 
-  getAttendanceDetail(eventId, userId) {
+  getAttendanceDetail (eventId, userId) {
     return axios.get(this.baseURL + '/attendances/event/' + eventId + '/user/' + userId).then(
       (response) => response.data
     );

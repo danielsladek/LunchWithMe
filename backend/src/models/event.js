@@ -5,6 +5,7 @@ module.exports = (sequelize, DataTypes) => {
     'Event',
     {
       description: { type: DataTypes.STRING, allowNull: false },
+      maximumLunchBuddies: { type: DataTypes.INTEGER, allowNull: true },
       timeStart: { type: DataTypes.DATE, allowNull: false },
       timeEnd: { type: DataTypes.DATE, allowNull: false },
     },
@@ -14,13 +15,16 @@ module.exports = (sequelize, DataTypes) => {
   Event.associate = function(models) {
     Event.belongsTo(models.User, {
       foreignKey: 'organizerId',
-      as: 'user',
+      as: 'organizator',
     });
 
     Event.belongsTo(models.Place, {
       foreignKey: 'placeId',
       as: 'place',
     });
+
+    Event.belongsToMany(models.User, { as: 'eventAttendees', through: models.Attendance });
+
   };
 
   return Event;

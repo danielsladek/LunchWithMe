@@ -4,7 +4,7 @@ import { Row, Col, Button, Form } from 'reactstrap';
 import { EventComments } from '../EventComments';
 import { AttendToEventButton } from '../AttendToEventButton';
 import { connect } from 'react-redux';
-import { changeEventAttendance, fetchEventPanelToStore } from "./Actions";
+import { switchEventAttendance, fetchEventPanelToStore } from "./Actions";
 import { getEventById, getEventFromStore } from "./Reducer";
 
 export class EventPanelContainer extends Component {
@@ -15,14 +15,14 @@ export class EventPanelContainer extends Component {
 
   toggleBtn(e) {
     e.preventDefault();
-    this.props.changeEventAttendance(this.props.event);
+    this.props.switchEventAttendance(this.props.event);
   };
 
   render() {
     const {
       maximumLunchBuddies,
       eventName,
-      user,
+      organizator,
       eventDate,
       eventAttendees,
       comments,
@@ -40,8 +40,8 @@ export class EventPanelContainer extends Component {
       <Row className="eventPanel">
         <Col>
           <div className="name">
-            {user.name}
-            {user.surname}
+            {organizator.name}
+            {organizator.surname}
           </div>
           <div className="date">
             {eventDate}
@@ -53,7 +53,7 @@ export class EventPanelContainer extends Component {
           <div className="description">
             {eventDescription}
           </div>
-          <AttendToEventButton onClick={this.toggleBtn} organizator={user} activeBtn={willAttend} />
+          <AttendToEventButton onClick={this.toggleBtn} organizator={organizator} activeBtn={willAttend} />
           {displayComments && <EventComments comments={comments}/>}
         </Col>
       </Row>
@@ -71,7 +71,7 @@ const mapStateToProps = (storeState, props) => {
 export const EventPanel = connect(
   mapStateToProps,
   {
-    changeEventAttendance,
+    switchEventAttendance,
     fetchEventPanelToStore,
   },
 )(EventPanelContainer);

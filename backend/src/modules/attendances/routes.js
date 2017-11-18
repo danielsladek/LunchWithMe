@@ -20,5 +20,6 @@ router.get('/event/:eventId', getEventAttendanceController);
 router.post('/', postAttendanceController);
 router.delete('/:id', deleteAttendanceController);
 router.put('/user/:userId/event/:eventId', putAttendanceController);
+router.put('/event/:eventId/user/:userId', putAttendanceController);
 
 export default router;

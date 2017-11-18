@@ -5,7 +5,7 @@ const initialState = {};
 
 export const EventPanelReducer = (state = initialState, action) => {
     switch (action.type) {
-        case actions.CHANGE_EVENT_ATTENDANCE:
+        case actions.SWITCH_EVENT_ATTENDANCE:
           return { event: Object.assign({}, action.payload, { willAttend: !action.payload.willAttend })}
 
         case actions.FETCH_EVENT_PANEL_TO_STORE:

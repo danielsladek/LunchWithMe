@@ -10,26 +10,17 @@ function* eventFeedPageFetchSaga(action) {
 
 function* fetchEvents() {
   try {
-    const client = new Api();
-    const events = yield client.getEvents();
-
-    var eventsWithAttendees = events.map((event, i) => {
-      const eventAttendees = client.getEventAttendees(event.id);
-      console.log(eventAttendees);
-      event = {
-        ...event,
-          eventAttendees: eventAttendees,
-      }
-    });
-
-    console.log(eventsWithAttendees);
+    const api = new Api();
+    const events = yield api.getEvents();
 
     yield put({
       type: actions.EVENTS_FEED_SUCCESS,
       payload: events,
     });
   } catch (e) {
-
+    yield put({
+      type: actions.EVENTS_FEED_FAIL,
+    });
   }
 }
 
