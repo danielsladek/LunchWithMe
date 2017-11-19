@@ -4,7 +4,7 @@ import { EventPanel } from "../../components/EventPanel/EventPanel";
 import { Container, Row, Col } from "reactstrap";
 import { eventFeedFetch } from "./Actions";
 import { getEventFeedState, getEvents } from "./Reducer";
-
+import { Link } from 'react-router';
 
 export class EventsFeedPage extends Component {
   //Reacti event - zde si dispatchneme pak sagu a ta nataha pres axios data
@@ -21,7 +21,13 @@ export class EventsFeedPage extends Component {
       <Container>
         <Row className="eventsFeedPage">
           <Col md="8" sm="12">
-            {events.map(event => <EventPanel eventId={event.id} event={event} key={event.id} />)}
+            {
+              events.length
+              &&
+              events.map(event => <EventPanel eventId={event.id} event={event} key={event.id} />)
+              ||
+              <h2>There are currently no events. <Link to="addLunch">Let's create one!</Link></h2>
+            }
           </Col>
         </Row>
       </Container>

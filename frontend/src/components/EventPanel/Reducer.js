@@ -1,14 +1,14 @@
-import { actions } from "./Actions";
+import { SWITCH_EVENT_ATTENDANCE, FETCH_EVENT_PANEL_TO_STORE } from "./Actions";
 import { assign, isEmpty } from "ramda";
 
 const initialState = {};
 
 export const EventPanelReducer = (state = initialState, action) => {
     switch (action.type) {
-        case actions.SWITCH_EVENT_ATTENDANCE:
+        case SWITCH_EVENT_ATTENDANCE:
           return { event: Object.assign({}, action.payload, { willAttend: !action.payload.willAttend })}
 
-        case actions.FETCH_EVENT_PANEL_TO_STORE:
+        case FETCH_EVENT_PANEL_TO_STORE:
           return { event: action.payload }
 
         default: {

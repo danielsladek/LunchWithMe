@@ -13,6 +13,12 @@ export default class Api {
     );
   }
 
+  userLogin (facebookToken) {
+    return axios.post(this.baseURL + '/login/', facebookToken).then(
+      (response) => response.data
+    );
+  }
+
   switchAttendance (eventId, userId, currState) {
     console.log(currState);
     var willAttend = false;

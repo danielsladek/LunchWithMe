@@ -1,4 +1,4 @@
-import {actions} from "./Actions";
+import { EVENTS_FEED_FETCH, EVENTS_FEED_SUCCESS, EVENTS_FEED_FAIL } from "./Actions";
 
 const initialState = {
     /*events: [
@@ -27,16 +27,16 @@ const initialState = {
 };
 
 //Reducer Vrati upraveny state podle toho co mu pride za typ akce
-export const eventFeedReducer = (state = initialState, action) => {
+export const EventFeedReducer = (state = initialState, action) => {
     switch (action.type) {
-        case actions.EVENTS_FEED_FETCH:
+        case EVENTS_FEED_FETCH:
 
             return {
                 ...state,
                 isLoading: true
             }
 
-        case actions.EVENTS_FEED_SUCCESS:
+        case EVENTS_FEED_SUCCESS:
             return {
                 ...state,
                 events: action.payload.events,
@@ -44,7 +44,7 @@ export const eventFeedReducer = (state = initialState, action) => {
                 success: true
             }
 
-        case actions.EVENTS_FEED_FAIL:
+        case EVENTS_FEED_FAIL:
             return {
                 ...state,
                 events: {},

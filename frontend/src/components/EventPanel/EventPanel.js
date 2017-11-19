@@ -11,10 +11,12 @@ export class EventPanelContainer extends Component {
   constructor(props) {
     super(props);
     this.toggleBtn = this.toggleBtn.bind(this);
+    this.props.fetchEventPanelToStore(this.props.event);
   }
 
   toggleBtn(e) {
     e.preventDefault();
+    console.log("klik");
     this.props.switchEventAttendance(this.props.event);
   };
 

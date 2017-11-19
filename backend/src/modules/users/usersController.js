@@ -34,7 +34,7 @@ export const postUserController = async (req, res) => {
 };
 
 export const putUserController = async (req, res) => {
-  const userUpdated = await db.User.update(req.body, { // Only parameters that wereg sent will be updated
+  const userUpdated = await db.User.update(req.body, { // Only parameters that were sent will be updated
     where: {
       id: req.params.id,
     }

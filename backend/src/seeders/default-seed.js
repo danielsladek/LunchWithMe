@@ -9,7 +9,7 @@ module.exports = {
     const userPromise = queryInterface.bulkInsert(
       'Users',
       [
-        { createdAt: new Date(), updatedAt: new Date(), id: 1, name: 'John', surname: 'Doe' },
+        { createdAt: new Date(), updatedAt: new Date(), id: 1, name: 'John', surname: 'Doe', email: 'john.doe@lunchwithme.cz', facebookId: '555555555' },
       ],
       {}
     );

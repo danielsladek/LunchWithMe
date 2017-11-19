@@ -1,22 +1,24 @@
 import { takeLatest, take, put } from 'redux-saga/effects';
-import {delay} from 'redux-saga';
-import actions from './Actions';
+import { SWITCH_EVENT_ATTENDANCE } from './Actions';
 import Api from '../../Api';
 import axios from 'axios';
 
-function* ChangeEventAttendanceSaga (action) {
-  yield takeLatest(actions.SWITCH_EVENT_ATTENDANCE, switchAttendance);
+function* eventPanelSaga (action) {
+  console.log("saga bezi");
+  yield takeLatest(SWITCH_EVENT_ATTENDANCE, switchAttendance);
   //yield take(actions.EVENTS_FEED_FETCH);
 }
 
 function* switchAttendance (action) {
   try {
     const api = new Api();
-    console.log("aa");
-    const abc = yield api.switchAttendance(action.payload.eventId, action.payload.userId, action.payload.willAttend);
-    console.log(abc);
+    console.log(action.payload);
+
+    const abc = yield api.switchAttendance(action.payload.id, action.payload.userId, action.payload.willAttend);
+
   } catch (e) {
 
   }
+}
 
-export default ChangeEventAttendanceSaga;
+export default eventPanelSaga;
