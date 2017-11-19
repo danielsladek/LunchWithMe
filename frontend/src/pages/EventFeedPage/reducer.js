@@ -28,9 +28,19 @@ const initialState = {
 export const eventFeedReducer = (state = initialState, action) => {
     switch (action.type) {
         case actions.EVENTS_FEED_FETCH:
+        
             return {
                 ...state,
+                
                 isLoading: true
+            }
+
+        case actions.EVENTS_FEED_SUCCESS:
+            return {
+                ...state,
+                events: action.payload.events,
+                isLoading: false,
+                succes: true
             }
 
         default:
@@ -41,7 +51,9 @@ export const eventFeedReducer = (state = initialState, action) => {
 };
 
 // Selectory
-export const getEventFeedState = (storeState) => storeState.eventFeed;//eventFeed je definice z combineReducer. Bacha na to.
+export const getEventFeedState = function (storeState) {
+    return storeState.eventFeed;
+} //eventFeed je definice z combineReducer. Bacha na to.
 //Nevim jak to inteligentneji pojmenovavat,Aby v tom byl co nejmensi bordel.
 
 export const getEvents = (state) => state.events || [];

@@ -10,6 +10,7 @@ export default function* rootSaga() {
  // yield take("EVENTS_FEED_FETCH", eventFeedPageFetchSaga);
 
   yield all([
-    eventFeedPageFetchSaga()
+    eventFeedPageFetchSaga(),
+    
   ]);
 }

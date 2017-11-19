@@ -8,3 +8,5 @@ export const rootReducer = combineReducers({
   eventFeed: eventFeedReducer,
   eventAddLunch: eventAddLunchReducer,
 });
+
+
