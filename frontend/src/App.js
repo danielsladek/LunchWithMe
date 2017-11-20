@@ -6,7 +6,7 @@ import configureStore from './store/configureStore.js';
 import Landing from './pages/Landing.js';
 import {RegistrationPage} from './pages/registration.js';
 import EventsFeedPage from './pages/EventFeedPage/EventsFeedPage';
-import { NewLunchPage } from './pages/AddLunchPage/newLunch.js';
+import { AddEventPage } from './pages/AddEventPage/addEventPage.js';
 
 import './App.css';
 
@@ -22,7 +22,7 @@ class App extends Component {
             <Route path="/">
               <IndexRoute component={Landing}/>
               <Route path="reg" component={RegistrationPage}/>
-              <Route path="addLunch" component={NewLunchPage}/>
+              <Route path="add-event" component={AddEventPage}/>
               <Route path="feed" component={EventsFeedPage}/>
             </Route>
           </Router>

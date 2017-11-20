@@ -1,12 +1,11 @@
 import { combineReducers } from 'redux';
 
 import { eventFeedReducer } from './pages/EventFeedPage/reducer';
-import { eventAddLunchReducer } from './pages/AddLunchPage/reducer';
-
+import { eventReducer } from './components/AddEventForm/reducer';
 
 export const rootReducer = combineReducers({
   eventFeed: eventFeedReducer,
-  eventAddLunch: eventAddLunchReducer,
+  event: eventReducer,
 });
 
 
