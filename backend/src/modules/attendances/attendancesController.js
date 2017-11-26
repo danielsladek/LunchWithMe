@@ -67,12 +67,36 @@ export const postAttendanceController = async (req, res) => {
 };
 
 export const putAttendanceController = async (req, res) => {
-  const attendanceUpdated = await db.Attendance.update(req.body, { // Only parameters that were sent will be updated
+  const { userId, eventId } = req.params,
+        { willAttend } = req.body;
+
+  const attendance = await db.Attendance.findOrCreate({
     where: {
-      userId: req.params.userId,
-      eventId: req.params.eventId,
+      userId: userId,
+      eventId: eventId,
+    },
+    defaults: {
+      userId: userId,
+      eventId: eventId,
+      willAttend: willAttend,
+      invited: false,
+    }
+  }).spread(function(attendance, created){
+    if (created) {
+      const { id } = created;
+
+      res.json({ id: id });
+    } else {
+      const { id } = attendance;
+
+      const updateAttendance = db.Attendance.update(req.body, {
+        where: {
+          userId: userId,
+          eventId: eventId,
+        }
+      });
+
+      res.json({ id: id });
     }
   });
-
-  res.json({ attendanceUpdated });
 };

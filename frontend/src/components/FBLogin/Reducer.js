@@ -3,6 +3,7 @@ import { assign, isEmpty } from "ramda";
 
 const initialState = {
   isLogged: false,
+  userId: 1 // Debug
 };
 
 export const FBLoginReducer = (state = initialState, action) => {
@@ -23,4 +24,4 @@ export const FBLoginReducer = (state = initialState, action) => {
     }
 };
 
-export const getUserInfo = (storeState) => storeState.userInfo;
+export const getUserInfo = (state) => state.userInfo;

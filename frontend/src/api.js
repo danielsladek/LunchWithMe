@@ -9,7 +9,7 @@ export default class Api {
 
   getEvents () {
     return axios.get(this.baseURL + '/events/').then(
-      (response) => response.data
+      (response) => {return response.data}
     );
   }
 
@@ -20,9 +20,7 @@ export default class Api {
   }
 
   switchAttendance (eventId, userId, currState) {
-    console.log(currState);
     var willAttend = false;
-
     if (currState) willAttend = true;
 
     const reqBody = {

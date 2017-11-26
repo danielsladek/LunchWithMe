@@ -5,19 +5,19 @@ import { EventComments } from '../EventComments';
 import { AttendToEventButton } from '../AttendToEventButton';
 import { connect } from 'react-redux';
 import { switchEventAttendance, fetchEventPanelToStore } from "./Actions";
-import { getEventById, getEventFromStore } from "./Reducer";
+import { getEventById } from "../../pages/EventFeedPage/Reducer";
 
 export class EventPanelContainer extends Component {
   constructor(props) {
     super(props);
     this.toggleBtn = this.toggleBtn.bind(this);
-    this.props.fetchEventPanelToStore(this.props.event);
   }
 
   toggleBtn(e) {
     e.preventDefault();
-    console.log("klik");
-    this.props.switchEventAttendance(this.props.event);
+
+    const { id, willAttend } = this.props.event;
+    this.props.switchEventAttendance({id, willAttend});
   };
 
   render() {
@@ -64,16 +64,12 @@ export class EventPanelContainer extends Component {
 }
 
 const mapStateToProps = (storeState, props) => {
-  /* Informace o eventu se načtou ze storu eventFeed nebo
-     (pokud existuje) je načtena ze storu samotného eventPanelu.
-   */
-  return {event: getEventFromStore(storeState, props.eventId)};
+  return {event: getEventById(storeState, props.eventId)};
 };
 
 export const EventPanel = connect(
   mapStateToProps,
   {
     switchEventAttendance,
-    fetchEventPanelToStore,
   },
 )(EventPanelContainer);

@@ -1,4 +1,5 @@
-import { EVENTS_FEED_FETCH, EVENTS_FEED_SUCCESS, EVENTS_FEED_FAIL } from "./Actions";
+import { EVENTS_FEED_FETCH, EVENTS_FEED_SUCCESS, EVENTS_FEED_FAIL, FETCH_EVENT_CHANGES } from "./Actions";
+import { assign, isEmpty } from "ramda";
 
 const initialState = {
     /*events: [
@@ -52,6 +53,11 @@ export const EventFeedReducer = (state = initialState, action) => {
                 success: false
             }
 
+        case FETCH_EVENT_CHANGES:
+            return {
+
+            }
+
         default:
             {
                 return state;
@@ -66,3 +72,5 @@ export const getEventFeedState = function (storeState) {
 //Nevim jak to inteligentneji pojmenovavat,Aby v tom byl co nejmensi bordel.
 
 export const getEvents = (state) => state.events || [];
+
+export const getEventById = (storeState, eventId) => storeState.eventFeed.events.find((event) => {return (event.id === eventId)});

@@ -14,7 +14,7 @@ export class FBLoginContainer extends Component {
   responseFacebook(response) {
     if (response.status !== 'unknown') {
       const userLogin = this.props.userLogin(response);
-      window.location.replace("/feed");
+      //window.location.replace("/feed");
     } else {
       return <p>Login failed</p>;
     }
