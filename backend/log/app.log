@@ -11002,3 +11002,564 @@ notNull Violation: timeEnd cannot be null
     at readableAddChunk (_stream_readable.js:176:18)
     at Socket.Readable.push (_stream_readable.js:134:10)
     at TCP.onread (net.js:547:20)
+[2017-11-27 15:43:30.039] [INFO] console - Server started on http://localhost:3001!
+[2017-11-27 15:45:52.976] [INFO] console - Server started on http://localhost:3001!
+[2017-11-27 15:47:00.626] [INFO] console - Server started on http://localhost:3001!
+[2017-11-27 15:50:19.596] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-27 17:55:35.114] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-27 17:55:35.142] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-27 17:55:35.146] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-27 17:55:35.150] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-27 18:01:51.320] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-27 18:01:51.444] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-27 18:01:51.605] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-27 18:01:51.789] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 16:02:24.011] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 16:02:26.864] [WARN] console - [31mUnhandled rejection SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+    at Utils.Promise.tap.then.catch.err (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:139:19)
+    at tryCatcher (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:689:18)
+    at Async._drainQueue (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)[0m
+
+[2017-11-28 16:02:55.432] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 16:03:52.795] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 16:26:56.667] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 16:26:56.703] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 16:26:56.705] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 16:26:56.716] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 16:26:56.719] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 16:27:05.911] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 16:27:13.456] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 16:27:13.505] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 16:27:13.672] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 18:49:42.978] [ERROR] console - SequelizeDatabaseError: read ECONNRESET
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Connection._notifyError (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:218:25)
+    at Connection._handleFatalError (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:178:14)
+    at Connection._handleNetworkError (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:183:8)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+[2017-11-28 18:50:00.546] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 18:51:32.526] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 18:53:45.786] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 18:53:58.784] [INFO] console - { where: { userId: '1', eventId: '2' },
+  defaults: { userId: '1', eventId: '2', willAttend: false, invited: false } }
+[2017-11-28 18:53:58.848] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 18:55:21.390] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 18:55:28.024] [INFO] console - { where: { userId: '1', eventId: '2' },
+  defaults: { willAttend: false, invited: false } }
+[2017-11-28 18:55:28.130] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 19:01:54.394] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:02:34.538] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:02:41.590] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 19:04:57.095] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:05:18.131] [ERROR] console - SequelizeDatabaseError: Column 'userId' cannot be null
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 19:05:59.288] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:10:39.689] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:10:43.972] [INFO] console - [ Attendance {
+    dataValues: { UserId: null, willAttend: false, invited: false },
+    _previousDataValues: { willAttend: undefined, invited: undefined },
+    _changed: { willAttend: true, invited: true },
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: [Object],
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: { isNewRecord: true, _schema: null, _schemaDelimiter: '' },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: true },
+  true ]
+[2017-11-28 19:12:12.576] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:12:12.803] [INFO] console - [ Attendance {
+    dataValues: { willAttend: false, invited: false, userId: 1 },
+    _previousDataValues: { willAttend: undefined, invited: undefined, userId: undefined },
+    _changed: { willAttend: true, invited: true, userId: true },
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: [Object],
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: { isNewRecord: true, _schema: null, _schemaDelimiter: '' },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: true },
+  true ]
+[2017-11-28 19:12:18.696] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:12:21.153] [INFO] console - [ Attendance {
+    dataValues: { willAttend: false, invited: false, userId: 1, eventId: 2 },
+    _previousDataValues: 
+     { willAttend: undefined,
+       invited: undefined,
+       userId: undefined,
+       eventId: undefined },
+    _changed: { willAttend: true, invited: true, userId: true, eventId: true },
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: [Object],
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: { isNewRecord: true, _schema: null, _schemaDelimiter: '' },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: true },
+  true ]
+[2017-11-28 19:13:19.450] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:20:55.787] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:21:01.293] [ERROR] console - SequelizeDatabaseError: Field 'userId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 19:21:10.510] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:21:12.126] [ERROR] console - SequelizeDatabaseError: Field 'userId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 19:21:21.114] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:21:22.836] [ERROR] console - SequelizeDatabaseError: Field 'userId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 19:21:43.628] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:21:45.471] [ERROR] console - SequelizeDatabaseError: Field 'userId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 19:23:04.189] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:23:05.986] [ERROR] console - SequelizeDatabaseError: Field 'userId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 19:23:22.551] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:23:27.650] [ERROR] console - SequelizeDatabaseError: Field 'userId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 19:23:38.723] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:23:41.101] [ERROR] console - SequelizeDatabaseError: Field 'userId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-11-28 19:26:47.726] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:27:03.627] [INFO] console - Server started on http://localhost:3001!
+[2017-11-28 19:31:42.111] [INFO] console - Server started on http://localhost:3001!

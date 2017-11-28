@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
       as: 'place',
     });
 
-    Event.belongsToMany(models.User, { as: 'eventAttendees', through: models.Attendance });
+    Event.belongsToMany(models.User, { as: 'eventAttendees', through: models.Attendance, foreignKey: 'eventId' });
 
   };
 

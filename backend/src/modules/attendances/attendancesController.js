@@ -76,8 +76,6 @@ export const putAttendanceController = async (req, res) => {
       eventId: eventId,
     },
     defaults: {
-      userId: userId,
-      eventId: eventId,
       willAttend: willAttend,
       invited: false,
     }
@@ -99,4 +97,18 @@ export const putAttendanceController = async (req, res) => {
       res.json({ id: id });
     }
   });
+
+  // Upsert only on PostgreSQL
+  /*const attendance = await db.Attendance.upsert({
+    where: {
+      userId: userId,
+      eventId: eventId,
+    },
+    defaults: {
+      willAttend: willAttend,
+      invited: false,
+    }
+  }).then(function (test) {
+    console.log(test);
+  });*/
 };
