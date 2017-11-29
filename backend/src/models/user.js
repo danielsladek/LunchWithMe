@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) => {
       surname: { type: DataTypes.STRING, allowNull: false },
       facebookId: { type: DataTypes.STRING, allowNull: false, unique: true },
       email: { type: DataTypes.STRING, allowNull: false, unique: true },
+      icon: { type: DataTypes.STRING, allowNull: true },
       //favouritePlace: { type: DataTypes.TEXT, allowNull: false },
       //favouriteMeal: { type: DataTypes.TEXT, allowNull: false },
     },

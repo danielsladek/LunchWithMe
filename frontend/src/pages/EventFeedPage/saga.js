@@ -17,21 +17,9 @@ function* fetchEvents() {
     const events = yield api.getEvents();
     const loggedUser = yield select(getUserInfo);
 
-    /* Add "willAttend" attribute for each event for logged user */
-    var eventsWithAttendance = events.events.map(event => {
-      var willAttend = false;
-
-      event.eventAttendees.map(attendant => {
-        if (attendant.id === loggedUser.userId) {
-          willAttend =  true;
-        }
-      });
-      return Object.assign({}, event, { willAttend: willAttend });
-    });
-
     yield put({
       type: EVENTS_FEED_SUCCESS,
-      payload: {events: eventsWithAttendance},
+      payload: events,
     });
   } catch (e) {
     console.log(e);
@@ -56,6 +44,7 @@ function* fetchEventChanges() {
           willAttend =  true;
         }
       });
+      
       return Object.assign({}, event, { willAttend: willAttend });
     });
 

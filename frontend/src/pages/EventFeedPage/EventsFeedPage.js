@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { EventPanel } from "../../components/EventPanel/EventPanel";
 import { Container, Row, Col } from "reactstrap";
-import { eventFeedFetch } from "./Actions";
+import { eventFeedFetch, fetchEventChanges } from "./Actions";
 import { getEventFeedState, getEvents } from "./Reducer";
 import { Link } from 'react-router';
 
@@ -47,6 +47,7 @@ const mapStateToProps = storeState => {
 export function mapDispatchToProps(dispatch) {
   return {
     eventFeedFetch: () => dispatch(eventFeedFetch()),
+    fetchEventChanges: () => dispatch(fetchEventChanges()),
   };
 }
 

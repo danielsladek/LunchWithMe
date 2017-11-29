@@ -54,8 +54,21 @@ export const EventFeedReducer = (state = initialState, action) => {
             }
 
         case FETCH_EVENT_CHANGES:
-            return {
+          const changedEvent = action.payload.event;
 
+          /* Fetch changed event */
+          const events = getEvents(state).map((event, i) => {
+
+            if (event.id === changedEvent.id) {
+              return changedEvent;
+            } else {
+              return event;
+            }
+          });
+        
+            return {
+              ...state,
+              events: events,
             }
 
         default:

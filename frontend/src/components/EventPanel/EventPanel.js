@@ -1,23 +1,56 @@
 import React, { Component } from 'react';
 import { EventLunchBuddiesList } from '../EventLunchBuddiesList';
-import { Row, Col, Button, Form } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import { EventComments } from '../EventComments';
 import { AttendToEventButton } from '../AttendToEventButton';
 import { connect } from 'react-redux';
-import { switchEventAttendance, fetchEventPanelToStore } from "./Actions";
+import { switchEventAttendance } from "./Actions";
 import { getEventById } from "../../pages/EventFeedPage/Reducer";
+import { getUserInfo } from "../FBLogin/Reducer";
 
 export class EventPanelContainer extends Component {
   constructor(props) {
     super(props);
     this.toggleBtn = this.toggleBtn.bind(this);
+    this.getWillAttend = this.getWillAttend.bind(this);
   }
 
   toggleBtn(e) {
     e.preventDefault();
 
-    const { id, willAttend } = this.props.event;
-    this.props.switchEventAttendance({id, willAttend});
+    const { event } = this.props,
+            currentWillAttend = this.getWillAttend();
+
+    var newWillAttend = false;
+
+    if (currentWillAttend) {
+      newWillAttend = false;
+    } else { // Watch out for null value
+      newWillAttend = true;
+    }
+
+    this.props.switchEventAttendance({event: event, willAttend: newWillAttend});
+  };
+
+  /* Check if user belongs to attendants and will attend the event */
+  getWillAttend() {
+    const { eventAttendees } = this.props.event,
+          { userId } = this.props.userInfo;
+
+    var willAttend = false;
+
+    eventAttendees.find((attendant) => {
+      const eventAttendance = attendant.Attendance.willAttend,
+            attendantId = attendant.Attendance.userId;
+
+      if (attendantId === userId && typeof eventAttendance !== 'undefined' && eventAttendance !== null) {
+        willAttend = eventAttendance;
+      } else {
+        willAttend = false;
+      }
+    });
+
+    return willAttend;
   };
 
   render() {
@@ -29,9 +62,9 @@ export class EventPanelContainer extends Component {
       eventAttendees,
       comments,
       eventDescription,
-      willAttend,
-      id
-    } = this.props.event;
+    } = this.props.event,
+      willAttend = this.getWillAttend();
+
     var displayComments = false;
 
     if (typeof this.props.displayComments !== 'undefined' && this.props.displayComments === true) {
@@ -64,7 +97,10 @@ export class EventPanelContainer extends Component {
 }
 
 const mapStateToProps = (storeState, props) => {
-  return {event: getEventById(storeState, props.eventId)};
+  return {
+    event: getEventById(storeState, props.eventId),
+    userInfo: getUserInfo(storeState),
+  };
 };
 
 export const EventPanel = connect(

@@ -19,12 +19,9 @@ export default class Api {
     );
   }
 
-  switchAttendance (eventId, userId, currState) {
-    var willAttend = false;
-    if (currState) willAttend = true;
-
+  changeAttendance (eventId, userId, newState) {
     const reqBody = {
-      willAttend: willAttend,
+      willAttend: newState,
     };
 
     return axios.put(this.baseURL + '/attendances/event/' + eventId + '/user/' + userId, reqBody).then(

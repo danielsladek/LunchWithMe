@@ -12,6 +12,7 @@ module.exports = {
       surname: { type: Sequelize.STRING, allowNull: false },
       email: { type: Sequelize.STRING, allowNull: false, unique: true },
       facebookId: { type: Sequelize.STRING, allowNull: false, unique: true },
+      icon: { type: Sequelize.STRING, allowNull: true },
       createdAt: { type: Sequelize.DATE, allowNull: false },
       updatedAt: { type: Sequelize.DATE, allowNull: false },
     });
