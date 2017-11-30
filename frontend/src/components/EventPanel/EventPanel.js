@@ -7,15 +7,35 @@ import { connect } from 'react-redux';
 import { switchEventAttendance } from "./Actions";
 import { getEventById } from "../../pages/EventFeedPage/Reducer";
 import { getUserInfo } from "../FBLogin/Reducer";
+import { LunchBuddyIcon } from "../LunchBuddyIcon";
+import { CancelEventButton } from "../CancelEventButton";
 
 export class EventPanelContainer extends Component {
   constructor(props) {
     super(props);
-    this.toggleBtn = this.toggleBtn.bind(this);
+    this.changeAttendanceButtonClick = this.changeAttendanceButtonClick.bind(this);
+    this.cancelEventButtonClick = this.cancelEventButtonClick.bind(this);
     this.getWillAttend = this.getWillAttend.bind(this);
   }
 
-  toggleBtn(e) {
+  cancelEventButtonClick(e) {
+    e.preventDefault();
+
+    const { event } = this.props,
+            currentWillAttend = this.getWillAttend();
+
+    var newWillAttend = false;
+
+    if (currentWillAttend) {
+      newWillAttend = false;
+    } else { // Watch out for null value
+      newWillAttend = true;
+    }
+
+    this.props.switchEventAttendance({event: event, willAttend: newWillAttend});
+  };
+
+  changeAttendanceButtonClick(e) {
     e.preventDefault();
 
     const { event } = this.props,
@@ -61,7 +81,7 @@ export class EventPanelContainer extends Component {
       eventDate,
       eventAttendees,
       comments,
-      eventDescription,
+      description,
     } = this.props.event,
       willAttend = this.getWillAttend(),
       { userInfo } = this.props;
@@ -75,21 +95,38 @@ export class EventPanelContainer extends Component {
     return (
       <Row className="eventPanel">
         <Col>
-          <div className="name">
-            {organizator.name}
-            {organizator.surname}
-          </div>
-          <div className="date">
-            {eventDate}
-          </div>
-
-          <h1 className="eventName">{eventName}</h1>
-          <span>Lunch buddies (max. {maximumLunchBuddies}):</span>
+          <Row className="organizatorPanel">
+            <Col>
+              <LunchBuddyIcon href={userInfo.icon} />
+              <div className="name">
+                { organizator.id == userInfo.userId ?
+                  "You"
+                  :
+                  organizator.name + " " +  organizator.surname
+                }
+              </div>
+            </Col>
+          </Row>
+          <Row className="eventInfo">
+            <Col>
+              <h1 className="eventName">{eventName}</h1>
+              <div className="date">
+                {eventDate}
+              </div>
+              <div className="description">
+                {description}
+              </div>
+            </Col>
+          </Row>
           <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} />
-          <div className="description">
-            {eventDescription}
-          </div>
-          <AttendToEventButton onClick={this.toggleBtn} organizator={organizator} activeBtn={willAttend} />
+          <Row className="buttonPanel">
+            <Col>
+              <form name="eventActions">
+                <AttendToEventButton onClick={this.changeAttendanceButtonClick} organizator={organizator} activeBtn={willAttend} userInfo={userInfo} />
+                { organizator.id == userInfo.userId && <CancelEventButton onClick={this.cancelEventButtonClick} />}
+              </form>
+            </Col>
+          </Row>
           {displayComments && <EventComments comments={comments}/>}
         </Col>
       </Row>

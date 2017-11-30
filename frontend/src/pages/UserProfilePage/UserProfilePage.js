@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Row, Col, Form, Button } from 'reactstrap';
-import { UserEventsList } from '../components/UserEventsList';
+import { UserEventsList } from '../../components/UserEventsList';
+import { connect } from "react-redux";
+import {  } from "./Actions";
+import { } from "./Reducer";
 
-export class UserProfilePage extends Component {
+export class UserProfilePageContainer extends Component {
   render() {
     // Sample user data object
     /* userDataObj = {
@@ -31,26 +34,37 @@ export class UserProfilePage extends Component {
       ]
     };*/
 
-    const { user } = this.props;
+    const { name, surname, lunchBuddiesCount, description, events } = this.props.user;
 
     return (
       <Row className="eventsFeedPage">
         <Col md="8" sm="12">
           <Row>
             <Col>
-              <h1>{user.name} {user.surname}</h1>
-              <span>Lunch buddies: {user.lunchBuddiesCount}</span>
+              <h1>{name} {surname}</h1>
+              <span>Lunch buddies: {lunchBuddiesCount}</span>
               <div className="description">
-                {user.description}
+                {description}
               </div>
               <Form name="addBudy">
                 <Button type="submit" color="primary">Add a buddy</Button>
               </Form>
             </Col>
           </Row>
-          <UserEventsList userEvents={user.events} />
+          <UserEventsList userEvents={events} />
         </Col>
       </Row>
     );
   }
 }
+
+const mapStateToProps = (storeState, props) => {
+  return {};
+};
+
+export const UserProfilePage = connect(
+  mapStateToProps,
+  {
+
+  },
+)(UserProfilePageContainer);

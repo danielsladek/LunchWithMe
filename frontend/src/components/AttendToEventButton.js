@@ -3,7 +3,7 @@ import { Button, Form } from 'reactstrap';
 import { connect } from 'react-redux';
 import { getUserInfo } from './FBLogin/Reducer';
 
-export class AttendToEventButtonContainer extends Component {
+export class AttendToEventButton extends Component {
 
   render() {
     const { organizator, onClick, activeBtn, userInfo } = this.props,
@@ -19,26 +19,15 @@ export class AttendToEventButtonContainer extends Component {
             };
 
     return (
-      <Form name="attendToEvent">
-        <Button onClick={onClick}  type="submit" color={activeBtn ? "success" : "primary" } size="lg">
-          {activeBtn ?
-            (userInfo.userId == organizator.id) ?
-              buttonTexts.own.going : buttonTexts.others.going
-            :
-            userInfo.userId == organizator.id ?
-              buttonTexts.own.attend : buttonTexts.others.attend
-          }
-        </Button>
-      </Form>
+      <Button onClick={onClick}  type="button" color={activeBtn ? "success" : "primary" } size="lg">
+        {activeBtn ?
+          (userInfo.userId == organizator.id) ?
+            buttonTexts.own.going : buttonTexts.others.going
+          :
+          userInfo.userId == organizator.id ?
+            buttonTexts.own.attend : buttonTexts.others.attend
+        }
+      </Button>
     );
   }
 }
-
-const mapStateToProps = (storeState, props) => {
-  return {userInfo: getUserInfo(storeState)};
-};
-
-export const AttendToEventButton = connect(
-  mapStateToProps,
-  {},
-)(AttendToEventButtonContainer);
