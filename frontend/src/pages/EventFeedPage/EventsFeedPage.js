@@ -47,7 +47,6 @@ const mapStateToProps = storeState => {
 export function mapDispatchToProps(dispatch) {
   return {
     eventFeedFetch: () => dispatch(eventFeedFetch()),
-    fetchEventChanges: () => dispatch(fetchEventChanges()),
   };
 }
 

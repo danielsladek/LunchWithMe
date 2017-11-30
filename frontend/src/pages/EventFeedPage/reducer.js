@@ -1,4 +1,4 @@
-import { EVENTS_FEED_FETCH, EVENTS_FEED_SUCCESS, EVENTS_FEED_FAIL, FETCH_EVENT_CHANGES } from "./Actions";
+import { EVENTS_FEED_FETCH, EVENTS_FEED_SUCCESS, EVENTS_FEED_FAIL, FETCH_EVENT_CHANGES, REFRESH_EVENTS_FEED } from "./Actions";
 import { assign, isEmpty } from "ramda";
 
 const initialState = {
@@ -65,7 +65,7 @@ export const EventFeedReducer = (state = initialState, action) => {
               return event;
             }
           });
-        
+
             return {
               ...state,
               events: events,

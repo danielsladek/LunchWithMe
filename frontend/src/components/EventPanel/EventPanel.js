@@ -63,7 +63,8 @@ export class EventPanelContainer extends Component {
       comments,
       eventDescription,
     } = this.props.event,
-      willAttend = this.getWillAttend();
+      willAttend = this.getWillAttend(),
+      { userInfo } = this.props;
 
     var displayComments = false;
 
@@ -84,7 +85,7 @@ export class EventPanelContainer extends Component {
 
           <h1 className="eventName">{eventName}</h1>
           <span>Lunch buddies (max. {maximumLunchBuddies}):</span>
-          <EventLunchBuddiesList eventAttendees={eventAttendees}/>
+          <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} />
           <div className="description">
             {eventDescription}
           </div>
