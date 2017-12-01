@@ -8,7 +8,16 @@ export const getUsersController = async (req, res) => {
 };
 
 export const getUserDetailController = async (req, res) => {
-  const user = await db.User.findById(req.params.id);
+  const user = await db.User.findOne({
+    include: [{
+        model: db.Event,
+        as: "organizes",
+        required: false,
+    }],
+    where: {
+      id: req.params.id,
+    },
+  });
 
   res.json({ user });
 };

@@ -25,7 +25,7 @@ module.exports = {
     const eventPromise = queryInterface.bulkInsert(
       'Events',
       [
-        { createdAt: new Date(), updatedAt: new Date(), placeId: 1, maximumLunchBuddies: 5, organizerId: 1, description: 'Default event description.', timeStart: new Date(), timeEnd: addSeconds(new Date(), 60*Math.random() * (max - min) + min) },
+        { createdAt: new Date(), updatedAt: new Date(), placeId: 1, maximumLunchBuddies: 5, organizatorId: 1, description: 'Default event description.', timeStart: new Date(), timeEnd: addSeconds(new Date(), 60*Math.random() * (max - min) + min) },
       ],
       {}
     );

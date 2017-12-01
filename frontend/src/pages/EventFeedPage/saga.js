@@ -31,10 +31,11 @@ function* fetchEvents() {
   }
 }
 
-function* fetchEventChanges() {
+function* fetchEventChanges(action) {
   try {
     yield put({
       type: EVENTS_FEED_FETCH,
+      payload: action.payload,
     });
   } catch (e) {
     console.log(e);

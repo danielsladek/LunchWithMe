@@ -8,15 +8,14 @@ module.exports = (sequelize, DataTypes) => {
       maximumLunchBuddies: { type: DataTypes.INTEGER, allowNull: true },
       timeStart: { type: DataTypes.DATE, allowNull: false },
       timeEnd: { type: DataTypes.DATE, allowNull: false },
+      organizatorId: { type: DataTypes.INTEGER, allowNull: false },
     },
     {}
   );
 
   Event.associate = function(models) {
-    Event.belongsTo(models.User, {
-      foreignKey: 'organizerId',
-      as: 'organizator',
-    });
+
+    Event.belongsTo(models.User, { foreignKey: 'organizatorId', as: 'organizator' });
 
     Event.belongsTo(models.Place, {
       foreignKey: 'placeId',

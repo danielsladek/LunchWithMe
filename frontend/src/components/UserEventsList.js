@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
+import { EventPanel } from "./EventPanel/EventPanel";
 
 export class UserEventsList extends Component {
   render() {
@@ -9,12 +10,7 @@ export class UserEventsList extends Component {
       <Row className="userEventsList">
         <Col>
           {userEvents.map((event, i) => (
-            <Row className="event" key={event.eventId}>
-              <Col>
-                <h3>Lunch with me at {event.eventPlace.name}, {event.eventPlace.location}</h3>
-                <span className="time">{event.eventDate}</span>
-              </Col>
-            </Row>
+            <EventPanel eventId={event.id} event={event} key={event.id} />
           ))}
         </Col>
       </Row>

@@ -1,70 +1,44 @@
 import React, { Component } from 'react';
-import { Row, Col, Form, Button } from 'reactstrap';
+import { Row, Col, Form, Button, Container } from 'reactstrap';
 import { UserEventsList } from '../../components/UserEventsList';
-import { connect } from "react-redux";
-import {  } from "./Actions";
-import { } from "./Reducer";
+import Api from '../../Api';
+import { LunchBuddyIcon } from '../../components/LunchBuddyIcon';
 
-export class UserProfilePageContainer extends Component {
+export class UserProfilePage extends Component {
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      userData: { name: "", surname: "" , email: "", icon: "", organizes: [] },
+    };
+  }
+
+  componentDidMount() {
+    /* Get user data without need to fetch them to the store */
+    const api = new Api();
+    const userData = api.getUserById(this.props.params.userId).then(res => {
+      this.setState({ userData: res.user });
+    });
+  }
+
   render() {
-    // Sample user data object
-    /* userDataObj = {
-      name: "John",
-      surname: "Doe",
-      userId: 1,
-      lunchBuddiesCount: 25,
-      description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      events: [
-        {
-          eventId: 1,
-          eventPlace: {
-            name: "Tradice",
-            location: "Anděl"
-          },
-          eventDate: "1.1.2001"
-        },
-        {
-          eventId: 2,
-          eventPlace: {
-            name: "Tradice",
-            location: "Anděl"
-          },
-          eventDate: "3.1.2001"
-        }
-      ]
-    };*/
-
-    const { name, surname, lunchBuddiesCount, description, events } = this.props.user;
+    const { name, surname, icon, organizes } = this.state.userData;
 
     return (
       <Row className="eventsFeedPage">
         <Col md="8" sm="12">
           <Row>
             <Col>
+              <LunchBuddyIcon href={icon} />
               <h1>{name} {surname}</h1>
-              <span>Lunch buddies: {lunchBuddiesCount}</span>
-              <div className="description">
-                {description}
-              </div>
-              <Form name="addBudy">
-                <Button type="submit" color="primary">Add a buddy</Button>
-              </Form>
+              <h3>{name}'s events</h3>
+              <UserEventsList userEvents={organizes} />
             </Col>
           </Row>
-          <UserEventsList userEvents={events} />
+
         </Col>
       </Row>
     );
   }
 }
-
-const mapStateToProps = (storeState, props) => {
-  return {};
-};
-
-export const UserProfilePage = connect(
-  mapStateToProps,
-  {
-
-  },
-)(UserProfilePageContainer);

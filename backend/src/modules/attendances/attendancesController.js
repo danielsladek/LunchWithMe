@@ -76,6 +76,7 @@ export const putAttendanceController = async (req, res) => {
       eventId: eventId,
     },
     defaults: {
+      UserId: userId,
       willAttend: willAttend,
       invited: false,
     }

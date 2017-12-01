@@ -23,21 +23,10 @@ export class EventPanelContainer extends Component {
 
     const { event } = this.props,
             currentWillAttend = this.getWillAttend();
-
-    var newWillAttend = false;
-
-    if (currentWillAttend) {
-      newWillAttend = false;
-    } else { // Watch out for null value
-      newWillAttend = true;
-    }
-
-    this.props.switchEventAttendance({event: event, willAttend: newWillAttend});
   };
 
   changeAttendanceButtonClick(e) {
     e.preventDefault();
-
     const { event } = this.props,
             currentWillAttend = this.getWillAttend();
 
@@ -61,7 +50,7 @@ export class EventPanelContainer extends Component {
 
     eventAttendees.find((attendant) => {
       const eventAttendance = attendant.Attendance.willAttend,
-            attendantId = attendant.Attendance.userId;
+            attendantId = attendant.Attendance.UserId;
 
       if (attendantId === userId && typeof eventAttendance !== 'undefined' && eventAttendance !== null) {
         willAttend = eventAttendance;

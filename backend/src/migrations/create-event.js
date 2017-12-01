@@ -9,7 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       description: { type: Sequelize.STRING, allowNull: false },
-      organizerId: { type: Sequelize.INTEGER, allowNull: false },
+      organizatorId: { type: Sequelize.INTEGER, allowNull: false },
       maximumLunchBuddies: { type: Sequelize.INTEGER, allowNull: true },
       timeStart: { type: Sequelize.DATE, allowNull: false },
       timeEnd: { type: Sequelize.DATE, allowNull: false },

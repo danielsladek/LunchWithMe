@@ -42,7 +42,7 @@ export default class Api {
   }
 
   getPlaceById (placeId) {
-    return axios.get(this.baseURL + '/events/' + placeId).then(
+    return axios.get(this.baseURL + '/places/' + placeId).then(
       (response) => response.data
     );
   }
