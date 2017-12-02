@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import { Container } from 'reactstrap';
 import configureStore from './store/configureStore.js';
@@ -9,6 +9,10 @@ import { RegistrationPage } from './pages/registration.js';
 import EventsFeedPage from './pages/EventFeedPage/EventsFeedPage';
 import { UserProfilePage } from './pages/UserProfilePage/UserProfilePage';
 import { NewLunchPage } from './pages/newLunch.js';
+import { TopMenu } from './components/TopMenu.js';
+import { Main } from 'reactstrap';
+import { PageLayout } from './components/PageLayout.js';
+
 import './App.css';
 
 const store = configureStore();
@@ -20,17 +24,15 @@ class App extends Component {
     return (
       <div className="App">
         <Provider store={store}>
-            <Router history={browserHistory}>
-              <Container>
-                <Route path="/">
-                  <IndexRoute component={Landing}/>
-                  <Route path="reg" component={RegistrationPage}/>
-                  <Route path="addLunch" component={NewLunchPage}/>
-                  <Route path="user/:userId" component={UserProfilePage}/>
-                  <Route path="feed" component={EventsFeedPage}/>
-                </Route>
-              </Container>
-            </Router>
+          <Router history={browserHistory}>
+            <Route path="/" component={PageLayout}>
+              <IndexRoute component={Landing}/>
+              <Route path="reg" component={RegistrationPage}/>
+              <Route path="addLunch" component={NewLunchPage}/>
+              <Route path="user/:userId" component={UserProfilePage}/>
+              <Route path="feed" component={EventsFeedPage}/>
+            </Route>
+          </Router>
         </Provider>
       </div>
     );
