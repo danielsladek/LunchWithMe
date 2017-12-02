@@ -2527,3 +2527,36 @@
 [2017-12-01 22:35:47.695] [INFO] console - Server started on http://localhost:3001!
 [2017-12-01 23:09:40.021] [INFO] console - Server started on http://localhost:3001!
 [2017-12-02 10:46:00.828] [INFO] console - Server started on http://localhost:3001!
+[2017-12-02 23:13:33.515] [INFO] console - Server started on http://localhost:3000!
+[2017-12-02 23:18:09.262] [INFO] console - Server started on http://localhost:3000!
+[2017-12-02 23:20:00.885] [INFO] console - Server started on http://localhost:3001!
+[2017-12-02 23:20:30.973] [WARN] console - [31mUnhandled rejection SequelizeAccessDeniedError: Access denied for user 'root'@'localhost' (using password: YES)
+    at Utils.Promise.tap.then.catch.err (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:141:19)
+    at tryCatcher (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/bluebird/js/release/promise.js:689:18)
+    at Async._drainQueue (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)[0m
+
+[2017-12-02 23:21:18.442] [INFO] console - Server started on http://localhost:3001!
+[2017-12-02 23:21:40.491] [WARN] console - [31mUnhandled rejection SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/sequelize/lib/dialects/mysql/query.js:203:16)
+    at Query.connection.query [as onResult] (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/sequelize/lib/dialects/mysql/query.js:55:23)
+    at Query.Command.execute (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/mysql2/lib/commands/command.js:30:12)
+    at Connection.handlePacket (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/mysql2/lib/connection.js:515:28)
+    at PacketParser.onPacket (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/mysql2/lib/connection.js:94:16)
+    at PacketParser.executeStart (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/daneCzech/Sites/LunchWithMe/backend/node_modules/mysql2/lib/connection.js:102:29)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)[0m
+
+[2017-12-02 23:22:56.237] [INFO] console - Server started on http://localhost:3001!

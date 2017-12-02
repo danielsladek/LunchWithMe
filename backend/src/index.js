@@ -5,7 +5,7 @@ import { app } from './server';
 import { setupLogging } from './logging';
 
 dotenv.config();
-const { PORT = 3000 } = process.env;
+const { PORT = 3001 } = process.env;
 
 setupLogging();
 
