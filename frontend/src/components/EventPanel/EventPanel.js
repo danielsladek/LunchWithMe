@@ -9,6 +9,7 @@ import { getEventById } from "../../pages/EventFeedPage/Reducer";
 import { getUserInfo } from "../FBLogin/Reducer";
 import { LunchBuddyIcon } from "../LunchBuddyIcon";
 import { CancelEventButton } from "../CancelEventButton";
+import Moment from 'moment';
 
 export class EventPanelContainer extends Component {
   constructor(props) {
@@ -63,23 +64,29 @@ export class EventPanelContainer extends Component {
   };
 
   render() {
+    Moment.locale('cs');
+
     const {
       maximumLunchBuddies,
-      eventName,
       organizator,
-      eventDate,
       eventAttendees,
       comments,
       description,
+      place,
     } = this.props.event,
       willAttend = this.getWillAttend(),
       { userInfo } = this.props;
 
-    var displayComments = false;
+    var displayComments = false,
+        timeStart = Moment(this.props.event.timeStart).format('d. M. Y H:mm'),
+        timeEnd = Moment(this.props.event.timeEnd).format('d. M. Y H:mm'),
+        googleMapsLink = 'https://maps.google.com/?ll=' + place.coordsX + ',' + place.coordsY;
 
     if (typeof this.props.displayComments !== 'undefined' && this.props.displayComments === true) {
       displayComments = true;
     }
+
+    console.log(this.props.event);
 
     return (
       <Row className="eventPanel">
@@ -98,9 +105,11 @@ export class EventPanelContainer extends Component {
           </Row>
           <Row className="eventInfo">
             <Col>
-              <h1 className="eventName">{eventName}</h1>
+              <h2 className="eventTitle">
+                at <a href={googleMapsLink} target="_blank">{place.name}</a>
+              </h2>
               <div className="date">
-                {eventDate}
+                {timeStart} - {timeEnd}
               </div>
               <div className="description">
                 {description}
