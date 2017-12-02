@@ -10,7 +10,7 @@ export class CancelEventButton extends Component {
 
     return (
       <Button onClick={onClick} type="button" color="danger" size="lg">
-        Delete
+        Cancel event
       </Button>
     );
   }

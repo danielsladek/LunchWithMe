@@ -9,9 +9,13 @@ export class UserEventsList extends Component {
     return (
       <Row className="userEventsList">
         <Col>
-          {userEvents.map((event, i) => (
-            <EventPanel eventId={event.id} event={event} key={event.id} />
-          ))}
+          {userEvents.length ?
+            userEvents.map((event, i) => (
+              <EventPanel eventId={event.id} event={event} key={event.id} />
+            ))
+            :
+            "User organizes no events."
+          }
         </Col>
       </Row>
     );

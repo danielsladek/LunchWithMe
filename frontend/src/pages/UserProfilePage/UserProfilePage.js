@@ -30,7 +30,7 @@ export class UserProfilePage extends Component {
         <Col md="8" sm="12">
           <Row>
             <Col>
-              <LunchBuddyIcon href={icon} />
+              <LunchBuddyIcon lunchBuddy={this.state.userData} />
               <h1>{name} {surname}</h1>
               <h3>{name}'s events</h3>
               <UserEventsList userEvents={organizes} />

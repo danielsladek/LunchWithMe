@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import { LunchBuddyIcon } from './LunchBuddyIcon';
-import { Redirect, Link } from 'react-router';
+import { Link } from 'react-router';
+import { browserHistory } from "react-router";
 
 export class EventLunchBuddiesList extends Component {
 
+  constructor(props) {
+    super(props);
+    this.userButtonClick = this.userButtonClick.bind(this);
+  }
+
+  userButtonClick(e) {
+    e.preventDefault();
+    browserHistory.replace('/user/' + e.target.getAttribute('data-user-id'));
+  }
+
   render() {
-    const { currentUser, eventAttendees } = this.props,
+    const { currentUser, eventAttendees, organizator } = this.props,
             userButtonClick = this.userButtonClick;
 
     return (
@@ -14,19 +25,17 @@ export class EventLunchBuddiesList extends Component {
       <div className="eventLunchBuddiesList">
 
         {eventAttendees.map(function(lunchBuddy, i) {
-          if (lunchBuddy.Attendance.willAttend) {
-            return <Button type="button" className="budy-btn" color="secondary" size="sm" key={lunchBuddy.id}>
-                    <Link to={"/user/" + lunchBuddy.id } >
-                     <LunchBuddyIcon href={lunchBuddy.icon} />
-                     <span className="buddyName">
+          if (lunchBuddy.Attendance.willAttend && lunchBuddy.id != organizator.id) {
+            return <Button type="button" className="budy-btn" color="secondary" onClick={userButtonClick} size="sm" data-user-id={lunchBuddy.id} key={lunchBuddy.id}>
+                    <LunchBuddyIcon lunchBuddy={lunchBuddy} />
+                    <span className="buddyName">
                        {lunchBuddy.id == currentUser.userId ?
                          "You"
                          :
                          lunchBuddy.name
                        }
-                     </span>
-                    </Link>
-                   </Button>
+                   </span>
+                  </Button>
           }
         })}
       </div>

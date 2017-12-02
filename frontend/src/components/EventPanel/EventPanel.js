@@ -86,14 +86,12 @@ export class EventPanelContainer extends Component {
       displayComments = true;
     }
 
-    console.log(this.props.event);
-
     return (
       <Row className="eventPanel">
         <Col>
           <Row className="organizatorPanel">
             <Col>
-              <LunchBuddyIcon href={userInfo.icon} />
+              <LunchBuddyIcon lunchBuddy={organizator} />
               <div className="name">
                 { organizator.id == userInfo.userId ?
                   "You"
@@ -116,11 +114,11 @@ export class EventPanelContainer extends Component {
               </div>
             </Col>
           </Row>
-          <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} />
+          <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
           <Row className="buttonPanel">
             <Col>
               <form name="eventActions">
-                <AttendToEventButton onClick={this.changeAttendanceButtonClick} organizator={organizator} activeBtn={willAttend} userInfo={userInfo} />
+                { organizator.id != userInfo.userId && <AttendToEventButton onClick={this.changeAttendanceButtonClick} organizator={organizator} activeBtn={willAttend} userInfo={userInfo} />}
                 { organizator.id == userInfo.userId && <CancelEventButton onClick={this.cancelEventButtonClick} />}
               </form>
             </Col>

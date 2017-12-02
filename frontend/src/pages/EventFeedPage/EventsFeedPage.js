@@ -20,6 +20,7 @@ export class EventsFeedPage extends Component {
     return (
       <Row className="eventsFeedPage">
         <Col md="8" sm="12">
+        <h1>Upcoming events</h1>
           {
             events.length
             &&
