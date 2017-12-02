@@ -4,11 +4,18 @@ import { Link } from 'react-router';
 
 export class LunchBuddyIcon extends Component {
   render() {
-    const { name, surname, icon, id } = this.props.lunchBuddy;
+    const { name, surname, icon, id } = this.props.lunchBuddy,
+            image = <img src={icon} alt={name + " " + surname} />;
 
     return (
       <div className="lunchBuddyIcon">
-        <Link to={"/user/" + id } ><img src={icon} alt={name + " " + surname} /></Link>
+        {typeof this.props.link != 'undefined' && this.props.link === false ?
+          image
+          :
+          <Link to={"/user/" + id } >
+            {image}
+          </Link>
+        }
       </div>
     );
   }

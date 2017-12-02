@@ -27,7 +27,7 @@ export class EventLunchBuddiesList extends Component {
         {eventAttendees.map(function(lunchBuddy, i) {
           if (lunchBuddy.Attendance.willAttend && lunchBuddy.id != organizator.id) {
             return <Button type="button" className="budy-btn" color="secondary" onClick={userButtonClick} size="sm" data-user-id={lunchBuddy.id} key={lunchBuddy.id}>
-                    <LunchBuddyIcon lunchBuddy={lunchBuddy} />
+                    <LunchBuddyIcon lunchBuddy={lunchBuddy} link={false} />
                     <span className="buddyName">
                        {lunchBuddy.id == currentUser.userId ?
                          "You"
