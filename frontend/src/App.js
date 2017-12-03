@@ -12,9 +12,8 @@ import { NewLunchPage } from './pages/newLunch.js';
 import { TopMenu } from './components/TopMenu.js';
 import { Main } from 'reactstrap';
 import { PageLayout } from './components/PageLayout.js';
-
-import './App.css';
-
+import { EventDetail } from './pages/EventDetail/EventDetail';
+ 
 const store = configureStore();
 
 class App extends Component {
@@ -31,6 +30,7 @@ class App extends Component {
               <Route path="addLunch" component={NewLunchPage}/>
               <Route path="user/:userId" component={UserProfilePage}/>
               <Route path="feed" component={EventsFeedPage}/>
+              <Route path="event/:eventId" component={EventDetail}/>
             </Route>
           </Router>
         </Provider>

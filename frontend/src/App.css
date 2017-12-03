@@ -2,11 +2,11 @@ body {
   background: url("hero.jpg");
   background-size: cover;
   height: 100vh;
-  color: #fff !important;
+  color: #fff;
 }
 
-.App {
-
+.rdtPicker {
+  color: black;
 }
 
 .App-logo {

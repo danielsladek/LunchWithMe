@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, FormGroup, Label, Input, Button, Col, Row } from 'reactstrap';
+import Datetime from 'react-datetime';
 
 
 export class NewLunchForm extends React.Component 
@@ -9,8 +10,7 @@ export class NewLunchForm extends React.Component
         super(props);
         this.state = {
             name: '',
-            date: '',
-            time: '',
+            datetime: '',
             description: '',
             lunchevent: '',
             invitations: '',
@@ -47,14 +47,8 @@ export class NewLunchForm extends React.Component
                 <Row>
                     <Col>
                         <FormGroup>
-                            <Label for="date">Date:</Label>
-                            <Input name="date" id="date" type="text" value={this.state.date} onChange={this.handleChange} />
-                        </FormGroup>
-                    </Col>
-                    <Col>
-                        <FormGroup>
-                            <Label for="time">Time:</Label>
-                            <Input name="time" id="time" type="text" value={this.state.time} onChange={this.handleChange} />
+                            <Label for="datetime">Date and time:</Label>
+                            <Datetime id="datetime" value={this.state.datetime} onChange={this.handleChange}/>
                         </FormGroup>
                     </Col>
                 </Row>

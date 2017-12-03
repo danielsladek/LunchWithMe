@@ -23,7 +23,7 @@ export class TopMenu extends Component {
     const { comments, userData } = this.props;
     console.log(userData);
     return (
-        <Navbar color="red" dark expand="md" fixed="top" className="topMenu">
+        <Navbar color="red" dark expand="md" className="topMenu">
           <NavbarBrand href="/">Lunchwithme</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

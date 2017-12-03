@@ -9,6 +9,7 @@ import { getEventById } from "../../pages/EventFeedPage/Reducer";
 import { getUserInfo } from "../FBLogin/Reducer";
 import { LunchBuddyIcon } from "../LunchBuddyIcon";
 import { CancelEventButton } from "../CancelEventButton";
+import { Redirect, Route, browserHistory } from "react-router";
 import Moment from 'moment';
 
 export class EventPanelContainer extends Component {
@@ -63,10 +64,17 @@ export class EventPanelContainer extends Component {
     return willAttend;
   };
 
+  handleClick(id) {
+    //return (<Route exact path="/" render={() => (<Redirect to="/dashboard"/>)}/>);
+    browserHistory.push('/event/' + this.props.event.id, { event: this.props.event })
+    
+  }
+
   render() {
     Moment.locale('cs');
 
     const {
+      id,
       maximumLunchBuddies,
       organizator,
       eventAttendees,
@@ -88,7 +96,7 @@ export class EventPanelContainer extends Component {
 
     return (
       <Row className="eventPanel">
-        <Col>
+        <Col onClick={() => this.handleClick(id)}>
           <Row className="organizatorPanel">
             <Col>
               <LunchBuddyIcon lunchBuddy={organizator} />
@@ -123,7 +131,6 @@ export class EventPanelContainer extends Component {
               </form>
             </Col>
           </Row>
-          {displayComments && <EventComments comments={comments}/>}
         </Col>
       </Row>
     );
