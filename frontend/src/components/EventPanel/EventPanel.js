@@ -68,7 +68,7 @@ export class EventPanelContainer extends Component {
   handleClick(id) {
     //return (<Route exact path="/" render={() => (<Redirect to="/dashboard"/>)}/>);
     browserHistory.push('/event/' + this.props.event.id, { event: this.props.event })
-    
+
   }
 
   render() {
@@ -96,44 +96,50 @@ export class EventPanelContainer extends Component {
     }
 
     return (
-      <Row className="eventPanel">
-        <Col onClick={() => this.handleClick(id)}>
-          <Row className="organizatorPanel">
-            <Col>
-              <LunchBuddyIcon lunchBuddy={organizator} />
-              <div className="name">
-                { organizator.id == userInfo.userId ?
-                  "You"
-                  :
-                  organizator.name + " " +  organizator.surname
-                }
-              </div>
-            </Col>
-          </Row>
-          <Row className="eventInfo">
-            <Col>
-              <h2 className="eventTitle">
-                at <a href={googleMapsLink} target="_blank">{place.name}</a>
-              </h2>
-              <div className="date">
-                {timeStart} - {timeEnd}
-              </div>
-              <div className="description">
-                {description}
-              </div>
-            </Col>
-          </Row>
-          <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
-          <Row className="buttonPanel">
-            <Col>
-              <form name="eventActions">
-                { organizator.id != userInfo.userId && <AttendToEventButton onClick={this.changeAttendanceButtonClick} organizator={organizator} activeBtn={willAttend} userInfo={userInfo} />}
-                { organizator.id == userInfo.userId && <CancelEventButton onClick={this.cancelEventButtonClick} />}
-              </form>
-            </Col>
-          </Row>
+
+        <Col md="3" onClick={() => this.handleClick(id)}>
+          <div className="feed-event-box">
+            <div className="organizatorPanel">
+
+                <LunchBuddyIcon lunchBuddy={organizator} />
+                <div className="name">
+                  { organizator.id == userInfo.userId ?
+                    "You are going to"
+                    :
+                    organizator.name + " " +  organizator.surname + " is going to "
+                  }
+                </div>
+
+            </div>
+            <div className="eventInfo">
+
+                <h2 className="eventTitle">
+                  <a href={googleMapsLink} target="_blank">{place.name}</a>
+                </h2>
+                <div className="date">
+                  {timeStart}
+                  {/* {timeStart} - {timeEnd} */}
+                </div>
+                {/* <div className="description">
+                  {description}
+                </div> */}
+
+            </div>
+            <div className="feed-event-buddies">
+              <div>with</div>
+              <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
+            </div>
+            <div className="buttonPanel">
+
+                <form name="eventActions">
+                  { organizator.id != userInfo.userId && <AttendToEventButton onClick={this.changeAttendanceButtonClick} organizator={organizator} activeBtn={willAttend} userInfo={userInfo} />}
+                  { organizator.id == userInfo.userId && <CancelEventButton onClick={this.cancelEventButtonClick} />}
+                </form>
+
+            </div>
+          </div>
         </Col>
-      </Row>
+
     );
   }
 }

@@ -19,8 +19,6 @@ export class EventsFeedPage extends Component {
 
     return (
       <Row className="eventsFeedPage">
-        <Col md="8" sm="12">
-        <h1>Upcoming events</h1>
           {
             events.length
             &&
@@ -28,7 +26,6 @@ export class EventsFeedPage extends Component {
             ||
             <h2>There are currently no events. <Link to="addLunch">Let's create one!</Link></h2>
           }
-        </Col>
       </Row>
     );
   }
