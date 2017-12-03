@@ -9,99 +9,66 @@ import { getUserInfo } from "../../components/FBLogin/Reducer";
 import { connect } from 'react-redux';
 import { LunchBuddyIcon } from "../../components/LunchBuddyIcon";
 import { switchEventAttendance } from "../EventFeedPage/Actions";
-
-
+import { getEvent, getEventState } from './Reducer'
+import { EventFetch } from './Actions'
 
 export class EventDetail extends Component {
 
-    constructor(props) {
-        super(props);
-        console.log(props);
 
-        /*this.state = {
-            event: {}
-        };*/
-    }
 
     componentDidMount() {
-        console.log(this.state);
-        this.getEvent();
+
+        EventFetch(this.props.params.eventId);
+        console.log("->>>>>>> STATE", this.props);
     }
-    
+
     getEvent() {
-        axios.get('http://localhost:3001/events/' + this.props.params.eventId).then(
-            (response) => this.setState({event: response.data})
-        );
+        // axios.get('http://localhost:3001/events/' + this.props.params.eventId).then(
+        //     (response) => this.setState({event: response.data})
+        // );
     }
 
-    getWillAttend() {
-
-        console.log(this.props);
-        const { eventAttendees } = this.state.event.event,
-              { userId } = this.props.userInfo;
-    
-        var willAttend = false;
-    
-        eventAttendees.find((attendant) => {
-          const eventAttendance = attendant.Attendance.willAttend,
-                attendantId = attendant.Attendance.UserId;
-    
-          if (attendantId === userId && typeof eventAttendance !== 'undefined' && eventAttendance !== null) {
-            willAttend = eventAttendance;
-          } else {
-            willAttend = false;
-          }
-        });
-    
-        return willAttend;
-      };
 
     render() {
         const { event } = this.props;
-        const id = this.props.params.eventId;
+        const { id } = this.props;
 
 
-        if(Object.keys(this.state.event).length !== 0) {
-            
-            const {
-                id,
-                maximumLunchBuddies,
-                organizator,
-                eventAttendees,
-                comments,
-                description,
-                place,
-              } = this.props.event,
-                willAttend = this.getWillAttend(),
-                { userInfo } = this.props;
 
-            return (
-                <Row className="eventPanel">
-                    
-                </Row>
-            );
-        } else {
-        
-            return (
-                <Row className="eventDetailsPage"></Row>
-            );
-    
-        }
+
+
+        return (
+            <Row className="eventDetailsPage"></Row>
+        );
+
+
 
     }
 
 }
 
-const mapStateToProps = (storeState, props) => {
+
+const mapStateToProps = storeState => {
+    // pouziju selecty definovany v reduceru. Je to hezci, kdyz si pak budem
+    // upravovat model, odpadne spoustu problemu.
+    const eventState = getEventState(storeState);
+    return { event: getEvent(eventState) };
+
+};
+
+
+export function mapDispatchToProps(dispatch) {
     return {
-      event: getEventById(storeState, props.eventId),
-      userInfo: getUserInfo(storeState),
+        EventFetch: (id) => dispatch(EventFetch(id)),
     };
-  };
-  
-  export const EventDetailContainer = connect(
+}
+
+
+
+
+export const EventDetailContainer = connect(
     mapStateToProps,
     {
-      switchEventAttendance,
+        switchEventAttendance,
     },
-  )(EventDetail);
+)(EventDetail);

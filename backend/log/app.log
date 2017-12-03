@@ -2562,3 +2562,72 @@
 [2017-12-02 23:22:56.237] [INFO] console - Server started on http://localhost:3001!
 [2017-12-02 23:27:55.763] [INFO] console - Server started on http://localhost:3001!
 [2017-12-03 11:53:08.089] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 20:29:17.642] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 20:38:27.070] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 20:38:27.266] [ERROR] console - SequelizeDatabaseError: Unknown column 'Event.organizatorId' in 'field list'
+    at Query.formatError (C:\wamp64\www\LunchWithMe\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\wamp64\www\LunchWithMe\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:252:12)
+    at readableAddChunk (_stream_readable.js:239:11)
+    at Socket.Readable.push (_stream_readable.js:197:10)
+    at TCP.onread (net.js:589:20)
+[2017-12-03 20:40:47.242] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 20:48:30.848] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 20:57:39.923] [ERROR] console - TypeError: Cannot read property 'split' of undefined
+    at Object._callee$ (C:\wamp64\www\LunchWithMe\backend\build\webpack:\src\modules\login\loginController.js:4:28)
+    at tryCatch (C:\wamp64\www\LunchWithMe\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (C:\wamp64\www\LunchWithMe\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at Generator.prototype.(anonymous function) [as next] (C:\wamp64\www\LunchWithMe\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\wamp64\www\LunchWithMe\backend\build\main.js:841:191)
+    at C:\wamp64\www\LunchWithMe\backend\build\main.js:841:437
+    at Promise (<anonymous>)
+    at C:\wamp64\www\LunchWithMe\backend\build\main.js:841:99
+    at loginController (C:\wamp64\www\LunchWithMe\backend\build\webpack:\src\modules\login\loginController.js:3:14)
+    at args (C:\wamp64\www\LunchWithMe\backend\node_modules\express-async-await\index.js:2:26)
+    at Layer.handle [as handle_request] (C:\wamp64\www\LunchWithMe\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\wamp64\www\LunchWithMe\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\wamp64\www\LunchWithMe\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\wamp64\www\LunchWithMe\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\wamp64\www\LunchWithMe\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\wamp64\www\LunchWithMe\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\wamp64\www\LunchWithMe\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\wamp64\www\LunchWithMe\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\wamp64\www\LunchWithMe\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\wamp64\www\LunchWithMe\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\wamp64\www\LunchWithMe\backend\node_modules\express\lib\router\index.js:317:13)
+    at C:\wamp64\www\LunchWithMe\backend\node_modules\express\lib\router\index.js:284:7
+[2017-12-03 20:59:25.073] [ERROR] console - SequelizeDatabaseError: Incorrect integer value: 'undefined' for column 'userId' at row 1
+    at Query.formatError (C:\wamp64\www\LunchWithMe\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\wamp64\www\LunchWithMe\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:252:12)
+    at readableAddChunk (_stream_readable.js:239:11)
+    at Socket.Readable.push (_stream_readable.js:197:10)
+    at TCP.onread (net.js:589:20)
+[2017-12-03 21:05:09.073] [ERROR] console - SequelizeDatabaseError: Incorrect integer value: 'undefined' for column 'userId' at row 1
+    at Query.formatError (C:\wamp64\www\LunchWithMe\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\wamp64\www\LunchWithMe\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\wamp64\www\LunchWithMe\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:252:12)
+    at readableAddChunk (_stream_readable.js:239:11)
+    at Socket.Readable.push (_stream_readable.js:197:10)
+    at TCP.onread (net.js:589:20)
