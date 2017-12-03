@@ -1,4 +1,4 @@
-module.exports = {
+locmodule.exports = {
   "development": {
     "username": "root",
     "password": "",

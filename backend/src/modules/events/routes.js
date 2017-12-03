@@ -7,12 +7,13 @@ import {
   postEventController,
   deleteEventController,
   putEventController,
+  createNewEvent,
 } from './eventsController';
 
 const router = expressAsyncAwait(Router());
 router.get('/', getEventsController);
 router.get('/:id', getEventDetailController);
-router.post('/', postEventController);
+router.post('/', createNewEvent);
 router.delete('/:id', deleteEventController);
 router.put('/:id', putEventController);
 

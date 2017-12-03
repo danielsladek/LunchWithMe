@@ -21,7 +21,7 @@ export class TopMenu extends Component {
 
   render() {
     const { comments, userData } = this.props;
-    console.log(userData);
+
     return (
         <Navbar color="red" dark expand="md" className="topMenu">
           <NavbarBrand href="/">Lunchwithme</NavbarBrand>
@@ -32,7 +32,7 @@ export class TopMenu extends Component {
                   <Link to="/feed" className="nav-link">Event Feed</Link>
                 </NavItem>
                 <NavItem>
-                  <Link to="/addLunch" className="nav-link">Add event</Link>
+                  <Link to="/addEvent" className="nav-link">Add event</Link>
                 </NavItem>
                 <NavItem>
                   <Link to="/logout" className="nav-link">Logout</Link>

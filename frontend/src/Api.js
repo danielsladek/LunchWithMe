@@ -64,4 +64,10 @@ export default class Api {
       (response) => response.data
     );
   }
+
+  createNewEvent (eventData) {
+    return axios.post(this.baseURL + '/events/', eventData).then(
+      (response) => response.data
+    );
+  }
 }
