@@ -12,7 +12,7 @@ import { NewLunchPage } from './pages/newLunch.js';
 import { TopMenu } from './components/TopMenu.js';
 import { Main } from 'reactstrap';
 import { PageLayout } from './components/PageLayout.js';
-import { EventDetail } from './pages/EventDetail/EventDetail';
+import  EventDetail  from './pages/EventDetail/EventDetail';
  
 const store = configureStore();
 

@@ -17,9 +17,10 @@ export class EventDetail extends Component {
 
 
     componentDidMount() {
-
-        EventFetch(this.props.params.eventId);
         console.log("->>>>>>> STATE", this.props);
+        const {EventFetch} = this.props;
+        EventFetch(this.props.params.eventId);
+        
     }
 
     getEvent() {
@@ -68,7 +69,8 @@ export function mapDispatchToProps(dispatch) {
 
 export const EventDetailContainer = connect(
     mapStateToProps,
-    {
-        switchEventAttendance,
-    },
+   mapDispatchToProps
 )(EventDetail);
+
+
+export default EventDetailContainer;
