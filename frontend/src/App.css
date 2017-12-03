@@ -59,16 +59,14 @@ body {
   font-size: 18px;
 }
 
-.eventPanel .name {
-  float: left;
-}
-
-.eventPanel .date {
-  float: right;
-}
-
 .budy-btn {
   margin-right: 10px;
+}
+
+.feed-event-box {
+  background: #fff;
+  color: #7f8187;
+  border-radius: 10px;
 }
 
 @keyframes App-logo-spin {
