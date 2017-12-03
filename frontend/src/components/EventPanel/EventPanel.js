@@ -106,7 +106,7 @@ export class EventPanelContainer extends Component {
                   { organizator.id == userInfo.userId ?
                     "You are going to"
                     :
-                    organizator.name + " " +  organizator.surname
+                    organizator.name + " " +  organizator.surname + " is going to "
                   }
                 </div>
 
@@ -125,8 +125,10 @@ export class EventPanelContainer extends Component {
                 </div> */}
 
             </div>
-            <div>with</div>
-            <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
+            <div className="feed-event-buddies">
+              <div>with</div>
+              <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
+            </div>
             <div className="buttonPanel">
 
                 <form name="eventActions">

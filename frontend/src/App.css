@@ -67,6 +67,27 @@ body {
   background: #fff;
   color: #7f8187;
   border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.feed-event-box .name {
+  font-weight: 600;
+}
+
+.feed-event-box .eventTitle a {
+  font-size: 18px;
+  color: #ecc30a;
+  font-weight: 700;
+}
+
+.feed-event-buddies {
+  font-weight: 600;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 0;
+  margin-bottom: 10px;
 }
 
 @keyframes App-logo-spin {

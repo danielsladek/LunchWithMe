@@ -19,7 +19,7 @@ export class AttendToEventButton extends Component {
             };
 
     return (
-      <Button onClick={onClick}  type="button" color={activeBtn ? "success" : "primary" } size="lg">
+      <Button onClick={onClick}  type="button" color={activeBtn ? "success" : "primary" } size="sm">
         {activeBtn ?
           (userInfo.userId == organizator.id) ?
             buttonTexts.own.going : buttonTexts.others.going
