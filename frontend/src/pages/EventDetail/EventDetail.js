@@ -18,9 +18,9 @@ export class EventDetail extends Component {
 
     componentDidMount() {
         console.log("->>>>>>> STATE", this.props);
-        const {EventFetch} = this.props;
+        const { EventFetch } = this.props;
         EventFetch(this.props.params.eventId);
-        
+
     }
 
     getEvent() {
@@ -50,6 +50,7 @@ export class EventDetail extends Component {
 
 
 const mapStateToProps = storeState => {
+    console.log('storeState: ', storeState);
     // pouziju selecty definovany v reduceru. Je to hezci, kdyz si pak budem
     // upravovat model, odpadne spoustu problemu.
     const eventState = getEventState(storeState);
@@ -69,7 +70,7 @@ export function mapDispatchToProps(dispatch) {
 
 export const EventDetailContainer = connect(
     mapStateToProps,
-   mapDispatchToProps
+    mapDispatchToProps
 )(EventDetail);
 
 
