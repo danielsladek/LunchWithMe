@@ -10,9 +10,13 @@ export const EventFetch = (id) => {
     payload: {
         id: id
     }
+<<<<<<< HEAD
 }};
 
 
 
 
 
+=======
+}};
+>>>>>>> 5e8535509219e23d94c1624b81d338b42cb8ce30

@@ -27,7 +27,7 @@ class App extends Component {
             <Route path="/" component={PageLayout}>
               <IndexRoute component={Landing}/>
               <Route path="reg" component={RegistrationPage}/>
-              <Route path="addLunch" component={NewLunchPage}/>
+              <Route path="addEvent" component={NewLunchPage}/>
               <Route path="user/:userId" component={UserProfilePage}/>
               <Route path="feed" component={EventsFeedPage}/>
               <Route path="event/:eventId" component={EventDetail}/>

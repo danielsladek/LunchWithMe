@@ -18,9 +18,15 @@ export class EventDetail extends Component {
 
     componentDidMount() {
         console.log("->>>>>>> STATE", this.props);
+<<<<<<< HEAD
         const { EventFetch } = this.props;
         EventFetch(this.props.params.eventId);
 
+=======
+        const {EventFetch} = this.props;
+        EventFetch(this.props.params.eventId);
+        
+>>>>>>> 5e8535509219e23d94c1624b81d338b42cb8ce30
     }
 
     getEvent() {
@@ -33,9 +39,15 @@ export class EventDetail extends Component {
     render() {
         const { event } = this.props;
         const { id } = this.props;
+<<<<<<< HEAD
     
 
         
+=======
+
+
+
+>>>>>>> 5e8535509219e23d94c1624b81d338b42cb8ce30
 
 
         return (
@@ -50,7 +62,10 @@ export class EventDetail extends Component {
 
 
 const mapStateToProps = storeState => {
+<<<<<<< HEAD
     console.log('storeState: ', storeState);
+=======
+>>>>>>> 5e8535509219e23d94c1624b81d338b42cb8ce30
     // pouziju selecty definovany v reduceru. Je to hezci, kdyz si pak budem
     // upravovat model, odpadne spoustu problemu.
     const eventState = getEventState(storeState);
@@ -70,7 +85,11 @@ export function mapDispatchToProps(dispatch) {
 
 export const EventDetailContainer = connect(
     mapStateToProps,
+<<<<<<< HEAD
     mapDispatchToProps
+=======
+   mapDispatchToProps
+>>>>>>> 5e8535509219e23d94c1624b81d338b42cb8ce30
 )(EventDetail);
 
 

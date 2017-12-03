@@ -17,7 +17,7 @@ module.exports = {
     const placePromise = queryInterface.bulkInsert(
       'Places',
       [
-        { createdAt: new Date(), updatedAt: new Date(), id: 1, coordsX: '50.000', coordsY: '50.000', name: 'Beer Nest' },
+        { createdAt: new Date(), updatedAt: new Date(), id: 1, lat: '50.000', lng: '50.000', name: 'Beer Nest' },
       ],
       {}
     );

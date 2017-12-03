@@ -7,6 +7,7 @@ import axios from 'axios';
 //import { getEvents } from './Reducer';
 
 // worker Saga: will be fired on USER_FETCH_REQUESTED actions
+<<<<<<< HEAD
 function* eventPageFetchSaga() {
 
     console.log("SAGA", EVENT_FETCH);
@@ -23,6 +24,22 @@ function* eventPageFetchSaga() {
 
             }
         );
+=======
+function* eventPageFetchSaga(action) {
+
+    console.log("SAGA", EVENT_FETCH);
+    yield takeLatest(EVENT_FETCH, fetchEvent(action));
+
+}
+function* fetchEvent(action) {
+    try {
+        console.log("SAGA222");
+        let eventData;
+
+        yield call(axios.get('http://localhost:3001/events/' + action.payload.id).then(
+            (response) => eventData = response.data
+        ));
+>>>>>>> 5e8535509219e23d94c1624b81d338b42cb8ce30
 
         yield put({
             type: EVENT_FETCH_SUCCESS,
@@ -40,5 +57,8 @@ function* eventPageFetchSaga() {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e8535509219e23d94c1624b81d338b42cb8ce30
 export default eventPageFetchSaga;

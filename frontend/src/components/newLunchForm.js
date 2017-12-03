@@ -1,19 +1,25 @@
 import React from 'react';
 import { Form, FormGroup, Label, Input, Button, Col, Row } from 'reactstrap';
 import Datetime from 'react-datetime';
+import Api from '../Api';
+import { connect } from "react-redux";
+import { getUserInfo } from "./FBLogin/Reducer";
 
-
-export class NewLunchForm extends React.Component 
+export class NewLunchFormContainer extends React.Component
 {
     constructor(props) {
-
         super(props);
+
+        const { userInfo } = this.props;
+
         this.state = {
             name: '',
-            datetime: '',
+            timeStart: '',
             description: '',
-            lunchevent: '',
-            invitations: '',
+            organizatorId: userInfo.userId,
+            placeName: '',
+            lat: '',
+            lng: '',
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -31,9 +37,22 @@ export class NewLunchForm extends React.Component
         });
     }
 
-    handleSubmit(event) {
-        console.log('-----Values', this.state);
-        event.preventDefault();
+    handleSubmit(e) {
+        e.preventDefault();
+
+        const { placeName, description, timeStart, organizatorId, lat, lng } = this.state;
+
+        const api = new Api();
+
+        api.createNewEvent({
+          description: description,
+          placeName: placeName,
+          timeStart: timeStart, //timeStart: '2017-12-14 14:30:00',
+          organizatorId: organizatorId,
+          lat: 50.082685,
+          lng: 14.440303,
+        });
+
     }
 
     render() {
@@ -41,14 +60,14 @@ export class NewLunchForm extends React.Component
         return (
             <Form onSubmit={this.handleSubmit}>
                 <FormGroup>
-                    <Label for="name">Name:</Label>
-                    <Input name="name" id="name" type="text" value={this.state.name} onChange={this.handleChange} />
+                    <Label for="placeName">Place name:</Label>
+                    <Input name="placeName" id="placeName" type="text" value={this.state.placeName} onChange={this.handleChange} />
                 </FormGroup>
                 <Row>
                     <Col>
                         <FormGroup>
-                            <Label for="datetime">Date and time:</Label>
-                            <Datetime id="datetime" value={this.state.datetime} onChange={this.handleChange}/>
+                            <Label for="timeStart">Date and time:</Label>
+                            <Datetime id="timeStart" name="timeStart" value={this.state.timeStart} onChange={this.handleChange}/>
                         </FormGroup>
                     </Col>
                 </Row>
@@ -56,22 +75,20 @@ export class NewLunchForm extends React.Component
                     <Label for="description">Description:</Label>
                     <Input name="description" type="textarea" id="description" value={this.state.description} onChange={this.handleChange} />
                 </FormGroup>
-                <FormGroup>
-                    <Label for="lunchevent">Lunch event type:</Label>
-                    <Input name="lunchevent" type="select" id="lunchevent" value={this.state.lunchevent} onChange={this.handleChange} >
-                        <option>Only for invited</option>
-                        <option>Only for my friends</option>
-                        <option>Public</option>
-                    </Input>
-                </FormGroup>
-                <FormGroup>
-                    <Label for="invitations">Invitations:</Label>
-                    <Input name="invitations" id="invitations" type="text" value={this.state.invitations} onChange={this.handleChange} />
-                </FormGroup>
                 <Button color="primary" type="submit">Create a new lunch</Button>
             </Form>
         )
-
     }
-
 }
+
+
+const mapStateToProps = (storeState, props) => {
+  return {
+    userInfo: getUserInfo(storeState),
+  };
+};
+
+export const NewLunchForm = connect(
+  mapStateToProps,
+  {},
+)(NewLunchFormContainer);

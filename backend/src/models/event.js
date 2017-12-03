@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
       description: { type: DataTypes.STRING, allowNull: false },
       maximumLunchBuddies: { type: DataTypes.INTEGER, allowNull: true },
       timeStart: { type: DataTypes.DATE, allowNull: false },
-      timeEnd: { type: DataTypes.DATE, allowNull: false },
+      timeEnd: { type: DataTypes.DATE, allowNull: true },
       organizatorId: { type: DataTypes.INTEGER, allowNull: false },
     },
     {}
