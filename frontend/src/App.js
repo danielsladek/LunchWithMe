@@ -13,7 +13,7 @@ import { TopMenu } from './components/TopMenu.js';
 import { Main } from 'reactstrap';
 import { PageLayout } from './components/PageLayout.js';
 import { EventDetail } from './pages/EventDetail/EventDetail';
-
+ 
 const store = configureStore();
 
 class App extends Component {
