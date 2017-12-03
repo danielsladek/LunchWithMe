@@ -1,5 +1,5 @@
 import { EVENTS_FEED_FETCH, EVENTS_FEED_SUCCESS, EVENTS_FEED_FAIL, FETCH_EVENT_CHANGES, REFRESH_EVENTS_FEED } from "./Actions";
-import { assign, isEmpty } from "ramda";
+// import { assign, isEmpty } from "ramda";
 
 const initialState = {
     /*events: [

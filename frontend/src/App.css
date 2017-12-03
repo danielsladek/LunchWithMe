@@ -14,14 +14,14 @@ body {
   height: 80px;
 }
 
-.App-header {
+.App-header {  
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
-.App-intro {
+.App-intro { 
   font-size: large;
 }
 
@@ -59,16 +59,35 @@ body {
   font-size: 18px;
 }
 
-.eventPanel .name {
-  float: left;
-}
-
-.eventPanel .date {
-  float: right;
-}
-
 .budy-btn {
   margin-right: 10px;
+}
+
+.feed-event-box {
+  background: #fff;
+  color: #7f8187;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.feed-event-box .name {
+  font-weight: 600;
+}
+
+.feed-event-box .eventTitle a {
+  font-size: 18px;
+  color: #ecc30a;
+  font-weight: 700;
+}
+
+.feed-event-buddies {
+  font-weight: 600;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 0;
+  margin-bottom: 10px;
 }
 
 @keyframes App-logo-spin {
