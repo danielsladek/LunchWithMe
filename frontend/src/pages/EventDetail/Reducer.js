@@ -1,6 +1,9 @@
 import { EVENT_FETCH } from './Actions';
 
-const initialState = {};
+const initialState = {
+
+    event:{}
+};
 
 
 
