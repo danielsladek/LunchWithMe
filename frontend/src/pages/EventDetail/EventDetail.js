@@ -33,9 +33,9 @@ export class EventDetail extends Component {
     render() {
         const { event } = this.props;
         const { id } = this.props;
+    
 
-
-
+        
 
 
         return (
