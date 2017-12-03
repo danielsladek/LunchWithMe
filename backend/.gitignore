@@ -17,3 +17,5 @@ npm-debug.log
 
 # DB Config
 /src/config/config.js
+
+backend/log/*
