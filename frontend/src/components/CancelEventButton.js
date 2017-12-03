@@ -9,7 +9,7 @@ export class CancelEventButton extends Component {
     const { onClick } = this.props;
 
     return (
-      <Button onClick={onClick} type="button" color="danger" size="lg">
+      <Button onClick={onClick} type="button" color="danger" size="sm">
         Cancel event
       </Button>
     );
