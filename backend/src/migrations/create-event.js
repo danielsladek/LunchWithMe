@@ -12,7 +12,7 @@ module.exports = {
       organizatorId: { type: Sequelize.INTEGER, allowNull: false },
       maximumLunchBuddies: { type: Sequelize.INTEGER, allowNull: true },
       timeStart: { type: Sequelize.DATE, allowNull: false },
-      timeEnd: { type: Sequelize.DATE, allowNull: false },
+      timeEnd: { type: Sequelize.DATE, allowNull: true },
       placeId: { type: Sequelize.INTEGER, allowNull: false },
       createdAt: { type: Sequelize.DATE, allowNull: false },
       updatedAt: { type: Sequelize.DATE, allowNull: false },

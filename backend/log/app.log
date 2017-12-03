@@ -2562,3 +2562,1112 @@
 [2017-12-02 23:22:56.237] [INFO] console - Server started on http://localhost:3001!
 [2017-12-02 23:27:55.763] [INFO] console - Server started on http://localhost:3001!
 [2017-12-03 11:53:08.089] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 21:04:40.166] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 21:26:30.325] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 21:28:16.185] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 21:29:02.358] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 21:31:41.476] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:20:10.159] [ERROR] console - SequelizeValidationError: notNull Violation: organizatorId cannot be null
+    at Promise.all.then (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\instance-validator.js:77:15)
+    at tryCatcher (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+[2017-12-03 22:20:48.046] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:20:49.764] [INFO] console - { description: '',
+  placeName: '',
+  timeStart: '1.1.1993',
+  organizator: 1 }
+[2017-12-03 22:20:49.896] [ERROR] console - SequelizeValidationError: notNull Violation: organizatorId cannot be null
+    at Promise.all.then (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\instance-validator.js:77:15)
+    at tryCatcher (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+[2017-12-03 22:21:29.330] [INFO] console - { description: '',
+  placeName: '',
+  timeStart: '1.1.1993',
+  organizatorId: 1 }
+[2017-12-03 22:21:32.760] [ERROR] console - SequelizeValidationError: notNull Violation: organizatorId cannot be null
+    at Promise.all.then (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\instance-validator.js:77:15)
+    at tryCatcher (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+[2017-12-03 22:21:41.711] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:21:44.559] [INFO] console - { description: '',
+  placeName: '',
+  timeStart: '1.1.1993',
+  organizatorId: 1 }
+[2017-12-03 22:21:44.636] [ERROR] console - SequelizeValidationError: notNull Violation: organizatorId cannot be null
+    at Promise.all.then (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\instance-validator.js:77:15)
+    at tryCatcher (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Promise._fulfill (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:638:18)
+    at PromiseArray._resolve (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise_array.js:144:14)
+    at Promise._settlePromise (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:574:26)
+    at Promise._settlePromise0 (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Develop\React\semestralka-redux\backend\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+[2017-12-03 22:23:25.554] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:23:41.274] [INFO] console - { description: '',
+  placeName: '',
+  timeStart: '1.1.1993',
+  organizatorId: 1 }
+[2017-12-03 22:23:41.380] [ERROR] console - ReferenceError: organizatorId is not defined
+    at Object._callee5$ (C:\Develop\React\semestralka-redux\backend\build\webpack:\src\modules\events\eventsController.js:86:20)
+    at tryCatch (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at Generator.prototype.(anonymous function) [as next] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\React\semestralka-redux\backend\build\main.js:625:191)
+    at C:\Develop\React\semestralka-redux\backend\build\main.js:625:361
+    at <anonymous>
+[2017-12-03 22:25:57.905] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:26:02.067] [INFO] console - { description: '',
+  placeName: '',
+  timeStart: '1.1.1993',
+  organizatorId: 1 }
+[2017-12-03 22:26:02.180] [ERROR] console - SequelizeDatabaseError: Field 'placeId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:27:04.155] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:27:07.731] [INFO] console - { description: '',
+  placeName: '',
+  timeStart: '1.1.1993',
+  organizatorId: 1 }
+[2017-12-03 22:27:07.796] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:27:07.796] [INFO] console - []
+[2017-12-03 22:27:07.830] [ERROR] console - SequelizeDatabaseError: Field 'placeId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:27:45.373] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:27:49.298] [INFO] console - { description: '',
+  placeName: '',
+  timeStart: '1.1.1993',
+  organizatorId: 1 }
+[2017-12-03 22:27:49.387] [ERROR] console - SequelizeDatabaseError: Field 'placeId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:28:11.662] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:28:15.355] [INFO] console - { description: '',
+  placeName: '',
+  timeStart: '1.1.1993',
+  organizatorId: 1 }
+[2017-12-03 22:28:15.465] [ERROR] console - ReferenceError: lat is not defined
+    at Object._callee5$ (C:\Develop\React\semestralka-redux\backend\build\webpack:\src\modules\events\eventsController.js:74:12)
+    at tryCatch (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at Generator.prototype.(anonymous function) [as next] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\React\semestralka-redux\backend\build\main.js:625:191)
+    at C:\Develop\React\semestralka-redux\backend\build\main.js:625:361
+    at <anonymous>
+[2017-12-03 22:28:37.071] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:31:14.010] [INFO] console - { description: '',
+  placeName: '',
+  timeStart: '2017-12-14 14:30:00',
+  organizatorId: 1,
+  lat: 50.082685,
+  lng: 14.440303 }
+[2017-12-03 22:31:14.103] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:31:14.104] [INFO] console - Place {
+  dataValues: 
+   { id: 2,
+     name: '',
+     lat: 50.082685,
+     lng: 14.440303,
+     updatedAt: 2017-12-03T21:31:14.081Z,
+     createdAt: 2017-12-03T21:31:14.081Z },
+  _previousDataValues: 
+   { name: '',
+     lat: 50.082685,
+     lng: 14.440303,
+     id: 2,
+     createdAt: 2017-12-03T21:31:14.081Z,
+     updatedAt: 2017-12-03T21:31:14.081Z },
+  _changed: 
+   { name: false,
+     lat: false,
+     lng: false,
+     id: false,
+     createdAt: false,
+     updatedAt: false },
+  _modelOptions: 
+   { timestamps: true,
+     validate: {},
+     freezeTableName: false,
+     underscored: false,
+     underscoredAll: false,
+     paranoid: false,
+     rejectOnEmpty: false,
+     whereCollection: { name: '' },
+     schema: null,
+     schemaDelimiter: '',
+     defaultScope: {},
+     scopes: [],
+     hooks: {},
+     indexes: [],
+     name: { plural: 'Places', singular: 'Place' },
+     omitNull: false,
+     sequelize: 
+      Sequelize {
+        options: [Object],
+        config: [Object],
+        dialect: [Object],
+        queryInterface: [Object],
+        models: [Object],
+        modelManager: [Object],
+        connectionManager: [Object],
+        importCache: {},
+        test: [Object] },
+     uniqueKeys: {} },
+  _options: { isNewRecord: true, _schema: null, _schemaDelimiter: '' },
+  __eagerlyLoadedAssociations: [],
+  isNewRecord: false }
+[2017-12-03 22:39:55.015] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:40:09.466] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:40:19.501] [INFO] console - { description: 'llll',
+  placeName: '',
+  timeStart: '2017-12-14 14:30:00',
+  organizatorId: 1,
+  lat: 50.082685,
+  lng: 14.440303 }
+[2017-12-03 22:40:19.595] [ERROR] console - SequelizeDatabaseError: Field 'placeId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:40:40.622] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:40:43.639] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:40:48.585] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:40:51.056] [INFO] console - { description: 'llll',
+  placeName: '',
+  timeStart: '2017-12-14 14:30:00',
+  organizatorId: 1,
+  lat: 50.082685,
+  lng: 14.440303 }
+[2017-12-03 22:40:51.113] [INFO] console - [ Place {
+    dataValues: 
+     { id: 2,
+       lat: '50.082685',
+       lng: '14.440303',
+       name: '',
+       createdAt: 2017-12-03T21:31:14.000Z,
+       updatedAt: 2017-12-03T21:31:14.000Z },
+    _previousDataValues: 
+     { id: 2,
+       lat: '50.082685',
+       lng: '14.440303',
+       name: '',
+       createdAt: 2017-12-03T21:31:14.000Z,
+       updatedAt: 2017-12-03T21:31:14.000Z },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: [Object],
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       raw: true,
+       attributes: [Array] },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false } ]
+[2017-12-03 22:40:51.114] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:40:51.141] [ERROR] console - SequelizeDatabaseError: Field 'placeId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:41:30.227] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:41:33.361] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:41:34.377] [INFO] console - { description: 'llll',
+  placeName: '',
+  timeStart: '2017-12-14 14:30:00',
+  organizatorId: 1,
+  lat: 50.082685,
+  lng: 14.440303 }
+[2017-12-03 22:41:34.439] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:41:34.440] [INFO] console - undefined
+[2017-12-03 22:41:34.468] [ERROR] console - SequelizeDatabaseError: Field 'placeId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:41:48.296] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:41:49.849] [INFO] console - { description: 'llll',
+  placeName: '',
+  timeStart: '2017-12-14 14:30:00',
+  organizatorId: 1,
+  lat: 50.082685,
+  lng: 14.440303 }
+[2017-12-03 22:41:49.923] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:41:49.923] [INFO] console - [ Place {
+    dataValues: 
+     { id: 2,
+       lat: '50.082685',
+       lng: '14.440303',
+       name: '',
+       createdAt: 2017-12-03T21:31:14.000Z,
+       updatedAt: 2017-12-03T21:31:14.000Z },
+    _previousDataValues: 
+     { id: 2,
+       lat: '50.082685',
+       lng: '14.440303',
+       name: '',
+       createdAt: 2017-12-03T21:31:14.000Z,
+       updatedAt: 2017-12-03T21:31:14.000Z },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: [Object],
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       raw: true,
+       attributes: [Array] },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false } ]
+[2017-12-03 22:41:49.962] [ERROR] console - SequelizeDatabaseError: Field 'placeId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:42:04.466] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:42:05.876] [INFO] console - { description: 'llll',
+  placeName: '',
+  timeStart: '2017-12-14 14:30:00',
+  organizatorId: 1,
+  lat: 50.082685,
+  lng: 14.440303 }
+[2017-12-03 22:42:05.959] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:42:06.025] [ERROR] console - TypeError: Cannot read property 'id' of undefined
+    at Object._callee5$ (C:\Develop\React\semestralka-redux\backend\build\webpack:\src\modules\events\eventsController.js:71:39)
+    at tryCatch (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at Generator.prototype.(anonymous function) [as next] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\React\semestralka-redux\backend\build\main.js:625:191)
+    at C:\Develop\React\semestralka-redux\backend\build\main.js:625:361
+    at <anonymous>
+[2017-12-03 22:42:21.147] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:42:22.425] [INFO] console - { description: 'llll',
+  placeName: '',
+  timeStart: '2017-12-14 14:30:00',
+  organizatorId: 1,
+  lat: 50.082685,
+  lng: 14.440303 }
+[2017-12-03 22:42:22.524] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:42:22.551] [INFO] console - undefined
+[2017-12-03 22:42:22.603] [ERROR] console - SequelizeDatabaseError: Field 'placeId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:42:33.550] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:42:45.118] [INFO] console - { description: 'llll',
+  placeName: '',
+  timeStart: '2017-12-14 14:30:00',
+  organizatorId: 1,
+  lat: 50.082685,
+  lng: 14.440303 }
+[2017-12-03 22:42:45.220] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:42:45.223] [INFO] console - [ Place {
+    dataValues: 
+     { id: 2,
+       lat: '50.082685',
+       lng: '14.440303',
+       name: '',
+       createdAt: 2017-12-03T21:31:14.000Z,
+       updatedAt: 2017-12-03T21:31:14.000Z },
+    _previousDataValues: 
+     { id: 2,
+       lat: '50.082685',
+       lng: '14.440303',
+       name: '',
+       createdAt: 2017-12-03T21:31:14.000Z,
+       updatedAt: 2017-12-03T21:31:14.000Z },
+    _changed: {},
+    _modelOptions: 
+     { timestamps: true,
+       validate: {},
+       freezeTableName: false,
+       underscored: false,
+       underscoredAll: false,
+       paranoid: false,
+       rejectOnEmpty: false,
+       whereCollection: [Object],
+       schema: null,
+       schemaDelimiter: '',
+       defaultScope: {},
+       scopes: [],
+       hooks: {},
+       indexes: [],
+       name: [Object],
+       omitNull: false,
+       sequelize: [Object],
+       uniqueKeys: {} },
+    _options: 
+     { isNewRecord: false,
+       _schema: null,
+       _schemaDelimiter: '',
+       raw: true,
+       attributes: [Array] },
+    __eagerlyLoadedAssociations: [],
+    isNewRecord: false } ]
+[2017-12-03 22:42:45.296] [ERROR] console - SequelizeDatabaseError: Field 'placeId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:43:03.771] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:43:06.214] [INFO] console - { description: 'llll',
+  placeName: '',
+  timeStart: '2017-12-14 14:30:00',
+  organizatorId: 1,
+  lat: 50.082685,
+  lng: 14.440303 }
+[2017-12-03 22:43:06.290] [ERROR] console - TypeError: __WEBPACK_IMPORTED_MODULE_1__models____default.a.Place.finOne is not a function
+    at Object._callee5$ (C:\Develop\React\semestralka-redux\backend\build\webpack:\src\modules\events\eventsController.js:58:37)
+    at tryCatch (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at Generator.prototype.(anonymous function) [as next] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\React\semestralka-redux\backend\build\main.js:625:191)
+    at C:\Develop\React\semestralka-redux\backend\build\main.js:625:437
+    at new Promise (<anonymous>)
+    at C:\Develop\React\semestralka-redux\backend\build\main.js:625:99
+    at createNewEvent (C:\Develop\React\semestralka-redux\backend\build\webpack:\src\modules\events\eventsController.js:52:14)
+    at args (C:\Develop\React\semestralka-redux\backend\node_modules\express-async-await\index.js:2:26)
+    at Layer.handle [as handle_request] (C:\Develop\React\semestralka-redux\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Develop\React\semestralka-redux\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Develop\React\semestralka-redux\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Develop\React\semestralka-redux\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Develop\React\semestralka-redux\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Develop\React\semestralka-redux\backend\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Develop\React\semestralka-redux\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Develop\React\semestralka-redux\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Develop\React\semestralka-redux\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Develop\React\semestralka-redux\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Develop\React\semestralka-redux\backend\node_modules\express\lib\router\index.js:317:13)
+    at C:\Develop\React\semestralka-redux\backend\node_modules\express\lib\router\index.js:284:7
+[2017-12-03 22:43:20.138] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:43:21.459] [INFO] console - { description: 'llll',
+  placeName: '',
+  timeStart: '2017-12-14 14:30:00',
+  organizatorId: 1,
+  lat: 50.082685,
+  lng: 14.440303 }
+[2017-12-03 22:43:21.648] [ERROR] console - ReferenceError: orgnizatorId is not defined
+    at Object._callee5$ (C:\Develop\React\semestralka-redux\backend\build\webpack:\src\modules\events\eventsController.js:94:13)
+    at tryCatch (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at Generator.prototype.(anonymous function) [as next] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\React\semestralka-redux\backend\build\main.js:625:191)
+    at C:\Develop\React\semestralka-redux\backend\build\main.js:625:361
+    at <anonymous>
+[2017-12-03 22:44:26.311] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:44:35.329] [INFO] console - { description: 'llll',
+  placeName: '',
+  timeStart: '2017-12-14 14:30:00',
+  organizatorId: 1,
+  lat: 50.082685,
+  lng: 14.440303 }
+[2017-12-03 22:44:35.459] [ERROR] console - SequelizeDatabaseError: Data truncated for column 'eventId' at row 1
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:45:05.814] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:45:09.198] [INFO] console - { description: 'llll',
+  placeName: '',
+  timeStart: '2017-12-14 14:30:00',
+  organizatorId: 1,
+  lat: 50.082685,
+  lng: 14.440303 }
+[2017-12-03 22:45:09.258] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:45:09.259] [INFO] console - Place {
+  dataValues: 
+   { id: 2,
+     lat: '50.082685',
+     lng: '14.440303',
+     name: '',
+     createdAt: 2017-12-03T21:31:14.000Z,
+     updatedAt: 2017-12-03T21:31:14.000Z },
+  _previousDataValues: 
+   { id: 2,
+     lat: '50.082685',
+     lng: '14.440303',
+     name: '',
+     createdAt: 2017-12-03T21:31:14.000Z,
+     updatedAt: 2017-12-03T21:31:14.000Z },
+  _changed: {},
+  _modelOptions: 
+   { timestamps: true,
+     validate: {},
+     freezeTableName: false,
+     underscored: false,
+     underscoredAll: false,
+     paranoid: false,
+     rejectOnEmpty: false,
+     whereCollection: { name: '' },
+     schema: null,
+     schemaDelimiter: '',
+     defaultScope: {},
+     scopes: [],
+     hooks: {},
+     indexes: [],
+     name: { plural: 'Places', singular: 'Place' },
+     omitNull: false,
+     sequelize: 
+      Sequelize {
+        options: [Object],
+        config: [Object],
+        dialect: [Object],
+        queryInterface: [Object],
+        models: [Object],
+        modelManager: [Object],
+        connectionManager: [Object],
+        importCache: {},
+        test: [Object] },
+     uniqueKeys: {} },
+  _options: 
+   { isNewRecord: false,
+     _schema: null,
+     _schemaDelimiter: '',
+     raw: true,
+     attributes: [ 'id', 'lat', 'lng', 'name', 'createdAt', 'updatedAt' ] },
+  __eagerlyLoadedAssociations: [],
+  isNewRecord: false }
+[2017-12-03 22:45:09.342] [ERROR] console - SequelizeDatabaseError: Data truncated for column 'eventId' at row 1
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:45:44.283] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:45:45.836] [INFO] console - { description: 'llll',
+  placeName: '',
+  timeStart: '2017-12-14 14:30:00',
+  organizatorId: 1,
+  lat: 50.082685,
+  lng: 14.440303 }
+[2017-12-03 22:45:45.898] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:45:45.899] [INFO] console - 2
+[2017-12-03 22:45:45.977] [ERROR] console - SequelizeDatabaseError: Data truncated for column 'eventId' at row 1
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:46:25.941] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:46:33.825] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:46:33.826] [INFO] console - Place {
+  dataValues: 
+   { id: 2,
+     lat: '50.082685',
+     lng: '14.440303',
+     name: '',
+     createdAt: 2017-12-03T21:31:14.000Z,
+     updatedAt: 2017-12-03T21:31:14.000Z },
+  _previousDataValues: 
+   { id: 2,
+     lat: '50.082685',
+     lng: '14.440303',
+     name: '',
+     createdAt: 2017-12-03T21:31:14.000Z,
+     updatedAt: 2017-12-03T21:31:14.000Z },
+  _changed: {},
+  _modelOptions: 
+   { timestamps: true,
+     validate: {},
+     freezeTableName: false,
+     underscored: false,
+     underscoredAll: false,
+     paranoid: false,
+     rejectOnEmpty: false,
+     whereCollection: { name: '' },
+     schema: null,
+     schemaDelimiter: '',
+     defaultScope: {},
+     scopes: [],
+     hooks: {},
+     indexes: [],
+     name: { plural: 'Places', singular: 'Place' },
+     omitNull: false,
+     sequelize: 
+      Sequelize {
+        options: [Object],
+        config: [Object],
+        dialect: [Object],
+        queryInterface: [Object],
+        models: [Object],
+        modelManager: [Object],
+        connectionManager: [Object],
+        importCache: {},
+        test: [Object] },
+     uniqueKeys: {} },
+  _options: 
+   { isNewRecord: false,
+     _schema: null,
+     _schemaDelimiter: '',
+     raw: true,
+     attributes: [ 'id', 'lat', 'lng', 'name', 'createdAt', 'updatedAt' ] },
+  __eagerlyLoadedAssociations: [],
+  isNewRecord: false }
+[2017-12-03 22:46:33.866] [ERROR] console - SequelizeDatabaseError: Data truncated for column 'eventId' at row 1
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:46:47.270] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:46:47.271] [INFO] console - Place {
+  dataValues: 
+   { id: 2,
+     lat: '50.082685',
+     lng: '14.440303',
+     name: '',
+     createdAt: 2017-12-03T21:31:14.000Z,
+     updatedAt: 2017-12-03T21:31:14.000Z },
+  _previousDataValues: 
+   { id: 2,
+     lat: '50.082685',
+     lng: '14.440303',
+     name: '',
+     createdAt: 2017-12-03T21:31:14.000Z,
+     updatedAt: 2017-12-03T21:31:14.000Z },
+  _changed: {},
+  _modelOptions: 
+   { timestamps: true,
+     validate: {},
+     freezeTableName: false,
+     underscored: false,
+     underscoredAll: false,
+     paranoid: false,
+     rejectOnEmpty: false,
+     whereCollection: { name: '' },
+     schema: null,
+     schemaDelimiter: '',
+     defaultScope: {},
+     scopes: [],
+     hooks: {},
+     indexes: [],
+     name: { plural: 'Places', singular: 'Place' },
+     omitNull: false,
+     sequelize: 
+      Sequelize {
+        options: [Object],
+        config: [Object],
+        dialect: [Object],
+        queryInterface: [Object],
+        models: [Object],
+        modelManager: [Object],
+        connectionManager: [Object],
+        importCache: {},
+        test: [Object] },
+     uniqueKeys: {} },
+  _options: 
+   { isNewRecord: false,
+     _schema: null,
+     _schemaDelimiter: '',
+     raw: true,
+     attributes: [ 'id', 'lat', 'lng', 'name', 'createdAt', 'updatedAt' ] },
+  __eagerlyLoadedAssociations: [],
+  isNewRecord: false }
+[2017-12-03 22:46:47.294] [ERROR] console - SequelizeDatabaseError: Data truncated for column 'eventId' at row 1
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:46:54.260] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:46:54.260] [INFO] console - Place {
+  dataValues: 
+   { id: 2,
+     lat: '50.082685',
+     lng: '14.440303',
+     name: '',
+     createdAt: 2017-12-03T21:31:14.000Z,
+     updatedAt: 2017-12-03T21:31:14.000Z },
+  _previousDataValues: 
+   { id: 2,
+     lat: '50.082685',
+     lng: '14.440303',
+     name: '',
+     createdAt: 2017-12-03T21:31:14.000Z,
+     updatedAt: 2017-12-03T21:31:14.000Z },
+  _changed: {},
+  _modelOptions: 
+   { timestamps: true,
+     validate: {},
+     freezeTableName: false,
+     underscored: false,
+     underscoredAll: false,
+     paranoid: false,
+     rejectOnEmpty: false,
+     whereCollection: { name: '' },
+     schema: null,
+     schemaDelimiter: '',
+     defaultScope: {},
+     scopes: [],
+     hooks: {},
+     indexes: [],
+     name: { plural: 'Places', singular: 'Place' },
+     omitNull: false,
+     sequelize: 
+      Sequelize {
+        options: [Object],
+        config: [Object],
+        dialect: [Object],
+        queryInterface: [Object],
+        models: [Object],
+        modelManager: [Object],
+        connectionManager: [Object],
+        importCache: {},
+        test: [Object] },
+     uniqueKeys: {} },
+  _options: 
+   { isNewRecord: false,
+     _schema: null,
+     _schemaDelimiter: '',
+     raw: true,
+     attributes: [ 'id', 'lat', 'lng', 'name', 'createdAt', 'updatedAt' ] },
+  __eagerlyLoadedAssociations: [],
+  isNewRecord: false }
+[2017-12-03 22:46:54.275] [ERROR] console - SequelizeDatabaseError: Data truncated for column 'eventId' at row 1
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:47:32.031] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:47:34.014] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:47:37.992] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:47:37.992] [INFO] console - Event {
+  dataValues: 
+   { id: 10,
+     description: 'llll',
+     timeStart: 2017-12-14T13:30:00.000Z,
+     timeEnd: null,
+     placeId: 2,
+     organizatorId: 1,
+     updatedAt: 2017-12-03T21:47:37.964Z,
+     createdAt: 2017-12-03T21:47:37.964Z },
+  _previousDataValues: 
+   { description: 'llll',
+     timeStart: 2017-12-14T13:30:00.000Z,
+     timeEnd: null,
+     placeId: 2,
+     organizatorId: 1,
+     id: 10,
+     maximumLunchBuddies: undefined,
+     createdAt: 2017-12-03T21:47:37.964Z,
+     updatedAt: 2017-12-03T21:47:37.964Z },
+  _changed: 
+   { description: false,
+     timeStart: false,
+     timeEnd: false,
+     placeId: false,
+     organizatorId: false,
+     id: false,
+     maximumLunchBuddies: false,
+     createdAt: false,
+     updatedAt: false },
+  _modelOptions: 
+   { timestamps: true,
+     validate: {},
+     freezeTableName: false,
+     underscored: false,
+     underscoredAll: false,
+     paranoid: false,
+     rejectOnEmpty: false,
+     whereCollection: null,
+     schema: null,
+     schemaDelimiter: '',
+     defaultScope: {},
+     scopes: [],
+     hooks: {},
+     indexes: [],
+     name: { plural: 'Events', singular: 'Event' },
+     omitNull: false,
+     sequelize: 
+      Sequelize {
+        options: [Object],
+        config: [Object],
+        dialect: [Object],
+        queryInterface: [Object],
+        models: [Object],
+        modelManager: [Object],
+        connectionManager: [Object],
+        importCache: {},
+        test: [Object] },
+     uniqueKeys: {} },
+  _options: { isNewRecord: true, _schema: null, _schemaDelimiter: '' },
+  __eagerlyLoadedAssociations: [],
+  isNewRecord: false }
+[2017-12-03 22:47:38.009] [ERROR] console - SequelizeDatabaseError: Data truncated for column 'eventId' at row 1
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:48:09.811] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:48:12.992] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:48:37.655] [ERROR] console - TypeError: Cannot read property 'dataValues' of null
+    at Object._callee5$ (C:\Develop\React\semestralka-redux\backend\build\webpack:\src\modules\events\eventsController.js:64:25)
+    at tryCatch (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at Generator.prototype.(anonymous function) [as next] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\React\semestralka-redux\backend\build\main.js:625:191)
+    at C:\Develop\React\semestralka-redux\backend\build\main.js:625:361
+    at <anonymous>
+[2017-12-03 22:50:37.342] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:50:39.907] [ERROR] console - TypeError: Cannot read property 'dataValues' of null
+    at Object._callee5$ (C:\Develop\React\semestralka-redux\backend\build\webpack:\src\modules\events\eventsController.js:64:25)
+    at tryCatch (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at Generator.prototype.(anonymous function) [as next] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\React\semestralka-redux\backend\build\main.js:625:191)
+    at C:\Develop\React\semestralka-redux\backend\build\main.js:625:361
+    at <anonymous>
+[2017-12-03 22:51:03.678] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:51:05.090] [ERROR] console - TypeError: Cannot read property 'dataValues' of null
+    at Object._callee5$ (C:\Develop\React\semestralka-redux\backend\build\webpack:\src\modules\events\eventsController.js:64:25)
+    at tryCatch (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at Generator.prototype.(anonymous function) [as next] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\React\semestralka-redux\backend\build\main.js:625:191)
+    at C:\Develop\React\semestralka-redux\backend\build\main.js:625:361
+    at <anonymous>
+[2017-12-03 22:51:50.290] [ERROR] console - TypeError: Cannot read property 'dataValues' of null
+    at Object._callee5$ (C:\Develop\React\semestralka-redux\backend\build\webpack:\src\modules\events\eventsController.js:64:25)
+    at tryCatch (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at Generator.prototype.(anonymous function) [as next] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\React\semestralka-redux\backend\build\main.js:625:191)
+    at C:\Develop\React\semestralka-redux\backend\build\main.js:625:361
+    at <anonymous>
+[2017-12-03 22:52:04.864] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:52:06.286] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:52:06.286] [INFO] console - null
+[2017-12-03 22:52:06.320] [ERROR] console - TypeError: Cannot read property 'dataValues' of null
+    at Object._callee5$ (C:\Develop\React\semestralka-redux\backend\build\webpack:\src\modules\events\eventsController.js:66:25)
+    at tryCatch (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:299:22)
+    at Generator.prototype.(anonymous function) [as next] (C:\Develop\React\semestralka-redux\backend\node_modules\regenerator-runtime\runtime.js:117:21)
+    at step (C:\Develop\React\semestralka-redux\backend\build\main.js:625:191)
+    at C:\Develop\React\semestralka-redux\backend\build\main.js:625:361
+    at <anonymous>
+[2017-12-03 22:52:35.960] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:52:41.357] [INFO] console - ---------------------------------------------------------------------------------------------
+
+
+
+
+[2017-12-03 22:52:41.358] [INFO] console - { id: 11,
+  description: 'budeme hodně',
+  timeStart: 2017-12-14T13:30:00.000Z,
+  timeEnd: null,
+  placeId: 7,
+  organizatorId: 1,
+  updatedAt: 2017-12-03T21:52:41.351Z,
+  createdAt: 2017-12-03T21:52:41.351Z }
+[2017-12-03 22:52:41.371] [ERROR] console - SequelizeDatabaseError: Field 'userId' doesn't have a default value
+    at Query.formatError (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+    at Query.connection.query [as onResult] (C:\Develop\React\semestralka-redux\backend\node_modules\sequelize\lib\dialects\mysql\query.js:55:23)
+    at Query.Command.execute (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:515:28)
+    at PacketParser.onPacket (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:94:16)
+    at PacketParser.executeStart (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (C:\Develop\React\semestralka-redux\backend\node_modules\mysql2\lib\connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:594:20)
+[2017-12-03 22:54:51.663] [INFO] console - Server started on http://localhost:3001!
+[2017-12-03 22:55:53.613] [INFO] console - Server started on http://localhost:3001!
