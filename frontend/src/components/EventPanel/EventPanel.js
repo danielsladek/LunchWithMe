@@ -15,6 +15,7 @@ import Moment from 'moment';
 export class EventPanelContainer extends Component {
   constructor(props) {
     super(props);
+    console.log(props);
     this.changeAttendanceButtonClick = this.changeAttendanceButtonClick.bind(this);
     this.cancelEventButtonClick = this.cancelEventButtonClick.bind(this);
     this.getWillAttend = this.getWillAttend.bind(this);
