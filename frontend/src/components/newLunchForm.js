@@ -3,6 +3,7 @@ import { Form, FormGroup, Label, Input, Button, Col, Row } from 'reactstrap';
 import Datetime from 'react-datetime';
 import Api from '../Api';
 import { connect } from "react-redux";
+import { Redirect, Route, browserHistory } from "react-router";
 import { getUserInfo } from "./FBLogin/Reducer";
 
 export class NewLunchFormContainer extends React.Component
@@ -52,6 +53,8 @@ export class NewLunchFormContainer extends React.Component
           lat: 50.082685,
           lng: 14.440303,
         });
+
+        browserHistory.push('/feed')
 
     }
 

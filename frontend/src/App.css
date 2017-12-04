@@ -63,6 +63,10 @@ body {
   margin-right: 10px;
 }
 
+.eventsFeedPage {
+  margin-top: 30px;
+}
+
 .feed-event-box {
   background: #fff;
   color: #7f8187;
@@ -71,6 +75,7 @@ body {
   text-align: center;
   font-size: 14px;
   min-height: 357px;
+  margin-bottom: 30px;
 }
 
 .feed-event-box .name {
@@ -128,6 +133,7 @@ body {
   display: inline-block;
   padding: 0 10px;
   padding-top: 5px;
+  cursor: pointer;
 }
 
 .feed-event-buddies {
