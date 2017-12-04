@@ -221,6 +221,20 @@ a {
   float: left;
 }
 
+.userEventsList {
+  margin: 0 -30px;
+}
+
+.user-profile-img-wrap, .eventsFeedPage .user {
+  display: inline-block;
+}
+
+.eventsFeedPage .user {
+  margin-left: 20px;
+  position: relative;
+  top: 10px;
+}
+
 footer {
   position: fixed;
   margin-left: 10px;
