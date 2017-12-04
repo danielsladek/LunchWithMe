@@ -59,6 +59,7 @@ export class NewLunchFormContainer extends React.Component
 
         return (
             <Form onSubmit={this.handleSubmit}>
+                <h1>Create new lunch</h1>
                 <FormGroup>
                     <Label for="placeName">Place name:</Label>
                     <Input name="placeName" id="placeName" type="text" value={this.state.placeName} onChange={this.handleChange} />

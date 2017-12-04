@@ -156,3 +156,40 @@ body {
   padding: 5px 20px !important;
   margin-right: 50px;
 }
+
+.form-wrapper {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  color: #7f8187;
+  position: relative;
+  min-height: 500px;
+  margin-top: 30px;
+}
+
+.form-wrapper .left {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: url("new-lunch.jpg");
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.form-wrapper .right {
+  padding: 50px;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+footer {
+  position: fixed;
+  margin-left: 10px;
+  bottom: 10px;
+}

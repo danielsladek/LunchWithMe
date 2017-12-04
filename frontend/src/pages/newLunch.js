@@ -9,8 +9,14 @@ export class NewLunchPage extends React.Component {
 
         return (
             <Container>
-                <h1>Create a new lunch event</h1> 
-                <NewLunchForm />
+                <div className="form-wrapper">
+                  <div className="left">
+
+                  </div>
+                  <div className="right">
+                    <NewLunchForm />
+                  </div>
+                </div>
             </Container>
         )
 
