@@ -95,6 +95,15 @@ export class EventPanelContainer extends Component {
       displayComments = true;
     }
 
+    let attendeesHelper;
+    if  (eventAttendees.filter((val) => val.Attendance.willAttend ).length > 0 ) {
+          attendeesHelper = <div>with</div>;
+     }
+     else {
+      attendeesHelper = <div class="empty-attendees">Empty</div>
+     }
+
+
     return (
 
         <Col md="3"
@@ -129,8 +138,9 @@ export class EventPanelContainer extends Component {
             </div>
 
               <div className="feed-event-buddies">
-                <div>with</div>
-                <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
+                {attendeesHelper}
+                 <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
+                 
               </div>
 
 
