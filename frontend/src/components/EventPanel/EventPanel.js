@@ -97,7 +97,9 @@ export class EventPanelContainer extends Component {
 
     return (
 
-        <Col md="3" onClick={() => this.handleClick(id)}>
+        <Col md="3"
+          // onClick={() => this.handleClick(id)}
+          >
           <div className="feed-event-box">
             <div className="organizatorPanel">
 
