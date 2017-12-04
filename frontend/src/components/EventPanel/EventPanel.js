@@ -89,7 +89,7 @@ export class EventPanelContainer extends Component {
     var displayComments = false,
         timeStart = Moment(this.props.event.timeStart).format('d. M. Y H:mm'),
         timeEnd = Moment(this.props.event.timeEnd).format('d. M. Y H:mm'),
-        googleMapsLink = 'https://maps.google.com/?ll=' + place.coordsX + ',' + place.coordsY;
+        googleMapsLink = 'https://maps.google.com/?ll=' + place.lat + ',' + place.lng;
 
     if (typeof this.props.displayComments !== 'undefined' && this.props.displayComments === true) {
       displayComments = true;
@@ -97,7 +97,9 @@ export class EventPanelContainer extends Component {
 
     return (
 
-        <Col md="3" onClick={() => this.handleClick(id)}>
+        <Col md="3"
+          // onClick={() => this.handleClick(id)}
+          >
           <div className="feed-event-box">
             <div className="organizatorPanel">
 
@@ -106,7 +108,7 @@ export class EventPanelContainer extends Component {
                   { organizator.id == userInfo.userId ?
                     "You are going to"
                     :
-                    organizator.name + " " +  organizator.surname + " is going to "
+                    organizator.name + " " + " is going to "
                   }
                 </div>
 
@@ -125,10 +127,13 @@ export class EventPanelContainer extends Component {
                 </div> */}
 
             </div>
-            <div className="feed-event-buddies">
-              <div>with</div>
-              <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
-            </div>
+
+              <div className="feed-event-buddies">
+                <div>with</div>
+                <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
+              </div>
+
+
             <div className="buttonPanel">
 
                 <form name="eventActions">

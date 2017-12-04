@@ -27,17 +27,16 @@ export class UserProfilePage extends Component {
 
     return (
       <Row className="eventsFeedPage">
-        <Col md="8" sm="12">
-          <Row>
             <Col>
-              <LunchBuddyIcon lunchBuddy={this.state.userData} />
-              <h1>{name} {surname}</h1>
-              <h3>{name}'s events</h3>
+              <div className="user-profile-img-wrap">
+                <LunchBuddyIcon lunchBuddy={this.state.userData} />
+              </div>
+              <h1 className="user">{name} {surname}</h1>
+              <div className="day-separator">
+                <span>{name}'s events</span>1
+              </div>
               <UserEventsList userEvents={organizes} />
             </Col>
-          </Row>
-
-        </Col>
       </Row>
     );
   }

@@ -2,8 +2,9 @@ import { USER_LOGIN, USER_LOGIN_SUCCESS, USER_LOGIN_FAIL } from "./Actions";
 import { assign, isEmpty } from "ramda";
 
 const initialState = {
-  isLogged: false,
-  userId: 1 // Debug
+  isLogged: true,
+  userId: 1, // Debug
+  icon: 'https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/UlIqmHJn-SK.gif',
 };
 
 export const FBLoginReducer = (state = initialState, action) => {
@@ -12,8 +13,8 @@ export const FBLoginReducer = (state = initialState, action) => {
           return state;
 
         case USER_LOGIN_SUCCESS:
-          const { userId, name, surname } = action.payload;
-          return Object.assign({}, state, { userId: userId, isLogged: true, name: name, surname: surname });
+          const { userId, name, surname, icon } = action.payload;
+          return Object.assign({}, state, { userId: userId, isLogged: true, name: name, surname: surname, icon: icon });
 
         case USER_LOGIN_FAIL:
           return {}

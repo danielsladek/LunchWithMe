@@ -14,11 +14,12 @@ function* userLogin (action) {
     const api = new Api();
     var userInfo = {};
     const getUserId = yield api.userLogin(action.payload.facebookToken).then(function(response, data) {
-      const { id, name, surname } = response;
+      const { id, name, surname, picture, icon } = response;
       userInfo = {
         userId: id,
         name: name,
         surname: surname,
+        icon: icon,
       };
     });
 

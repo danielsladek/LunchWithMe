@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import myLogo from '../lwm-logo.png';
 import { Row, Ul, Li, Col, Form, Button, Input, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Collapse, DropdownMenu, Dropdown, DropdownToggle, DropdownItem } from 'reactstrap';
 
 export class TopMenu extends Component {
@@ -24,7 +25,7 @@ export class TopMenu extends Component {
 
     return (
         <Navbar color="red" dark expand="md" className="topMenu">
-          <NavbarBrand href="/">Lunchwithme</NavbarBrand>
+          <NavbarBrand href="/"><img width="150px" src={myLogo} alt="Logo"></img></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
@@ -32,7 +33,7 @@ export class TopMenu extends Component {
                   <Link to="/feed" className="nav-link">Event Feed</Link>
                 </NavItem>
                 <NavItem>
-                  <Link to="/addEvent" className="nav-link">Add event</Link>
+                  <Link to="/addEvent" className="nav-link add">Add event</Link>
                 </NavItem>
                 <NavItem>
                   <Link to="/logout" className="nav-link">Logout</Link>

@@ -4,7 +4,7 @@ export const loginController = async (req, res) => {
   const userFacebookName = req.body.name.split(' ')[0],
         userFacebookSurname = req.body.name.split(' ')[1],
         userFacebookEmail = req.body.email,
-        userIcon = req.body.icon;
+        userIcon = req.body.picture.data.url;
 
   /* Check if user has account */
   const userExists = db.User.findOrCreate({

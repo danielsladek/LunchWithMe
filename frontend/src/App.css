@@ -5,6 +5,10 @@ body {
   color: #fff;
 }
 
+a {
+  color: #ecc30a;
+}
+
 .rdtPicker {
   color: black;
 }
@@ -14,14 +18,14 @@ body {
   height: 80px;
 }
 
-.App-header {  
+.App-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
-.App-intro { 
+.App-intro {
   font-size: large;
 }
 
@@ -34,12 +38,18 @@ body {
 }
 
 .hero-title {
-  font-size: 60px;
+  font-size: 80px;
 }
 
 .title-text {
-  font-size: 20px;
+  font-size: 26px;
   line-height: 1.5;
+}
+
+.hero-img {
+  position: absolute;
+  right: 150px;
+  top: 0px;
 }
 
 .space-left {
@@ -63,23 +73,50 @@ body {
   margin-right: 10px;
 }
 
+.eventsFeedPage {
+  margin-top: 30px;
+}
+
+.feed-wrapper {
+  padding: 0 20px;
+}
+
 .feed-event-box {
   background: #fff;
   color: #7f8187;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px 10px;
   text-align: center;
   font-size: 14px;
+  min-height: 357px;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .feed-event-box .name {
   font-weight: 600;
 }
 
+.feed-event-box .eventTitle {
+  line-height: 100%;
+  margin-bottom: 0;
+}
+
+.feed-event-box .date {
+  position: relative;
+  bottom: 5px;
+  font-size: 12px;
+}
+
 .feed-event-box .eventTitle a {
+  display: inline-block;
   font-size: 18px;
   color: #ecc30a;
   font-weight: 700;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .feed-event-buddies {
@@ -90,9 +127,124 @@ body {
   margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.lunchBuddyIcon {
+  position: relative;
+  z-index: 10;
+}
+
+.lunchBuddyIcon img {
+  border-radius: 50%;
+  height: 100px;
+  border: 3px solid #8bc058;
+}
+
+.eventLunchBuddiesList .lunchBuddyIcon img {
+  height: 30px;
+  border: 2px solid #8bc058;
+}
+
+.organizatorPanel .name {
+  margin-top: 10px;
+}
+
+.budy-wrapper {
+  font-weight: normal;
+  font-size: 12px;
+  display: inline-block;
+  padding: 0 10px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.feed-event-buddies {
+  position: relative;
+  min-height: 96px;
+}
+
+.feed-event-buddies .empty {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background: white;
+  font-weight: normal;
+  padding-top: 15px;
+}
+
+.topMenu .nav-link {
+  color: #fff !important;
+  padding: 5px 20px !important;
+}
+
+.nav-link.add {
+  background-color: #218838;
+  line-height: 1.5;
+  border-radius: .2rem;
+  padding: 5px 20px !important;
+  margin-right: 50px;
+}
+
+.form-wrapper {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  color: #7f8187;
+  position: relative;
+  min-height: 500px;
+  margin-top: 30px;
+}
+
+.form-wrapper .left {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: url("new-lunch.jpg");
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.form-wrapper .right {
+  padding: 50px;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.day-separator {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: right;
+  margin: 30px 0;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 4px;
+}
+
+.day-separator span {
+  float: left;
+}
+
+.userEventsList {
+  margin: 0 -30px;
+}
+
+.user-profile-img-wrap, .eventsFeedPage .user {
+  display: inline-block;
+}
+
+.eventsFeedPage .user {
+  margin-left: 20px;
+  position: relative;
+  top: 10px;
+}
+
+footer {
+  position: fixed;
+  margin-left: 10px;
+  bottom: 10px;
 }
 
 .card-body {
