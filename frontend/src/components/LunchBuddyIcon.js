@@ -16,7 +16,7 @@ export class LunchBuddyIcon extends Component {
   }
 
   componentDidMount() {
-  
+
     let url;
     const { facebookId } = this.props.lunchBuddy;
     fetch('https://graph.facebook.com/v2.11/' + facebookId + '/picture')

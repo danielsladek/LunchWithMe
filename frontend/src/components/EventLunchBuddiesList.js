@@ -26,7 +26,7 @@ export class EventLunchBuddiesList extends Component {
 
         {eventAttendees.map(function(lunchBuddy, i) {
           if (lunchBuddy.Attendance.willAttend && lunchBuddy.id != organizator.id) {
-            return <Button type="button" className="budy-btn" color="secondary" onClick={userButtonClick} size="sm" data-user-id={lunchBuddy.id} key={lunchBuddy.id}>
+            return <div className="budy-wrapper" onClick={userButtonClick} data-user-id={lunchBuddy.id} key={lunchBuddy.id}>
                     <LunchBuddyIcon lunchBuddy={lunchBuddy} link={false} />
                     <span className="buddyName">
                        {lunchBuddy.id == currentUser.userId ?
@@ -35,7 +35,7 @@ export class EventLunchBuddiesList extends Component {
                          lunchBuddy.name
                        }
                    </span>
-                  </Button>
+                 </div>
           }
         })}
       </div>
