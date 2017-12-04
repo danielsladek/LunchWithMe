@@ -108,7 +108,7 @@ export class EventPanelContainer extends Component {
                   { organizator.id == userInfo.userId ?
                     "You are going to"
                     :
-                    organizator.name + " " +  organizator.surname + " is going to "
+                    organizator.name + " " + " is going to "
                   }
                 </div>
 
