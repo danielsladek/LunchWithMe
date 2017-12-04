@@ -100,7 +100,7 @@ export class EventPanelContainer extends Component {
           attendeesHelper = <div>with</div>;
      }
      else {
-      attendeesHelper = <div class="empty-attendees">
+      attendeesHelper = <div className="empty-attendees">
         with
         <div className="empty">No lunch budies yet</div>
       </div>
