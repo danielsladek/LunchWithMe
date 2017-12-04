@@ -16,6 +16,8 @@ import  EventDetail  from './pages/EventDetail/EventDetail';
  
 const store = configureStore();
 
+console.log('>>>> STORE:', store);
+
 class App extends Component {
 
   render() {

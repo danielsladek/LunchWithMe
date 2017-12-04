@@ -23,13 +23,15 @@ export class EventPanelContainer extends Component {
 
   cancelEventButtonClick(e) {
     e.preventDefault();
-
+    e.stopPropagation();
+    
     const { event } = this.props,
             currentWillAttend = this.getWillAttend();
   };
 
   changeAttendanceButtonClick(e) {
     e.preventDefault();
+    e.stopPropagation();
     const { event } = this.props,
             currentWillAttend = this.getWillAttend();
 
@@ -110,7 +112,7 @@ export class EventPanelContainer extends Component {
     return (
 
         <Col md="3"
-          // onClick={() => this.handleClick(id)}
+          onClick={() => this.handleClick(id)}
           >
           <div className="feed-event-box">
             <div className="organizatorPanel">
