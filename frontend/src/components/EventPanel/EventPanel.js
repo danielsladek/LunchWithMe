@@ -100,7 +100,10 @@ export class EventPanelContainer extends Component {
           attendeesHelper = <div>with</div>;
      }
      else {
-      attendeesHelper = <div class="empty-attendees">Empty</div>
+      attendeesHelper = <div class="empty-attendees">
+        with
+        <div className="empty">No lunch budies yet</div>
+      </div>
      }
 
 
@@ -140,7 +143,7 @@ export class EventPanelContainer extends Component {
               <div className="feed-event-buddies">
                 {attendeesHelper}
                  <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
-                 
+
               </div>
 
 
