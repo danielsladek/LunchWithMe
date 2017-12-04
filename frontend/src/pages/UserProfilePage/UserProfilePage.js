@@ -33,7 +33,7 @@ export class UserProfilePage extends Component {
               </div>
               <h1 className="user">{name} {surname}</h1>
               <div className="day-separator">
-                <span>{name}'s events</span>1
+                <span>{name}'s events</span>
               </div>
               <UserEventsList userEvents={organizes} />
             </Col>
