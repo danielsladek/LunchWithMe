@@ -127,12 +127,12 @@ export class EventPanelContainer extends Component {
                 </div> */}
 
             </div>
-            { eventAttendees.length > 1 &&
+
               <div className="feed-event-buddies">
                 <div>with</div>
                 <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
               </div>
-            }
+            
 
             <div className="buttonPanel">
 

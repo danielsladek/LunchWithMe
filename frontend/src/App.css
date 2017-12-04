@@ -67,19 +67,36 @@ body {
   background: #fff;
   color: #7f8187;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px 10px;
   text-align: center;
   font-size: 14px;
+  min-height: 357px;
 }
 
 .feed-event-box .name {
   font-weight: 600;
 }
 
+.feed-event-box .eventTitle {
+  line-height: 100%;
+  margin-bottom: 0;
+}
+
+.feed-event-box .date {
+  position: relative;
+  bottom: 5px;
+  font-size: 12px;
+}
+
 .feed-event-box .eventTitle a {
+  display: inline-block;
   font-size: 18px;
   color: #ecc30a;
   font-weight: 700;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .feed-event-buddies {
@@ -99,4 +116,30 @@ body {
 .eventLunchBuddiesList .lunchBuddyIcon img {
   height: 30px;
   border: 2px solid #8bc058;
+}
+
+.organizatorPanel .name {
+  margin-top: 10px;
+}
+
+.budy-wrapper {
+  font-weight: normal;
+  font-size: 12px;
+  display: inline-block;
+  padding: 0 10px;
+  padding-top: 5px;
+}
+
+.feed-event-buddies {
+  position: relative;
+  min-height: 96px;
+}
+
+.feed-event-buddies .empty {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background: white;
+  font-weight: normal;
+  padding-top: 15px;
 }
