@@ -1,14 +1,14 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": "adminadmin",
+    "password": "",
     "database": "lunchwithme",
     "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "adminadmin",
+    "password": "",
     "database": "lunchwithme",
     "host": "localhost",
     "dialect": "mysql"
