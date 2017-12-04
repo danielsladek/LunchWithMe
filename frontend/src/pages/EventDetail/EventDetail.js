@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { EventPanel } from '../../components/EventPanel/EventPanel';
-import { Row, Col } from 'reactstrap';
-import { withRouter } from 'react-router-dom'
+import { Row, Col, Card, CardBody } from 'reactstrap';
 import axios from 'axios'
 import Api from '../../Api';
 import { getEventById } from "../EventFeedPage/Reducer";
@@ -12,36 +10,69 @@ import { switchEventAttendance } from "../EventFeedPage/Actions";
 import { getEvent, getEventState } from './Reducer'
 import { EventFetch } from './Actions'
 
+// Komponenty Eventu
+import { Title } from '../../components/Event/Title';
+import { Comments } from '../../components/Event/Comments';
+import { EventLunchBuddiesList } from '../../components/EventLunchBuddiesList';
+import Map  from '../../components/Event/Map';
+
+
 export class EventDetail extends Component {
 
+    constructor(props) {
+        super(props);
 
-
-    componentDidMount() {
-        console.log("->>>>>>> STATE", this.props);
         const {EventFetch} = this.props;
         EventFetch(this.props.params.eventId);
     }
 
-    getEvent() {
-        // axios.get('http://localhost:3001/events/' + this.props.params.eventId).then(
-        //     (response) => this.setState({event: response.data})
-        // );
-    }
-
-
     render() {
         const { event } = this.props;
-        const { id } = this.props;
-
-
-
-
+        const { eventAttendees } = this.props.event;
 
         return (
-            <Row className="eventDetailsPage"></Row>
+            <Row className="eventDetailsPage">
+                { Object.keys(event).length !== 0 && 
+
+                    <Col>
+                        <Card>
+                            <CardBody>
+                            <div className="organizatorPanel">
+
+                            </div>
+                            <div className="eventInfo">
+
+                                <Title name={event.place.name} />
+
+                                <div className="date">
+                                    {event.timeStart}
+                                </div>
+
+                            </div>
+                            <div className="feed-event-buddies">
+                            <div>with</div>
+                            <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={this.props.userInfo} organizator={event.organizator} />
+                            </div>
+                            <div className="buttonPanel">
+
+                                <form name="eventActions">
+                                </form>
+
+                            </div>
+                            </CardBody>
+                        </Card>
+                        <Card className="mt-4">
+                            <CardBody>
+                            <Map isMarkerShown="false" lat={parseInt(event.place.lat)} lng={parseInt(event.place.lng)} />
+                            </CardBody>
+                        </Card>
+                    </Col>
+                }
+                <Col>
+                    <Comments />
+                </Col>
+            </Row>
         );
-
-
 
     }
 
@@ -49,11 +80,11 @@ export class EventDetail extends Component {
 
 
 const mapStateToProps = storeState => {
-    // pouziju selecty definovany v reduceru. Je to hezci, kdyz si pak budem
-    // upravovat model, odpadne spoustu problemu.
     const eventState = getEventState(storeState);
-    return { event: getEvent(eventState) };
-
+    return { 
+        event: getEvent(eventState),
+        userInfo: getUserInfo(storeState)
+    };
 };
 
 
@@ -63,13 +94,9 @@ export function mapDispatchToProps(dispatch) {
     };
 }
 
-
-
-
 export const EventDetailContainer = connect(
     mapStateToProps,
-   mapDispatchToProps
+    mapDispatchToProps
 )(EventDetail);
-
 
 export default EventDetailContainer;

@@ -21,7 +21,21 @@ export const getEventsController = async (req, res) => {
 };
 
 export const getEventDetailController = async (req, res) => {
-  const event = await db.Event.findById(req.params.id);
+  const event = await db.Event.findById(req.params.id, {
+      include: [{
+        model: db.User,
+        as: "organizator",
+        required: false,
+    },{
+        model: db.Place,
+        as: "place",
+        required: false,
+    },{
+        model: db.User,
+        as: "eventAttendees",
+        required: false,
+    }],
+  });
 
   res.json({ event });
 };

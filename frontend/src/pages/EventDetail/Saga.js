@@ -9,9 +9,7 @@ import axios from 'axios';
 // worker Saga: will be fired on USER_FETCH_REQUESTED actions
 function* eventPageFetchSaga() {
 
-    console.log("SAGA", EVENT_FETCH);
     let action = yield take(EVENT_FETCH);
-    console.log('action: ', action);
 
     try {
 
@@ -20,7 +18,6 @@ function* eventPageFetchSaga() {
         yield axios.get('http://localhost:3001/events/' + action.payload.id).then(
             (response) => {
                 eventData = response.data.event
-
             }
         );
 
@@ -29,7 +26,6 @@ function* eventPageFetchSaga() {
             payload: eventData,
         });
     } catch (e) {
-        console.log(e);
         yield put({
             type: EVENT_FETCH_FAIL,
         });

@@ -39,5 +39,8 @@ export const getEventState = function (storeState) {
 } //eventFeed je definice z combineReducer. Bacha na to.
 //Nevim jak to inteligentneji pojmenovavat,Aby v tom byl co nejmensi bordel.
 
-export const getEvent = (state) => state.event || [];
+export const getEvent = (state) => { 
+    return (state.event || []) 
+};
+
 

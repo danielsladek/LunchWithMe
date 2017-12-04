@@ -4,7 +4,6 @@ EVENT_FETCH_SUCCESS = 'EVENT_FETCH_SUCCESS'
 
 
 export const EventFetch = (id) => {
-    console.log('actiona');
     return {
     type: EVENT_FETCH,
     payload: {
