@@ -132,7 +132,7 @@ export class EventPanelContainer extends Component {
                 <div>with</div>
                 <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
               </div>
-            
+
 
             <div className="buttonPanel">
 
