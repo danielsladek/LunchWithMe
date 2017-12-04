@@ -143,3 +143,16 @@ body {
   font-weight: normal;
   padding-top: 15px;
 }
+
+.topMenu .nav-link {
+  color: #fff !important;
+  padding: 5px 20px !important;
+}
+
+.nav-link.add {
+  background-color: #218838;
+  line-height: 1.5;
+  border-radius: .2rem;
+  padding: 5px 20px !important;
+  margin-right: 50px;
+}
