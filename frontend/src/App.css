@@ -5,6 +5,10 @@ body {
   color: #fff;
 }
 
+a {
+  color: #ecc30a;
+}
+
 .rdtPicker {
   color: black;
 }
@@ -67,6 +71,10 @@ body {
   margin-top: 30px;
 }
 
+.feed-wrapper {
+  padding: 0 20px;
+}
+
 .feed-event-box {
   background: #fff;
   color: #7f8187;
@@ -76,6 +84,7 @@ body {
   font-size: 14px;
   min-height: 357px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .feed-event-box .name {
@@ -110,6 +119,11 @@ body {
   border-bottom: 1px solid #dddddd;
   padding: 10px 0;
   margin-bottom: 10px;
+}
+
+.lunchBuddyIcon {
+  position: relative;
+  z-index: 10;
 }
 
 .lunchBuddyIcon img {
@@ -192,6 +206,33 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
+}
+
+.day-separator {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: right;
+  margin: 30px 0;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 4px;
+}
+
+.day-separator span {
+  float: left;
+}
+
+.userEventsList {
+  margin: 0 -30px;
+}
+
+.user-profile-img-wrap, .eventsFeedPage .user {
+  display: inline-block;
+}
+
+.eventsFeedPage .user {
+  margin-left: 20px;
+  position: relative;
+  top: 10px;
 }
 
 footer {

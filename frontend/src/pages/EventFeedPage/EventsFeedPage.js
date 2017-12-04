@@ -16,17 +16,22 @@ export class EventsFeedPage extends Component {
 
   render() {
     const { events } = this.props;
-    
+
     return (
-      <Row className="eventsFeedPage">
-          {
-            events.length
-            &&
-            events.map(event => <EventPanel eventId={event.id} event={event} key={event.id} />)
-            ||
-            <h2>There are currently no events. <Link to="addEvent">Let's create one!</Link></h2>
-          }
-      </Row>
+      <div className="feed-wrapper">
+        <div className="day-separator">
+          <span>Today</span>Going with <a href="#">Tomas</a> at 12:30 am
+        </div>
+        <Row className="eventsFeedPage">
+            {
+              events.length
+              &&
+              events.map(event => <EventPanel eventId={event.id} event={event} key={event.id} />)
+              ||
+              <h2>There are currently no events. <Link to="addLunch">Let's create one!</Link></h2>
+            }
+        </Row>
+      </div>
     );
   }
 }
