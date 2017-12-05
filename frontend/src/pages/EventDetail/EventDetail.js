@@ -30,50 +30,54 @@ export class EventDetail extends Component {
         const { event } = this.props;
         const { eventAttendees } = this.props.event;
 
+        if(Object.keys(event).length !== 0) {
+
         return (
             <Row className="eventDetailsPage">
-                { Object.keys(event).length !== 0 && 
-
-                    <Col>
-                        <Card>
-                            <CardBody>
-                            <div className="organizatorPanel">
-
-                            </div>
-                            <div className="eventInfo">
-
-                                <Title name={event.place.name} />
-
-                                <div className="date">
-                                    {event.timeStart}
-                                </div>
-
-                            </div>
-                            <div className="feed-event-buddies">
-                            <div>with</div>
-                            <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={this.props.userInfo} organizator={event.organizator} />
-                            </div>
-                            <div className="buttonPanel">
-
-                                <form name="eventActions">
-                                </form>
-
-                            </div>
-                            </CardBody>
-                        </Card>
-                        <Card className="mt-4">
-                            <CardBody>
-                            <Map isMarkerShown="false" lat={parseInt(event.place.lat)} lng={parseInt(event.place.lng)} />
-                            </CardBody>
-                        </Card>
-                    </Col>
-                }
                 <Col>
-                    <Comments />
+                    <Card>
+                        <CardBody>
+                        <div className="organizatorPanel">
+
+                        </div>
+                        <div className="eventInfo">
+
+                            <Title name={event.place.name} />
+
+                            <div className="date">
+                                {event.timeStart}
+                            </div>
+
+                        </div>
+                        <div className="feed-event-buddies">
+                        <div>with</div>
+                        <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={this.props.userInfo} organizator={event.organizator} />
+                        </div>
+                        <div className="buttonPanel">
+
+                            <form name="eventActions">
+                            </form>
+
+                        </div>
+                        </CardBody>
+                    </Card>
+                    <Card className="mt-4">
+                        <CardBody>
+                        <Map isMarkerShown="false" lat={parseInt(event.place.lat)} lng={parseInt(event.place.lng)} />
+                        </CardBody>
+                    </Card>
+                </Col>  
+                <Col>
+                    <Comments id={event.id}/>
                 </Col>
             </Row>
         );
 
+        } else {
+            return (
+                <div></div>
+            );
+        }
     }
 
 }

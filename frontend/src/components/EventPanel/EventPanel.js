@@ -67,10 +67,15 @@ export class EventPanelContainer extends Component {
     return willAttend;
   };
 
-  handleClick(id) {
+  handleClick(id, e) {
     //return (<Route exact path="/" render={() => (<Redirect to="/dashboard"/>)}/>);
     browserHistory.push('/event/' + this.props.event.id, { event: this.props.event })
+    console.log(e);
 
+  }
+
+  handleStopPropagation(e) {
+    e.stopPropagation();
   }
 
   render() {
@@ -112,7 +117,7 @@ export class EventPanelContainer extends Component {
     return (
 
         <Col md="3"
-          onClick={() => this.handleClick(id)}
+          onClick={(e) => this.handleClick(id, e)}
           >
           <div className="feed-event-box">
             <div className="organizatorPanel">
@@ -130,7 +135,7 @@ export class EventPanelContainer extends Component {
             <div className="eventInfo">
 
                 <h2 className="eventTitle">
-                  <a href={googleMapsLink} target="_blank">{place.name}</a>
+                  <a href={googleMapsLink} target="_blank" onClick={ () => this.handleStopPropagation() }>{place.name}</a>
                 </h2>
                 <div className="date">
                   {timeStart}
