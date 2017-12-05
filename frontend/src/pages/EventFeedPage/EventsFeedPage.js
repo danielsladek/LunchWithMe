@@ -28,7 +28,7 @@ export class EventsFeedPage extends Component {
               &&
               events.map(event => <EventPanel eventId={event.id} event={event} key={event.id} />)
               ||
-              <h2>There are currently no events. <Link to="addLunch">Let's create one!</Link></h2>
+              <h2>There are currently no events. <Link to="addEvent">Let's create one!</Link></h2>
             }
         </Row>
       </div>

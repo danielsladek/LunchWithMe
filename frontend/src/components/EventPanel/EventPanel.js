@@ -4,7 +4,7 @@ import { Row, Col } from 'reactstrap';
 import { EventComments } from '../EventComments';
 import { AttendToEventButton } from '../AttendToEventButton';
 import { connect } from 'react-redux';
-import { switchEventAttendance } from "./Actions";
+import { switchEventAttendance, deleteEvent } from "./Actions";
 import { getEventById } from "../../pages/EventFeedPage/Reducer";
 import { getUserInfo } from "../FBLogin/Reducer";
 import { LunchBuddyIcon } from "../LunchBuddyIcon";
@@ -15,7 +15,7 @@ import Moment from 'moment';
 export class EventPanelContainer extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
+
     this.changeAttendanceButtonClick = this.changeAttendanceButtonClick.bind(this);
     this.cancelEventButtonClick = this.cancelEventButtonClick.bind(this);
     this.getWillAttend = this.getWillAttend.bind(this);
@@ -24,9 +24,11 @@ export class EventPanelContainer extends Component {
   cancelEventButtonClick(e) {
     e.preventDefault();
     e.stopPropagation();
-    
-    const { event } = this.props,
-            currentWillAttend = this.getWillAttend();
+
+    const { eventId } = this.props;
+
+    this.props.deleteEvent(eventId);
+
   };
 
   changeAttendanceButtonClick(e) {
@@ -180,5 +182,6 @@ export const EventPanel = connect(
   mapStateToProps,
   {
     switchEventAttendance,
+    deleteEvent,
   },
 )(EventPanelContainer);

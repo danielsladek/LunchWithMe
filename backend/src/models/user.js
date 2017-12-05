@@ -16,11 +16,11 @@ module.exports = (sequelize, DataTypes) => {
   );
 
   User.associate = function(models) {
-    User.belongsToMany(models.Event, { as: 'attendances', through: models.Attendance, foreignKey: 'userId' });
+    User.belongsToMany(models.Event, { as: 'attendances', through: models.Attendance, foreignKey: 'userId', onDelete: 'CASCADE', hooks: true });
   };
 
   User.associate = function(models) {
-    User.hasMany(models.Event, { foreignKey: 'organizatorId', as: 'organizes' });
+    User.hasMany(models.Event, { foreignKey: 'organizatorId', as: 'organizes', onDelete: 'CASCADE', hooks: true });
   };
 
   return User;
