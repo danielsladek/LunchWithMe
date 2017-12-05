@@ -9,7 +9,7 @@ import { getEventById } from "../../pages/EventFeedPage/Reducer";
 import { getUserInfo } from "../FBLogin/Reducer";
 import { LunchBuddyIcon } from "../LunchBuddyIcon";
 import { CancelEventButton } from "../CancelEventButton";
-import { Redirect, Route, browserHistory } from "react-router";
+import { Redirect, Route, browserHistory, Link } from "react-router";
 import Moment from 'moment';
 
 export class EventPanelContainer extends Component {
@@ -119,52 +119,54 @@ export class EventPanelContainer extends Component {
     return (
 
         <Col md="3"
-          onClick={(e) => this.handleClick(id, e)}
+          // onClick={(e) => this.handleClick(id, e)}
           >
-          <div className="feed-event-box">
-            <div className="organizatorPanel">
+            <Link to={"/event/" + id } >
+              <div className="feed-event-box">
+              <div className="organizatorPanel">
 
-                <LunchBuddyIcon lunchBuddy={organizator} />
-                <div className="name">
-                  { organizator.id == userInfo.userId ?
-                    "You are going to"
-                    :
-                    organizator.name + " " + " is going to "
-                  }
-                </div>
+                  <LunchBuddyIcon lunchBuddy={organizator} />
+                  <div className="name">
+                    { organizator.id == userInfo.userId ?
+                      "You are going to"
+                      :
+                      organizator.name + " " + " is going to "
+                    }
+                  </div>
 
-            </div>
-            <div className="eventInfo">
+              </div>
+              <div className="eventInfo">
 
-                <h2 className="eventTitle">
-                  <a href={googleMapsLink} target="_blank" onClick={ () => this.handleStopPropagation() }>{place.name}</a>
-                </h2>
-                <div className="date">
-                  {timeStart}
-                  {/* {timeStart} - {timeEnd} */}
-                </div>
-                {/* <div className="description">
-                  {description}
-                </div> */}
-
-            </div>
-
-              <div className="feed-event-buddies">
-                {attendeesHelper}
-                 <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
+                  <h2 className="eventTitle">
+                    <a href={googleMapsLink} target="_blank" onClick={ () => this.handleStopPropagation() }>{place.name}</a>
+                  </h2>
+                  <div className="date">
+                    {timeStart}
+                    {/* {timeStart} - {timeEnd} */}
+                  </div>
+                  {/* <div className="description">
+                    {description}
+                  </div> */}
 
               </div>
 
+                <div className="feed-event-buddies">
+                  {attendeesHelper}
+                   <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
 
-            <div className="buttonPanel">
+                </div>
 
-                <form name="eventActions">
-                  { organizator.id != userInfo.userId && <AttendToEventButton onClick={this.changeAttendanceButtonClick} organizator={organizator} activeBtn={willAttend} userInfo={userInfo} />}
-                  { organizator.id == userInfo.userId && <CancelEventButton onClick={this.cancelEventButtonClick} />}
-                </form>
 
+              <div className="buttonPanel">
+
+                  <form name="eventActions">
+                    { organizator.id != userInfo.userId && <AttendToEventButton onClick={this.changeAttendanceButtonClick} organizator={organizator} activeBtn={willAttend} userInfo={userInfo} />}
+                    { organizator.id == userInfo.userId && <CancelEventButton onClick={this.cancelEventButtonClick} />}
+                  </form>
+
+              </div>
             </div>
-          </div>
+            </Link>
         </Col>
 
     );
