@@ -70,4 +70,10 @@ export default class Api {
       (response) => response.data
     );
   }
+
+  deleteEvent (eventId) {
+    return axios.delete(this.baseURL + '/events/' + eventId).then(
+      (response) => response.data
+    );
+  }
 }

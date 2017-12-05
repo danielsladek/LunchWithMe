@@ -41,11 +41,22 @@ export const getEventDetailController = async (req, res) => {
 };
 
 export const deleteEventController = async (req, res) => {
+
+
   const eventDeleted = await db.Event.destroy({
     where: {
       id: req.params.id,
     }
   });
+
+  /* Cascade delete not working - delete attendances manually */
+  if (eventDeleted) {
+    const attendancesDelete = await db.Attendance.destroy({
+      where: {
+        eventId: req.params.id,
+      }
+    });
+  }
 
   res.json({ eventDeleted });
 };
