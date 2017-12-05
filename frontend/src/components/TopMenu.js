@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import myLogo from '../lwm-logo.png';
+import { LunchBuddyIcon } from "./LunchBuddyIcon";
 import { Row, Ul, Li, Col, Form, Button, Input, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Collapse, DropdownMenu, Dropdown, DropdownToggle, DropdownItem } from 'reactstrap';
 
 export class TopMenu extends Component {
@@ -35,6 +36,10 @@ export class TopMenu extends Component {
                 <NavItem>
                   <Link to="/addEvent" className="nav-link add">Add event</Link>
                 </NavItem>
+                <div className="top-nav-user-icon">
+                  <LunchBuddyIcon lunchBuddy={userData} link={false} />
+                </div>
+                <div className="top-nav-user-name">{userData.name}</div>
                 <NavItem>
                   <Link to="/logout" className="nav-link">Logout</Link>
                 </NavItem>
