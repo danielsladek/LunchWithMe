@@ -1,10 +1,16 @@
 import { applyMiddleware, createStore, compose } from "redux";
 import createSagaMiddleware from "redux-saga";
-
-//import api from "../api";
+import { persistStore, persistCombineReducers } from 'redux-persist';
+import storage from 'redux-persist/es/storage';
 
 import { rootReducer } from "../reducers";
 import rootSaga from "../rootSaga";
+
+const reduxPersistConfig = {
+  key: 'root',
+  storage,
+  whitelist: ['userInfo'],
+}
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -19,7 +25,13 @@ export default function configureStore() {
   const composeEnhancers =
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-  const store = createStore(rootReducer, composeEnhancers(...enhancers));
+  const reducer = persistCombineReducers(reduxPersistConfig, rootReducer);
+
+
+  const store = createStore(reducer, composeEnhancers(...enhancers));
   sagaMiddleware.run(rootSaga);
-  return store;
+
+  let persistor = persistStore(store);
+
+  return { store, persistor };
 }

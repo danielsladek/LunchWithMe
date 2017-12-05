@@ -15,7 +15,7 @@ function* eventPageFetchSaga() {
 
         let eventData;
 
-        yield axios.get('http://localhost:3001/events/' + action.payload.id).then(
+        yield axios.get(process.env.REACT_APP_API_URL + '/events/' + action.payload.id).then(
             (response) => {
                 eventData = response.data.event
             }

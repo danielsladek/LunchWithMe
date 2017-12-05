@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import { Container } from 'reactstrap';
+import { PersistGate } from 'redux-persist/es/integration/react';
 import configureStore from './store/configureStore.js';
 //import logo from './logo.svg';
 import Landing from './pages/Landing.js';
@@ -13,7 +14,7 @@ import { Main } from 'reactstrap';
 import { PageLayout } from './components/PageLayout.js';
 import  EventDetail  from './pages/EventDetail/EventDetail';
 
-const store = configureStore();
+const { store, persistor } = configureStore();
 
 console.log('>>>> STORE:', store);
 
@@ -22,18 +23,21 @@ class App extends Component {
   render() {
 
     return (
+      // TODO: add 404 handler: https://knowbody.github.io/react-router-docs/guides/NotFound.html
       <div className="App">
         <Provider store={store}>
-          <Router history={browserHistory}>
-            <Route path="/" component={PageLayout}>
-              <IndexRoute component={Landing}/>
-              <Route path="addEvent" component={LunchPage}/>
-              <Route path="user/:userId" component={UserProfilePage}/>
-              <Route path="feed" component={EventsFeedPage}/>
-              <Route path="event/:eventId" component={EventDetail}/>
-              <Route path="event/:eventId/edit" component={LunchPage}/>
-            </Route>
-          </Router>
+          <PersistGate persistor={persistor}>
+            <Router history={browserHistory}>
+              <Route path="/" component={PageLayout}>
+                <IndexRoute component={Landing}/>
+                <Route path="reg" component={RegistrationPage}/>
+                <Route path="addEvent" component={NewLunchPage}/>
+                <Route path="user/:userId" component={UserProfilePage}/>
+                <Route path="feed" component={EventsFeedPage}/>
+                <Route path="event/:eventId" component={EventDetail}/>
+              </Route>
+            </Router>
+          </PersistGate>
         </Provider>
       </div>
     );
