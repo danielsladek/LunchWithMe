@@ -15,3 +15,5 @@ npm-debug.log
 
 # custom
 /tmp
+/.env.local
+/.env.*.local

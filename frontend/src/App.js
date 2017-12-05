@@ -13,7 +13,7 @@ import { TopMenu } from './components/TopMenu.js';
 import { Main } from 'reactstrap';
 import { PageLayout } from './components/PageLayout.js';
 import  EventDetail  from './pages/EventDetail/EventDetail';
- 
+
 const store = configureStore();
 
 console.log('>>>> STORE:', store);
@@ -23,6 +23,7 @@ class App extends Component {
   render() {
 
     return (
+      // TODO: add 404 handler: https://knowbody.github.io/react-router-docs/guides/NotFound.html
       <div className="App">
         <Provider store={store}>
           <Router history={browserHistory}>
