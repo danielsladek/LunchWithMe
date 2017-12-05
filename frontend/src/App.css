@@ -247,6 +247,10 @@ a {
   font-weight: normal;
 }
 
+.feed-event-box-link-wrap:hover div {
+  text-decoration: none;
+}
+
 footer {
   position: fixed;
   margin-left: 10px;
