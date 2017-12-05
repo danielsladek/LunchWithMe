@@ -31,7 +31,7 @@ export default class Api {
 
   getEventById (eventId) {
     return axios.get(this.baseURL + '/events/' + eventId).then(
-      (response) => response.data
+      (response) => response.data.event
     );
   }
 
@@ -73,6 +73,12 @@ export default class Api {
 
   deleteEvent (eventId) {
     return axios.delete(this.baseURL + '/events/' + eventId).then(
+      (response) => response.data
+    );
+  }
+
+  updateEvent (event) {
+    return axios.put(this.baseURL + '/events/' + event.eventId, event.eventData).then(
       (response) => response.data
     );
   }

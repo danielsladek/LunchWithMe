@@ -5,15 +5,14 @@ import { Container } from 'reactstrap';
 import configureStore from './store/configureStore.js';
 //import logo from './logo.svg';
 import Landing from './pages/Landing.js';
-import { RegistrationPage } from './pages/registration.js';
 import EventsFeedPage from './pages/EventFeedPage/EventsFeedPage';
 import { UserProfilePage } from './pages/UserProfilePage/UserProfilePage';
-import { NewLunchPage } from './pages/newLunch.js';
+import { LunchPage } from './pages/LunchPage/LunchPage.js';
 import { TopMenu } from './components/TopMenu.js';
 import { Main } from 'reactstrap';
 import { PageLayout } from './components/PageLayout.js';
 import  EventDetail  from './pages/EventDetail/EventDetail';
- 
+
 const store = configureStore();
 
 console.log('>>>> STORE:', store);
@@ -28,11 +27,11 @@ class App extends Component {
           <Router history={browserHistory}>
             <Route path="/" component={PageLayout}>
               <IndexRoute component={Landing}/>
-              <Route path="reg" component={RegistrationPage}/>
-              <Route path="addEvent" component={NewLunchPage}/>
+              <Route path="addEvent" component={LunchPage}/>
               <Route path="user/:userId" component={UserProfilePage}/>
               <Route path="feed" component={EventsFeedPage}/>
               <Route path="event/:eventId" component={EventDetail}/>
+              <Route path="event/:eventId/edit" component={LunchPage}/>
             </Route>
           </Router>
         </Provider>

@@ -4,7 +4,7 @@ import { all, take } from "redux-saga/effects";
 import eventFeedPageFetchSaga from "./pages/EventFeedPage/Saga";
 import eventPanelSaga from "./components/EventPanel/Saga";
 import fbLoginSaga from "./components/FBLogin/Saga";
-import eventPageFetchSaga from './pages/EventDetail/Saga'
+import eventPageFetchSaga from './pages/EventDetail/Saga';
 
 // single entry point to start all Sagas at once
 //tady se pisou vsechny sagy, podobne jako rootReducer

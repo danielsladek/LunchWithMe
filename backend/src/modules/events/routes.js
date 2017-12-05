@@ -6,7 +6,7 @@ import {
   getEventDetailController,
   postEventController,
   deleteEventController,
-  putEventController,
+  updateEvent,
   createNewEvent,
 } from './eventsController';
 
@@ -15,6 +15,6 @@ router.get('/', getEventsController);
 router.get('/:id', getEventDetailController);
 router.post('/', createNewEvent);
 router.delete('/:id', deleteEventController);
-router.put('/:id', putEventController);
+router.put('/:id', updateEvent);
 
 export default router;

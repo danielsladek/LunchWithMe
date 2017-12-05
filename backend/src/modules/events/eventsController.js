@@ -120,10 +120,41 @@ export const createNewEvent = async (req, res) => {
   res.json({ eventCreated });
 };
 
-export const putEventController = async (req, res) => {
-  const eventUpdated = await db.Event.update(req.body, { // Only parameters that were sent will be updated
+export const updateEvent = async (req, res) => {
+  const { description, placeName, timeStart, timeEnd, organizatorId, lat, lng } = req.body;
+
+  /* Create new place if not found */
+  const placeFound = await db.Place.findOne({
     where: {
-      id: req.params.id,
+      name: placeName,
+    }
+  });
+
+  var placeId = null;
+
+  if (placeFound != null) {
+    /* PLace already exists in the database */
+    placeId = placeFound.dataValues.id;
+  } else {
+    /* Create new place */
+    const placeCreated = await db.Place.build({
+      name: placeName,
+      lat: lat,
+      lng: lng,
+    }).save();
+
+    placeId = placeCreated.id;
+  }
+
+  const eventUpdated = await db.Event.update({
+      description: description,
+      timeStart: timeStart,
+      timeEnd: timeEnd || null,
+      placeId: placeId,
+      organizatorId: organizatorId,
+    }, { // Only parameters that were sent will be updated
+    where: {
+      id: req.params.eventId,
     }
   });
 
