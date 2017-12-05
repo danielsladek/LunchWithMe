@@ -15,3 +15,5 @@ npm-debug.log
 
 # custom
 /tmp
+
+/backend/src/config.js
