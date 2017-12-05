@@ -173,6 +173,8 @@ a {
 .topMenu .nav-link {
   color: #fff !important;
   padding: 5px 20px !important;
+  position: relative;
+  z-index: 10;
 }
 
 .nav-link.add {
