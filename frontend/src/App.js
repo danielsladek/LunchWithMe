@@ -30,11 +30,11 @@ class App extends Component {
             <Router history={browserHistory}>
               <Route path="/" component={PageLayout}>
                 <IndexRoute component={Landing}/>
-                <Route path="reg" component={RegistrationPage}/>
-                <Route path="addEvent" component={NewLunchPage}/>
+                <Route path="addEvent" component={LunchPage}/>
                 <Route path="user/:userId" component={UserProfilePage}/>
                 <Route path="feed" component={EventsFeedPage}/>
                 <Route path="event/:eventId" component={EventDetail}/>
+                <Route path="event/:eventId/edit" component={LunchPage}/>
               </Route>
             </Router>
           </PersistGate>

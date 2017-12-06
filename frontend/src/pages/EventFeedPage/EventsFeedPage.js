@@ -35,25 +35,18 @@ export class EventsFeedPage extends Component {
     );
   }
 }
-
 const mapStateToProps = storeState => {
   // pouziju selecty definovany v reduceru. Je to hezci, kdyz si pak budem
   // upravovat model, odpadne spoustu problemu.
   const eventListState = getEventFeedState(storeState);
   return { events: getEvents(eventListState) };
-
 };
-
-
 export function mapDispatchToProps(dispatch) {
   return {
     eventFeedFetch: () => dispatch(eventFeedFetch()),
   };
 }
-
-
 // Connect  - obali comopnentu a udela z ni container, který má řístup do
 // REDUXoveho Storu
 const EventsFeedContainer = connect(mapStateToProps, mapDispatchToProps)(EventsFeedPage);
-
 export default EventsFeedContainer;

@@ -151,10 +151,10 @@ export const updateEvent = async (req, res) => {
       timeStart: timeStart,
       timeEnd: timeEnd || null,
       placeId: placeId,
-      organizatorId: organizatorId,
-    }, { // Only parameters that were sent will be updated
+      //organizatorId: organizatorId,
+    }, {
     where: {
-      id: req.params.eventId,
+      id: req.params.id,
     }
   });
 

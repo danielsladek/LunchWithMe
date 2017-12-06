@@ -9,6 +9,7 @@ import { getEventById } from "../../pages/EventFeedPage/Reducer";
 import { getUserInfo } from "../FBLogin/Reducer";
 import { LunchBuddyIcon } from "../LunchBuddyIcon";
 import { CancelEventButton } from "../CancelEventButton";
+import { EditEventButton } from "../EditEventButton";
 import { Redirect, Route, browserHistory } from "react-router";
 import Moment from 'moment';
 
@@ -18,6 +19,7 @@ export class EventPanelContainer extends Component {
 
     this.changeAttendanceButtonClick = this.changeAttendanceButtonClick.bind(this);
     this.cancelEventButtonClick = this.cancelEventButtonClick.bind(this);
+    this.editEventButtonClick = this.editEventButtonClick.bind(this);
     this.getWillAttend = this.getWillAttend.bind(this);
   }
 
@@ -28,7 +30,15 @@ export class EventPanelContainer extends Component {
     const { eventId } = this.props;
 
     this.props.deleteEvent(eventId);
+  };
 
+  editEventButtonClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const { eventId } = this.props;
+
+    browserHistory.push('/event/' + eventId + '/edit');
   };
 
   changeAttendanceButtonClick(e) {
@@ -161,6 +171,7 @@ export class EventPanelContainer extends Component {
                 <form name="eventActions">
                   { organizator.id != userInfo.userId && <AttendToEventButton onClick={this.changeAttendanceButtonClick} organizator={organizator} activeBtn={willAttend} userInfo={userInfo} />}
                   { organizator.id == userInfo.userId && <CancelEventButton onClick={this.cancelEventButtonClick} />}
+                  { organizator.id == userInfo.userId && <EditEventButton onClick={this.editEventButtonClick} />}
                 </form>
 
             </div>
