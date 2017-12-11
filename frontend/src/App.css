@@ -254,3 +254,24 @@ footer {
 .card-body {
   color: #343a40;;
 }
+
+/* Main menu styles */
+div.menuContainer {
+  order: 1;
+  background: darkgray;
+  width: 10%;
+  min-width: 100px;
+}
+
+nav.mainMenu ul {
+  list-style: none;
+}
+
+nav.mainMenu ul li a span.icon {
+  list-style: none;
+}
+
+/* Main content container styles */
+main.contentContainer {
+  order: 2;
+}

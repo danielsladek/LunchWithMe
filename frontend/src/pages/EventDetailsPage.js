@@ -4,7 +4,7 @@ import { Row, Col } from 'reactstrap';
 
 export class EventDetailsPage extends Component {
   render() {
-    /*
+    
     // Sample events array
     var sampleEventsArray = [
       {
@@ -60,8 +60,10 @@ export class EventDetailsPage extends Component {
           },
         ]
       }
-    ];*/
-    const { event } = this.props;
+    ];
+
+
+    const { event } = sampleEventsArray;
 
     return (
       <Row className="eventDetailsPage">

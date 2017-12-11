@@ -21,6 +21,7 @@ export const getEventsController = async (req, res) => {
 };
 
 export const getEventDetailController = async (req, res) => {
+<<<<<<< HEAD
   const event = await db.Event.findById(req.params.id, {
       include: [{
         model: db.User,
@@ -36,19 +37,26 @@ export const getEventDetailController = async (req, res) => {
         required: false,
     }],
   });
+=======
+  const event = await db.Event.findById(req.params.id);
+>>>>>>> master
 
   res.json({ event });
 };
 
 export const deleteEventController = async (req, res) => {
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
   const eventDeleted = await db.Event.destroy({
     where: {
       id: req.params.id,
     }
   });
 
+<<<<<<< HEAD
   /* Cascade delete not working - delete attendances manually */
   if (eventDeleted) {
     const attendancesDelete = await db.Attendance.destroy({
@@ -58,6 +66,8 @@ export const deleteEventController = async (req, res) => {
     });
   }
 
+=======
+>>>>>>> master
   res.json({ eventDeleted });
 };
 
@@ -74,6 +84,7 @@ export const postEventController = async (req, res) => {
   res.json({ eventCreated });
 };
 
+<<<<<<< HEAD
 export const createNewEvent = async (req, res) => {
   const { description, placeName, timeStart, timeEnd, organizatorId, lat, lng } = req.body;
 
@@ -120,6 +131,8 @@ export const createNewEvent = async (req, res) => {
   res.json({ eventCreated });
 };
 
+=======
+>>>>>>> master
 export const putEventController = async (req, res) => {
   const eventUpdated = await db.Event.update(req.body, { // Only parameters that were sent will be updated
     where: {

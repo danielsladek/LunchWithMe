@@ -8,6 +8,7 @@ export const getUsersController = async (req, res) => {
 };
 
 export const getUserDetailController = async (req, res) => {
+<<<<<<< HEAD
   const user = await db.User.findOne({
     include: [{
         model: db.Event,
@@ -18,6 +19,9 @@ export const getUserDetailController = async (req, res) => {
       id: req.params.id,
     },
   });
+=======
+  const user = await db.User.findById(req.params.id);
+>>>>>>> master
 
   res.json({ user });
 };
@@ -43,7 +47,11 @@ export const postUserController = async (req, res) => {
 };
 
 export const putUserController = async (req, res) => {
+<<<<<<< HEAD
   const userUpdated = await db.User.update(req.body, { // Only parameters that were sent will be updated
+=======
+  const userUpdated = await db.User.update(req.body, { // Only parameters that wereg sent will be updated
+>>>>>>> master
     where: {
       id: req.params.id,
     }
