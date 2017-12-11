@@ -86,7 +86,7 @@ export class EventPanelContainer extends Component {
 
   }
 
-  handleStopPropagation(e) {
+   handleStopPropagation = function(e) {
     e.stopPropagation();
   }
 
@@ -134,7 +134,7 @@ export class EventPanelContainer extends Component {
           <div className="feed-event-box">
             <div className="organizatorPanel">
 
-                <LunchBuddyIcon lunchBuddy={organizator} />
+                <LunchBuddyIcon lunchBuddy={organizator} onClick={this.handleStopPropagation} />
                 <div className="name">
                   { organizator.id == userInfo.userId ?
                     "You are going to"
@@ -147,7 +147,7 @@ export class EventPanelContainer extends Component {
             <div className="eventInfo">
 
                 <h2 className="eventTitle">
-                  <a href={googleMapsLink} target="_blank" onClick={ () => this.handleStopPropagation() }>{place.name}</a>
+                  <a href={googleMapsLink} target="_blank" onClick={ (e) => this.handleStopPropagation(e) }>{place.name}</a>
                 </h2>
                 <div className="date">
                   {timeStart}
@@ -161,7 +161,7 @@ export class EventPanelContainer extends Component {
 
               <div className="feed-event-buddies">
                 {attendeesHelper}
-                 <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} />
+                 <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={userInfo} organizator={organizator} onClick={ (e) => this.handleStopPropagation(e) } />
 
               </div>
 
@@ -171,7 +171,7 @@ export class EventPanelContainer extends Component {
                 <form name="eventActions">
                   { organizator.id != userInfo.userId && <AttendToEventButton onClick={this.changeAttendanceButtonClick} organizator={organizator} activeBtn={willAttend} userInfo={userInfo} />}
                   { organizator.id == userInfo.userId && <CancelEventButton onClick={this.cancelEventButtonClick} />}
-                  { organizator.id == userInfo.userId && <EditEventButton onClick={this.editEventButtonClick} />}
+                  { organizator.id == userInfo.userId && <EditEventButton onClick={(e) => {this.editEventButtonClick; this.handleStopPropagation(e);} } />}
                 </form>
 
             </div>

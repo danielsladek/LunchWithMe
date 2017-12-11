@@ -12,12 +12,12 @@ export const FBLoginReducer = (state = initialState, action) => {
         case USER_LOGIN:
           return state;
 
-        case USER_LOGIN_SUCCESS:
+        case USER_LOGIN_SUCCESS:{
           const { userId, name, surname, icon } = action.payload;
           return Object.assign({}, state, { userId: userId, isLogged: true, name: name, surname: surname, icon: icon });
-
+        }
         case USER_LOGIN_FAIL:
-          return {}
+          return state;
 
         default: {
           return state;

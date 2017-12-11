@@ -12,7 +12,7 @@ export class LunchBuddyIcon extends Component {
         {typeof this.props.link != 'undefined' && this.props.link === false ?
           image
           :
-          <Link to={"/user/" + id } >
+          <Link to={"/user/" + id }  onClick={this.props.onClick}>
             {image}
           </Link>
         }

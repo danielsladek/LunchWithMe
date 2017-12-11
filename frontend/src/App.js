@@ -16,7 +16,7 @@ import  EventDetail  from './pages/EventDetail/EventDetail';
 
 const { store, persistor } = configureStore();
 
-console.log('>>>> STORE:', store);
+//console.log('>>>> STORE:', store);
 
 class App extends Component {
 
