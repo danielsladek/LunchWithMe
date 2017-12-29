@@ -1,10 +1,11 @@
 import { takeLatest, take, put } from 'redux-saga/effects';
-import { USER_LOGIN, USER_LOGIN_SUCCESS, USER_LOGIN_FAIL } from "./Actions";
+import { USER_LOGIN, USER_LOGIN_SUCCESS, USER_LOGIN_FAIL, USER_LOGOUT_FAIL, USER_LOGOUT_SUCCESS, USER_LOGOUT } from "./Actions";
 import Api from '../../Api';
 import { browserHistory } from "react-router";
 
 function* fbLoginSaga (action) {
   yield takeLatest(USER_LOGIN, userLogin);
+  yield takeLatest(USER_LOGOUT, userLogout);
   yield take(USER_LOGIN);
 }
 
@@ -37,6 +38,23 @@ function* userLogin (action) {
     console.log(e);
     yield put({
       type: USER_LOGIN_FAIL,
+    });
+  }
+}
+
+function* userLogout (action) {
+  try {
+    sessionStorage.removeItem('isLogged');
+    sessionStorage.removeItem('userInfo');
+
+    yield put({
+      type: USER_LOGOUT_SUCCESS
+    });
+
+  } catch (e) {
+    console.log(e);
+    yield put({
+      type: USER_LOGOUT_FAIL
     });
   }
 }

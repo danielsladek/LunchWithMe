@@ -9,6 +9,7 @@ import Landing from './pages/Landing.js';
 import EventsFeedPage from './pages/EventFeedPage/EventsFeedPage';
 import { UserProfilePage } from './pages/UserProfilePage/UserProfilePage';
 import { LunchPage } from './pages/LunchPage/LunchPage.js';
+import { LogoutPage } from './pages/LogoutPage/LogoutPage.js';
 import { TopMenu } from './components/TopMenu.js';
 import { Main } from 'reactstrap';
 import { PageLayout } from './components/PageLayout.js';
@@ -35,6 +36,7 @@ class App extends Component {
                 <Route path="feed" component={EventsFeedPage}/>
                 <Route path="event/:eventId" component={EventDetail}/>
                 <Route path="event/:eventId/edit" component={LunchPage}/>
+                <Route path="logout" component={LogoutPage}/>
               </Route>
             </Router>
           </PersistGate>

@@ -1,10 +1,11 @@
-import { USER_LOGIN, USER_LOGIN_SUCCESS, USER_LOGIN_FAIL } from "./Actions";
+import { USER_LOGIN, USER_LOGIN_SUCCESS, USER_LOGIN_FAIL, USER_LOGOUT_FAIL, USER_LOGOUT_SUCCESS, USER_LOGOUT } from "./Actions";
 import { assign, isEmpty } from "ramda";
 
 const initialState = {
-  isLogged: true,
+  /*isLogged: true,
   userId: 1, // Debug
-  icon: 'https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/UlIqmHJn-SK.gif',
+  icon: 'https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/UlIqmHJn-SK.gif',*/
+  isLogged: false,
 };
 
 export const FBLoginReducer = (state = initialState, action) => {
@@ -12,10 +13,17 @@ export const FBLoginReducer = (state = initialState, action) => {
         case USER_LOGIN:
           return state;
 
-        case USER_LOGIN_SUCCESS:{
+        case USER_LOGIN_SUCCESS: {
           const { userId, name, surname, icon } = action.payload;
           return Object.assign({}, state, { userId: userId, isLogged: true, name: name, surname: surname, icon: icon });
         }
+
+        case USER_LOGOUT_FAIL:
+          return state;
+
+        case USER_LOGOUT_SUCCESS:
+          return { isLogged: false };
+
         case USER_LOGIN_FAIL:
           return state;
 
