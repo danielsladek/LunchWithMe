@@ -281,3 +281,15 @@ footer {
 .card-body {
   color: #343a40;;
 }
+
+.event-image {
+  font-size: 12px;
+}
+
+.imgPreview img {
+  max-width: 200px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 7px;
+  margin-top: 10px;
+}

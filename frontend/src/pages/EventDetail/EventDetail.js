@@ -15,6 +15,7 @@ import { Title } from '../../components/Event/Title';
 import { Comments } from '../../components/Event/Comments';
 import { EventLunchBuddiesList } from '../../components/EventLunchBuddiesList';
 import Map  from '../../components/Event/Map';
+import { ImageUpload } from '../../components/Event/ImageUpload';
 
 
 export class EventDetail extends Component {
@@ -69,6 +70,12 @@ export class EventDetail extends Component {
                 </Col>  
                 <Col>
                     <Comments id={event.id}/>
+
+                    <Card className="mt-4">
+                        <CardBody>
+                            <ImageUpload />
+                        </CardBody>
+                    </Card>
                 </Col>
             </Row>
         );
