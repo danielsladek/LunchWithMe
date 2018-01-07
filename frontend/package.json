@@ -9,6 +9,7 @@
   "dependencies": {
     "axios": "^0.17.0",
     "bootstrap": "^4.0.0-beta.2",
+    "date-fns": "^1.29.0",
     "fb": "^2.0.0",
     "fb-react-sdk": "^1.0.4",
     "install": "^0.10.1",
@@ -36,5 +37,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "prettier": {
+    "printWidth": 130
   }
 }

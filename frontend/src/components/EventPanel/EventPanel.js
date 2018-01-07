@@ -62,6 +62,7 @@ export class EventPanelContainer extends Component {
   getWillAttend() {
     const { eventAttendees } = this.props.event,
           { userId } = this.props.userInfo;
+        
 
     var willAttend = false;
 
@@ -102,8 +103,9 @@ export class EventPanelContainer extends Component {
       description,
       place,
     } = this.props.event,
+
       willAttend = this.getWillAttend(),
-      { userInfo } = this.props;
+      { userInfo,divide } = this.props;
 
     var displayComments = false,
         timeStart = Moment(this.props.event.timeStart).format('d. M. Y H:mm'),
@@ -127,10 +129,13 @@ export class EventPanelContainer extends Component {
 
 
     return (
-
-        <Col md="3"
+      
+      
+      <Col md="3"
           onClick={(e) => this.handleClick(id, e)}
           >
+            
+
           <div className="feed-event-box">
             <div className="organizatorPanel">
 
