@@ -26,9 +26,7 @@ export class ImagePanel extends React.Component {
             var items = [];
         
             this.state.data.map(image => {
-            
-                console.log(image.blob.toString('utf8'));
-                items.push(<img key={image.id} src={image.blob.data.toString('base64')} />);
+                items.push(<img key={image.id} width="100" src={'data:image/jpeg;base64,'+Buffer.from(image.blob).toString('base64')} />);
             })           
             
             return <div>{items}</div>;

@@ -35,11 +35,30 @@ export class EventDetail extends Component {
 
     handleImageSubmit = function (e) {
         e.preventDefault();
-        // TODO: do something with -> this.state.file
-        console.log('handle uploading-', this.state.file);
-/*        Api.insertImage(image);
-        this.images = () => Api.getImages(event.id);
+        
+        /*
+        * Takhle se to dělat nemá, 
+        * ale chtěl jsem si vyzkoušet querySelectory 
         */
+        let reader = new FileReader();
+        let file = e.currentTarget.parentNode.querySelector('.fileInput').files[0];
+
+        reader.onloadend = () => {
+
+            const api   = new Api();
+            const image = {
+                blob: reader.result,
+                name: null,
+                userId: this.props.userId,
+                eventId: this.props.eventId
+            }
+
+            api.insertImage(image);
+
+        }
+
+        reader.readAsDataURL(file)
+
     }
 
     componentWillMount() {

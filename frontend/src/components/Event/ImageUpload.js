@@ -47,7 +47,7 @@ export class ImageUploadRaw extends React.Component {
                 onChange={(e)=>this._handleImageChange(e)} />
             <button className="submitButton" 
                 type="submit" 
-                onClick={(e)=>this._handleSubmit(e)}>Nahrát fotku</button>
+                onClick={(e)=>this.props.handleSubmit(e)}>Nahrát fotku</button>
             </form>
             <div className="imgPreview">
             {$imagePreview}
