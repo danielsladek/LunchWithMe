@@ -16,6 +16,8 @@ import { Comments } from '../../components/Event/Comments';
 import { EventLunchBuddiesList } from '../../components/EventLunchBuddiesList';
 import Map  from '../../components/Event/Map';
 import { ImageUpload } from '../../components/Event/ImageUpload';
+import { ImagePanel } from '../../components/Event/ImagePanel/ImagePanel';
+
 
 
 export class EventDetail extends Component {
@@ -24,7 +26,25 @@ export class EventDetail extends Component {
         super(props);
 
         const {EventFetch} = this.props;
+        const { event } = this.props;
+
         EventFetch(this.props.params.eventId);
+    }
+    
+    images = {};
+
+    handleImageSubmit = function (e) {
+        e.preventDefault();
+        // TODO: do something with -> this.state.file
+        console.log('handle uploading-', this.state.file);
+/*        Api.insertImage(image);
+        this.images = () => Api.getImages(event.id);
+        */
+    }
+
+    componentWillMount() {
+        let api = new Api();
+        this.images = api.getImages(this.props.params.eventId);
     }
 
     render() {
@@ -73,7 +93,13 @@ export class EventDetail extends Component {
 
                     <Card className="mt-4">
                         <CardBody>
-                            <ImageUpload />
+                            <ImagePanel images={this.images}/>
+                        </CardBody>
+                    </Card>
+
+                    <Card className="mt-4">
+                        <CardBody>
+                            <ImageUpload handleSubmit={this.handleImageSubmit} />
                         </CardBody>
                     </Card>
                 </Col>

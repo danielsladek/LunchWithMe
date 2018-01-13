@@ -12,12 +12,6 @@ export class ImageUploadRaw extends React.Component {
         };
     }
   
-    _handleSubmit(e) {
-        e.preventDefault();
-        // TODO: do something with -> this.state.file
-        console.log('handle uploading-', this.state.file);
-    }
-  
     _handleImageChange(e) {
         e.preventDefault();
 
@@ -37,6 +31,8 @@ export class ImageUploadRaw extends React.Component {
     render() {
         let imagePreviewUrl = this.props.url;
         let $imagePreview = null;
+        let { handleSubmit } = this.props;
+
         if (imagePreviewUrl) {
         $imagePreview = (<img src={imagePreviewUrl} />);
         } else {
@@ -45,7 +41,7 @@ export class ImageUploadRaw extends React.Component {
 
         return (
         <div className="previewComponent">
-            <form onSubmit={(e)=>this._handleSubmit(e)}>
+            <form onSubmit={(e) => handleSubmit(e)}>
             <input className="fileInput" 
                 type="file" 
                 onChange={(e)=>this._handleImageChange(e)} />

@@ -7,3 +7,8 @@ export const imageUploadChange = (state) => ({
     type: IMAGE_UPLOAD_CHANGE,
     payload: state,
 });
+
+export const imageUploadSubmit = (state) => ({
+    type: IMAGE_UPLOAD_SUBMIT,
+    payload: state,
+});

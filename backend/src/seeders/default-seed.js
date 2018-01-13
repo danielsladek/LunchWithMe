@@ -57,7 +57,8 @@ module.exports = {
       queryInterface.bulkDelete('Events', null, {}),
       queryInterface.bulkDelete('Users', null, {}),
       queryInterface.bulkDelete('Places', null, {}),
-      queryInterface.bulkDelete('Attendances', null, {})
+      queryInterface.bulkDelete('Attendances', null, {}),
+      queryInterface.bulkDelete('Images', null, {})
     ]);
   },
 };

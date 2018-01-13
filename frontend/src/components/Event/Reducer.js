@@ -1,4 +1,4 @@
-import { IMAGE_UPLOAD_CHANGE } from "./Actions";
+import { IMAGE_UPLOAD_CHANGE, IMAGE_UPLOAD_SUBMIT } from "./Actions";
 
 const initialState = {
     file: '',
@@ -8,8 +8,6 @@ const initialState = {
 export const ImageUploadReducer = (state = initialState, action) => {
     switch (action.type) {
         case IMAGE_UPLOAD_CHANGE:
-
-          console.log(action);
 
           return {
             ...state,
