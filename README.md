@@ -15,11 +15,11 @@ npm install
 
 # poté používat npm nebo yarn a příkaz. Použiju zde yarn
 
-./node_modules/.bin/sequilize db:migrate
+./node_modules/.bin/sequelize db:migrate
 # sequilize je nastaven na sqlite a nemělo by tedy být potřeba 
 # upravovat ./config/config.js
 
-./node_modules/.bin/sequilize db:seed:all
+./node_modules/.bin/sequelize db:seed:all
 
 yarn start
 ```
@@ -52,8 +52,7 @@ linter jsme nechali v původním create-react-app.
 
 
 ## Technické poznámky
-Některé Componenty používají jak redux tak Sagy. Některé jen Redux a většina pouze react state. Můžeme najít asynchroní volání i přímo v componentách a dlaší podobně ošklivé věci. Tím jak kód vznikal na rychlo a hlavně v rámci učení se všech nových věci.
-
+Některé Componenty používají jak redux tak Sagy. Některé jen Redux a většina pouze react state. Můžeme najít asynchroní volání i přímo v componentách a další podobně ošklivé věci. Tím jak kód vznikal na rychlo a hlavně v rámci učení se všech nových věci, tak utrpěla jeho kvalita.
 
 Je potřeba velký refactoring.
 
