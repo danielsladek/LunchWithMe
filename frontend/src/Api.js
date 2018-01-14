@@ -82,4 +82,21 @@ export default class Api {
       (response) => response.data
     );
   }
+
+  getImages (eventId) {
+    const request = axios.get(this.baseURL + '/images/event/' + eventId);
+
+    request.then(function(response) {}).catch(function (error) {});
+
+    return request;
+  }
+
+  insertImage (image) {
+    const request = axios.post(this.baseURL + '/images/', image);
+
+    request.then(function(response){}).catch(function(){});
+
+    return request;
+  }
+
 }
