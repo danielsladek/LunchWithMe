@@ -27,6 +27,7 @@ export class EventDetail extends Component {
 
         const {EventFetch} = this.props;
         const { event } = this.props;
+        this.handleImageSubmit = this.handleImageSubmit.bind(this); 
 
         EventFetch(this.props.params.eventId);
     }
@@ -43,30 +44,52 @@ export class EventDetail extends Component {
         let reader = new FileReader();
         let file = e.currentTarget.parentNode.querySelector('.fileInput').files[0];
 
+
         reader.onloadend = () => {
+
+    
+
+            var binary_string = atob(reader.result.split(',')[1]);
+            var len = binary_string.length;
+            var bytes = new Uint8Array( len );
+            for (var i = 0; i < len; i++)        {
+                bytes[i] = binary_string.charCodeAt(i);
+            }
+
+            var blob = binary_string;
 
             const api   = new Api();
             const image = {
-                blob: reader.result,
+                blob: reader.result.split(',')[1],
+                image: file,
+                mimeType: file.type,
                 name: null,
-                userId: this.props.userId,
-                eventId: this.props.eventId
+                userId: this.props.userInfo.userId,
+                eventId: this.props.event.id
             }
 
-            api.insertImage(image);
+            api.insertImage(image).then(function() {
+                let api = new Api();
+                this.setState({ images: api.getImages(this.props.params.eventId) });
+                console.log('zavolání funkce');
+                this.forceUpdate();
+            }.bind(this));
 
         }
 
-        reader.readAsDataURL(file)
+        reader.readAsDataURL(file);
 
     }
 
     componentWillMount() {
         let api = new Api();
-        this.images = api.getImages(this.props.params.eventId);
+
+        console.log('componentWillMount --- ');
+        this.setState({ images: api.getImages(this.props.params.eventId) });
     }
 
     render() {
+        console.log('OBNOVILO SE');
         const { event } = this.props;
         const { eventAttendees } = this.props.event;
 
@@ -112,7 +135,7 @@ export class EventDetail extends Component {
 
                     <Card className="mt-4">
                         <CardBody>
-                            <ImagePanel images={this.images}/>
+                            <ImagePanel images={this.state.images}/>
                         </CardBody>
                     </Card>
 

@@ -6,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       blob: { type: DataTypes.BLOB, allowNull: false },
       name: { type: DataTypes.STRING, allowNull: true },
+      mimeType: { type: DataTypes.STRING, allowNull: false },
       userId: { type: DataTypes.INTEGER, allowNull: false },
       eventId: { type: DataTypes.INTEGER, allowNull: false}
     },

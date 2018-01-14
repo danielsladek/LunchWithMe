@@ -92,7 +92,7 @@ export default class Api {
   }
 
   insertImage (image) {
-    const request = axios.post(this.baseURL + '/image/', image);
+    const request = axios.post(this.baseURL + '/images/', image);
 
     request.then(function(response){}).catch(function(){});
 

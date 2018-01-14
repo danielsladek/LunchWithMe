@@ -7,10 +7,6 @@ export class ImagePanel extends React.Component {
         this.state = {data: false};
     }
 
-    getImages() {
-
-    }
-
     componentDidMount() {
         const { images } = this.props;
 
@@ -18,15 +14,16 @@ export class ImagePanel extends React.Component {
             this.setState({ data: result.data.images });
         });
     }
+    
 
     render () {
-
+        
         if(this.state.data) {
 
             var items = [];
         
             this.state.data.map(image => {
-                items.push(<img key={image.id} width="100" src={'data:image/jpeg;base64,'+Buffer.from(image.blob).toString('base64')} />);
+                items.push(<img key={image.id} width="100" src={'data:'+image.mimeType+';base64,'+Buffer.from(image.blob).toString('utf8')} />);
             })           
             
             return <div>{items}</div>;

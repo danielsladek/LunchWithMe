@@ -10,6 +10,7 @@ module.exports = {
       },
       name: { type: Sequelize.STRING, allowNull: true },
       blob: { type: Sequelize.BLOB, allowNull: false },
+      mimeType: { type: Sequelize.STRING, allowNull: false },
       userId: { type: Sequelize.INTEGER, allowNull: false },
       eventId: { type: Sequelize.INTEGER, allowNull: false },
     });

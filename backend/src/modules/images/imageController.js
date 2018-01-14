@@ -30,12 +30,17 @@ export const getImagesByEventController = async (req, res) => {
 
 
 export const postImageController = async (req, res) => {
-  const { name, userId, blob, eventId } = req.body;
+  const { name, userId, blob, eventId, mimeType, file } = req.body;
+
+  console.log('---> SOUBOR');
+  console.log(file);
+
   const imageCreated = await db.Image.build({
     name: name,
     blob: blob,
-    userId, userId,
-    eventId, eventId
+    userId: userId,
+    mimeType: mimeType,
+    eventId: eventId
   }).save();
 
   res.json({ imageCreated });
