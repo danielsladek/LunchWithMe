@@ -13,9 +13,9 @@ npm-debug.log
 !/tmp/.gitkeep
 
 # Dev database
-/db.sqlite*
+sqlite.sqlite
 
 # DB Config
-/src/config/config.js
+# /src/config/config.js
 
 backend/log/*

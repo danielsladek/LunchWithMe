@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = (sequelize, DataTypes) => {
   const Attendance = sequelize.define(
@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
       willAttend: { type: DataTypes.BOOLEAN, allowNull: true },
     },
     {}
-  );
+  )
 
-  return Attendance;
-};
+  return Attendance
+}

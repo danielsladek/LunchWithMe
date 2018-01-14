@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = (sequelize, DataTypes) => {
   const Place = sequelize.define(
@@ -6,10 +6,10 @@ module.exports = (sequelize, DataTypes) => {
     {
       lat: { type: DataTypes.STRING, allowNull: false },
       lng: { type: DataTypes.STRING, allowNull: false },
-      name: { type: DataTypes.TEXT, allowNull: false }
+      name: { type: DataTypes.TEXT, allowNull: false },
     },
     {}
-  );
+  )
 
-  return Place;
-};
+  return Place
+}

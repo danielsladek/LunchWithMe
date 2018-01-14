@@ -1,13 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 export class Title extends React.Component {
-
-    render() {
-        return (
-            <h2 className="eventTitle">
-                {this.props.name}
-            </h2>
-        );
-    }
-
+  render() {
+    return <h2 className="eventTitle">{this.props.name}</h2>
+  }
 }

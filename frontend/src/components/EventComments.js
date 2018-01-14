@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { Row, Col, Form, Button, Input } from 'reactstrap';
+import React, { Component } from 'react'
+import { Row, Col, Form, Button, Input } from 'reactstrap'
 
 export class EventComments extends Component {
   render() {
-    const { comments } = this.props;
+    const { comments } = this.props
 
     return (
       <Row className="eventComments">
@@ -20,12 +20,19 @@ export class EventComments extends Component {
           </Row>
           <Row className="commentForm">
             <Form inline name="addEventComment">
-              <Input className="mr-2" type="text" name="text" placeholder="Write a comment" />
-              <Button type="submit" color="secondary">Send</Button>
+              <Input
+                className="mr-2"
+                type="text"
+                name="text"
+                placeholder="Write a comment"
+              />
+              <Button type="submit" color="secondary">
+                Send
+              </Button>
             </Form>
           </Row>
         </Col>
       </Row>
-    );
+    )
   }
 }

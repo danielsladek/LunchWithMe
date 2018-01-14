@@ -1,4 +1,4 @@
-import log4js from 'log4js';
+import log4js from 'log4js'
 
 export const setupLogging = () => {
   log4js.configure({
@@ -10,5 +10,5 @@ export const setupLogging = () => {
       },
     ],
     replaceConsole: true,
-  });
-};
+  })
+}

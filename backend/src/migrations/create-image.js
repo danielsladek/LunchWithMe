@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Images', {
@@ -13,9 +13,9 @@ module.exports = {
       mimeType: { type: Sequelize.STRING, allowNull: false },
       userId: { type: Sequelize.INTEGER, allowNull: false },
       eventId: { type: Sequelize.INTEGER, allowNull: false },
-    });
+    })
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Images');
+    return queryInterface.dropTable('Images')
   },
-};
+}

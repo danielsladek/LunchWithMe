@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Attendances', {
@@ -8,15 +8,23 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      userId: { type: Sequelize.INTEGER, allowNull: false, unique: 'attendanceIndex' },
-      eventId: { type: Sequelize.INTEGER, allowNull: false, unique: 'attendanceIndex' },
+      userId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        unique: 'attendanceIndex',
+      },
+      eventId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        unique: 'attendanceIndex',
+      },
       willAttend: { type: Sequelize.BOOLEAN, allowNull: true },
       invited: { type: Sequelize.BOOLEAN, allowNull: true },
       createdAt: { type: Sequelize.DATE, allowNull: false },
       updatedAt: { type: Sequelize.DATE, allowNull: false },
-    });
+    })
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Attendances');
+    return queryInterface.dropTable('Attendances')
   },
-};
+}

@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = (sequelize, DataTypes) => {
   const Event = sequelize.define(
@@ -11,20 +11,27 @@ module.exports = (sequelize, DataTypes) => {
       organizatorId: { type: DataTypes.INTEGER, allowNull: false },
     },
     {}
-  );
+  )
 
   Event.associate = function(models) {
-
-    Event.belongsTo(models.User, { foreignKey: 'organizatorId', as: 'organizator' });
+    Event.belongsTo(models.User, {
+      foreignKey: 'organizatorId',
+      as: 'organizator',
+    })
 
     Event.belongsTo(models.Place, {
       foreignKey: 'placeId',
       as: 'place',
-    });
+    })
 
-    Event.belongsToMany(models.User, { as: 'eventAttendees', through: models.Attendance, foreignKey: 'eventId', onDelete: 'CASCADE', hooks: true });
+    Event.belongsToMany(models.User, {
+      as: 'eventAttendees',
+      through: models.Attendance,
+      foreignKey: 'eventId',
+      onDelete: 'CASCADE',
+      hooks: true,
+    })
+  }
 
-  };
-
-  return Event;
-};
+  return Event
+}

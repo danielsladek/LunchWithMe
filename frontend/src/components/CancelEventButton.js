@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
-import { Button, Form } from 'reactstrap';
-import { connect } from 'react-redux';
-import { getUserInfo } from './FBLogin/Reducer';
+import React, { Component } from 'react'
+import { Button, Form } from 'reactstrap'
+import { connect } from 'react-redux'
+import { getUserInfo } from './FBLogin/Reducer'
 
 export class CancelEventButton extends Component {
-
   render() {
-    const { onClick } = this.props;
+    const { onClick } = this.props
 
     return (
       <Button onClick={onClick} type="button" color="danger" size="sm">
         Cancel event
       </Button>
-    );
+    )
   }
 }

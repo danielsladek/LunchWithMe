@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { EventPanel } from '../components/EventPanel/EventPanel';
-import { Row, Col } from 'reactstrap';
+import React, { Component } from 'react'
+import { EventPanel } from '../components/EventPanel/EventPanel'
+import { Row, Col } from 'reactstrap'
 
 export class EventDetailsPage extends Component {
   render() {
@@ -61,14 +61,18 @@ export class EventDetailsPage extends Component {
         ]
       }
     ];*/
-    const { event } = this.props;
+    const { event } = this.props
 
     return (
       <Row className="eventDetailsPage">
         <Col md="8" sm="12">
-          <EventPanel event={event} displayComments={true} key={event.eventId} />
+          <EventPanel
+            event={event}
+            displayComments={true}
+            key={event.eventId}
+          />
         </Col>
       </Row>
-    );
+    )
   }
 }

@@ -1,53 +1,55 @@
-import db from '../../models/';
+import db from '../../models/'
 
 export const getUsersController = async (req, res) => {
-  const users = await db.User.findAll({
-  });
+  const users = await db.User.findAll({})
 
-  res.json({ users });
-};
+  res.json({ users })
+}
 
 export const getUserDetailController = async (req, res) => {
   const user = await db.User.findOne({
-    include: [{
+    include: [
+      {
         model: db.Event,
-        as: "organizes",
+        as: 'organizes',
         required: false,
-    }],
+      },
+    ],
     where: {
       id: req.params.id,
     },
-  });
+  })
 
-  res.json({ user });
-};
+  res.json({ user })
+}
 
 export const deleteUserController = async (req, res) => {
   const userDeleted = await db.User.destroy({
     where: {
       id: req.params.id,
-    }
-  });
+    },
+  })
 
-  res.json({ userDeleted });
-};
+  res.json({ userDeleted })
+}
 
 export const postUserController = async (req, res) => {
-  const { name, surname } = req.body;
+  const { name, surname } = req.body
   const userCreated = await db.User.build({
     name: name,
     surname: surname,
-  }).save();
+  }).save()
 
-  res.json({ userCreated });
-};
+  res.json({ userCreated })
+}
 
 export const putUserController = async (req, res) => {
-  const userUpdated = await db.User.update(req.body, { // Only parameters that were sent will be updated
+  const userUpdated = await db.User.update(req.body, {
+    // Only parameters that were sent will be updated
     where: {
       id: req.params.id,
-    }
-  });
+    },
+  })
 
-  res.json({ userUpdated });
-};
+  res.json({ userUpdated })
+}
