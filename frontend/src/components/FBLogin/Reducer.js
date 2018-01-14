@@ -11,11 +11,11 @@ const initialState = {
 export const FBLoginReducer = (state = initialState, action) => {
     switch (action.type) {
         case USER_LOGIN:
-          return state;
+          return Object.assign({}, state, { loginProcessing: true });
 
         case USER_LOGIN_SUCCESS: {
           const { userId, name, surname, icon } = action.payload;
-          return Object.assign({}, state, { userId: userId, isLogged: true, name: name, surname: surname, icon: icon });
+          return Object.assign({}, state, { userId: userId, isLogged: true, name: name, surname: surname, icon: icon, loginProcessing: false });
         }
 
         case USER_LOGOUT_FAIL:

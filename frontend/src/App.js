@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, Routeif, IndexRoute, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import { Container } from 'reactstrap';
 import { PersistGate } from 'redux-persist/es/integration/react';
@@ -14,7 +14,7 @@ import { TopMenu } from './components/TopMenu.js';
 import { Main } from 'reactstrap';
 import { PageLayout } from './components/PageLayout.js';
 import  EventDetail  from './pages/EventDetail/EventDetail';
-
+import  { UserLoginCheck }  from './components/UserLoginCheck';
 const { store, persistor } = configureStore();
 
 //console.log('>>>> STORE:', store);
@@ -30,13 +30,17 @@ class App extends Component {
           <PersistGate persistor={persistor}>
             <Router history={browserHistory}>
               <Route path="/" component={PageLayout}>
-                <IndexRoute component={Landing}/>
-                <Route path="addEvent" component={LunchPage}/>
-                <Route path="user/:userId" component={UserProfilePage}/>
-                <Route path="feed" component={EventsFeedPage}/>
-                <Route path="event/:eventId" component={EventDetail}/>
-                <Route path="event/:eventId/edit" component={LunchPage}/>
-                <Route path="logout" component={LogoutPage}/>
+                  <IndexRoute component={Landing}/>
+                  <Route path="login" component={Landing}/>
+                  <Route path="logout" component={LogoutPage}/>
+                  <Route component={UserLoginCheck}>
+                    <IndexRoute component={EventsFeedPage}/>
+                    <Route path="addEvent" component={LunchPage}/>
+                    <Route path="user/:userId" component={UserProfilePage}/>
+                    <Route path="feed" component={EventsFeedPage}/>
+                    <Route path="event/:eventId" component={EventDetail}/>
+                    <Route path="event/:eventId/edit" component={LunchPage}/>
+                  </Route>
               </Route>
             </Router>
           </PersistGate>

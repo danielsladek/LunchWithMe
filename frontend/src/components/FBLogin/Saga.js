@@ -26,7 +26,6 @@ function* userLogin (action) {
 
     sessionStorage.setItem('isLogged', true);
     sessionStorage.setItem('userInfo', userInfo);
-
     browserHistory.replace('/feed'); // Redirect to Feed page if login successful
 
     yield put({
