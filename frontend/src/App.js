@@ -2,12 +2,10 @@ import React, { Component } from 'react'
 import {
   Router,
   Route,
-  Routeif,
   IndexRoute,
   browserHistory,
 } from 'react-router'
 import { Provider } from 'react-redux'
-import { Container } from 'reactstrap'
 import { PersistGate } from 'redux-persist/es/integration/react'
 import configureStore from './store/configureStore.js'
 //import logo from './logo.svg';
@@ -16,8 +14,6 @@ import EventsFeedPage from './pages/EventFeedPage/EventsFeedPage'
 import { UserProfilePage } from './pages/UserProfilePage/UserProfilePage'
 import { LunchPage } from './pages/LunchPage/LunchPage.js'
 import { LogoutPage } from './pages/LogoutPage/LogoutPage.js'
-import { TopMenu } from './components/TopMenu.js'
-import { Main } from 'reactstrap'
 import { PageLayout } from './components/PageLayout.js'
 import EventDetail from './pages/EventDetail/EventDetail'
 import { UserLoginCheck } from './components/UserLoginCheck'

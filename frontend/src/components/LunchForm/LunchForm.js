@@ -1,70 +1,63 @@
-import React from 'react'
-import { Form, FormGroup, Label, Input, Button, Col, Row } from 'reactstrap'
-import Datetime from 'react-datetime'
-import Api from '../../Api'
-import { connect } from 'react-redux'
-import { Redirect, Route, browserHistory } from 'react-router'
-import { getUserInfo } from '../FBLogin/Reducer'
-import { isMoment } from 'moment'
-import { updateEvent } from './Actions'
+import React from "react";
+import { Form, FormGroup, Label, Input, Button, Col, Row } from "reactstrap";
+import Datetime from "react-datetime";
+import Api from "../../Api";
+import { connect } from "react-redux";
+import {  browserHistory } from "react-router";
+import { getUserInfo } from "../FBLogin/Reducer";
+import { isMoment } from "moment";
+import { updateEvent } from "./Actions";
 
 export class LunchFormContainer extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
-    const { userInfo } = props
+    const { userInfo } = props;
 
     var statePrepare = {
-      timeStart: '',
-      description: '',
-      placeName: '',
+      timeStart: "",
+      description: "",
+      placeName: "",
       organizatorId: userInfo.userId,
-      lat: '',
-      lng: '',
-    }
+      lat: "",
+      lng: ""
+    };
 
     if (props.editEvent != null) {
-      const { timeStart, description, place } = props.editEvent
+      const { timeStart, description, place } = props.editEvent;
 
-      statePrepare.timeStart = timeStart
-      statePrepare.description = description
-      statePrepare.placeName = place.name
-      statePrepare.lat = place.lat
-      statePrepare.lng = place.lng
+      statePrepare.timeStart = timeStart;
+      statePrepare.description = description;
+      statePrepare.placeName = place.name;
+      statePrepare.lat = place.lat;
+      statePrepare.lng = place.lng;
     }
 
-    this.state = statePrepare
-    this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
+    this.state = statePrepare;
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
     if (isMoment(event)) {
       this.setState({
-        timeStart: event.format(),
-      })
+        timeStart: event.format()
+      });
     } else {
-      const target = event.target
-      const value = target.value
-      const name = target.name
+      const target = event.target;
+      const value = target.value;
+      const name = target.name;
 
       this.setState({
-        [name]: value,
-      })
+        [name]: value
+      });
     }
   }
 
   handleSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
 
-    const {
-        placeName,
-        description,
-        timeStart,
-        organizatorId,
-        lat,
-        lng,
-      } = this.state,
+    const { placeName, description, timeStart, organizatorId} = this.state,
       api = new Api(),
       eventData = {
         description: description,
@@ -72,54 +65,38 @@ export class LunchFormContainer extends React.Component {
         timeStart: timeStart, //timeStart: '2017-12-14 14:30:00',
         organizatorId: organizatorId,
         lat: 50.082685,
-        lng: 14.440303,
-      }
+        lng: 14.440303
+      };
 
-    if (e.target.getAttribute('name') == 'saveChange') {
+    if (e.target.getAttribute("name") === "saveChange") {
       // Update event
       api.updateEvent({
         eventId: this.props.editEvent.id,
-        eventData: eventData,
-      })
+        eventData: eventData
+      });
     } else {
       // Create new event
-      api.createNewEvent(eventData)
+      api.createNewEvent(eventData);
     }
 
-    this.props.updateEvent()
-    browserHistory.push('/feed')
+    this.props.updateEvent();
+    browserHistory.push("/feed");
   }
 
   render() {
-    console.log(this.props.editEvent)
+    console.log(this.props.editEvent);
     return (
-      <Form
-        onSubmit={this.handleSubmit}
-        name={this.props.editEvent != null ? 'saveChange' : 'create'}
-      >
-        <h1>
-          {this.props.editEvent != null ? 'Edit lunch' : 'Create new lunch'}
-        </h1>
+      <Form onSubmit={this.handleSubmit} name={this.props.editEvent != null ? "saveChange" : "create"}>
+        <h1>{this.props.editEvent != null ? "Edit lunch" : "Create new lunch"}</h1>
         <FormGroup>
           <Label for="placeName">Place name:</Label>
-          <Input
-            name="placeName"
-            id=""
-            type="text"
-            value={this.state.placeName}
-            onChange={this.handleChange}
-          />
+          <Input name="placeName" id="" type="text" value={this.state.placeName} onChange={this.handleChange} />
         </FormGroup>
         <Row>
           <Col>
             <FormGroup>
               <Label for="timeStart">Date and time:</Label>
-              <Datetime
-                id="timeStart"
-                name="timeStart"
-                value={this.state.timeStart}
-                onChange={this.handleChange}
-              />
+              <Datetime id="timeStart" name="timeStart" value={this.state.timeStart} onChange={this.handleChange} />
             </FormGroup>
           </Col>
         </Row>
@@ -134,19 +111,19 @@ export class LunchFormContainer extends React.Component {
           />
         </FormGroup>
         <Button color="primary" type="submit">
-          {this.props.editEvent != null ? 'Save changes' : 'Create a new lunch'}
+          {this.props.editEvent != null ? "Save changes" : "Create a new lunch"}
         </Button>
       </Form>
-    )
+    );
   }
 }
 
 const mapStateToProps = (storeState, props) => {
   return {
-    userInfo: getUserInfo(storeState),
-  }
-}
+    userInfo: getUserInfo(storeState)
+  };
+};
 
 export const LunchForm = connect(mapStateToProps, {
-  updateEvent,
-})(LunchFormContainer)
+  updateEvent
+})(LunchFormContainer);

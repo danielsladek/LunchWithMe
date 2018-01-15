@@ -34,7 +34,7 @@ export class ImageUploadRaw extends React.Component {
     let { handleSubmit } = this.props
 
     if (imagePreviewUrl) {
-      $imagePreview = <img src={imagePreviewUrl} />
+      $imagePreview = <img src={imagePreviewUrl} alt="Náhled nahraného obrázku" />
     } else {
       $imagePreview = (
         <div className="event-image">Zde se zobrazí náhled obrázku</div>

@@ -3,24 +3,12 @@ import { Link } from 'react-router'
 import myLogo from '../lwm-logo.png'
 import { LunchBuddyIcon } from './LunchBuddyIcon'
 import {
-  Row,
-  Ul,
-  Li,
-  Col,
-  Form,
-  Button,
-  Input,
   Nav,
   Navbar,
   NavbarBrand,
   NavbarToggler,
   NavItem,
-  NavLink,
   Collapse,
-  DropdownMenu,
-  Dropdown,
-  DropdownToggle,
-  DropdownItem,
 } from 'reactstrap'
 
 export class TopMenu extends Component {
@@ -40,7 +28,7 @@ export class TopMenu extends Component {
   }
 
   render() {
-    const { comments, userData } = this.props
+    const { userData } = this.props
 
     return (
       <Navbar color="red" dark expand="md" className="topMenu">

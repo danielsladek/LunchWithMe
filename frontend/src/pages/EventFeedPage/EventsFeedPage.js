@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { EventPanel } from '../../components/EventPanel/EventPanel'
-import { Container, Row, Col } from 'reactstrap'
-import { eventFeedFetch, fetchEventChanges } from './Actions'
+import {  Row } from 'reactstrap'
+import { eventFeedFetch } from './Actions'
 import { getEventFeedState, getEvents } from './Reducer'
 import { Link } from 'react-router'
 import { format } from 'date-fns'
@@ -25,12 +25,11 @@ export class EventsFeedPage extends Component {
       } else {
         return 1
       }
-      return 0
     })
 
     return (
       <div className="feed-wrapper">
-        <div className="day-separator">
+        <div className="day-separator">      
           <span>Today</span>Going with <a href="#">Tomas</a> at 12:30 am
         </div>
         <Row className="eventsFeedPage">
@@ -60,6 +59,7 @@ export class EventsFeedPage extends Component {
                   <EventPanel eventId={event.id} event={event} key={event.id} />
                 )
               }
+              return (<div />);
             })) || (
             <h2>
               There are currently no events.{' '}

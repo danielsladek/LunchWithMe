@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
-import { Row, Col, Card, CardBody } from 'reactstrap'
-import axios from 'axios'
-import Api from '../../Api'
+import { Row, Col  } from 'reactstrap'
 import { getUserInfo } from '../../components/FBLogin/Reducer'
 import { connect } from 'react-redux'
-import { LunchBuddyIcon } from '../../components/LunchBuddyIcon'
 import { userLogout } from '../../components/FBLogin/Actions'
 import { Link } from 'react-router'
 

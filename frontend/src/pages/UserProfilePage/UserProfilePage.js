@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col, Form, Button, Container } from 'reactstrap'
+import { Row, Col } from 'reactstrap'
 import { UserEventsList } from '../../components/UserEventsList'
 import Api from '../../Api'
 import { LunchBuddyIcon } from '../../components/LunchBuddyIcon'
@@ -16,13 +16,13 @@ export class UserProfilePage extends Component {
   componentDidMount() {
     /* Get user data without need to fetch them to the store */
     const api = new Api()
-    const userData = api.getUserById(this.props.params.userId).then(res => {
+ api.getUserById(this.props.params.userId).then(res => {
       this.setState({ userData: res.user })
     })
   }
 
   render() {
-    const { name, surname, icon, organizes } = this.state.userData
+    const { name, surname, organizes } = this.state.userData
 
     return (
       <Row className="eventsFeedPage">

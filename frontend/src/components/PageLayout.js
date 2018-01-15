@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
 import { Container } from 'reactstrap'
 import { TopMenu } from './TopMenu.js'
 import { PageFooter } from './PageFooter.js'
@@ -23,7 +22,7 @@ export class PageLayoutContainer extends Component {
   }
 
   render() {
-    const { comments, userInfo } = this.props
+    const { userInfo } = this.props
 
     return (
       <Container>

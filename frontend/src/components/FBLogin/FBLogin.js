@@ -3,7 +3,6 @@ import FacebookLogin from 'react-facebook-login'
 import { connect } from 'react-redux'
 import { userLogin } from './Actions'
 import { getUserInfo } from './Reducer'
-import { Redirect } from 'react-router-dom'
 
 export class FBLoginContainer extends Component {
   constructor(props) {
@@ -12,9 +11,7 @@ export class FBLoginContainer extends Component {
   }
 
   responseFacebook(response) {
-    if (response.status !== 'unknown') {
-      const userLogin = this.props.userLogin(response)
-    } else {
+    if (response.status === 'unknown') {
       return <p>Login failed</p>
     }
   }

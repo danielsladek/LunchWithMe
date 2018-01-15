@@ -4,9 +4,7 @@ import {
   USER_LOGIN_FAIL,
   USER_LOGOUT_FAIL,
   USER_LOGOUT_SUCCESS,
-  USER_LOGOUT,
 } from './Actions'
-import { assign, isEmpty } from 'ramda'
 
 const initialState = {
   /*isLogged: true,

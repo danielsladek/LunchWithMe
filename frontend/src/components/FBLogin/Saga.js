@@ -20,10 +20,10 @@ function* userLogin(action) {
   try {
     const api = new Api()
     var userInfo = {}
-    const getUserId = yield api
+    yield api
       .userLogin(action.payload.facebookToken)
       .then(function(response, data) {
-        const { id, name, surname, picture, icon } = response
+        const { id, name, surname, icon } = response
         userInfo = {
           userId: id,
           name: name,

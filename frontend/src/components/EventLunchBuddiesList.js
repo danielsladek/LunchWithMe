@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { Button } from 'reactstrap'
 import { LunchBuddyIcon } from './LunchBuddyIcon'
-import { Link } from 'react-router'
 import { browserHistory } from 'react-router'
 
 export class EventLunchBuddiesList extends Component {
@@ -25,7 +23,7 @@ export class EventLunchBuddiesList extends Component {
         {eventAttendees.map(function(lunchBuddy, i) {
           if (
             lunchBuddy.Attendance.willAttend &&
-            lunchBuddy.id != organizator.id
+            lunchBuddy.id !== organizator.id
           ) {
             return (
               <div
@@ -36,13 +34,14 @@ export class EventLunchBuddiesList extends Component {
               >
                 <LunchBuddyIcon lunchBuddy={lunchBuddy} />
                 <span className="buddyName">
-                  {lunchBuddy.id == currentUser.userId
+                  {lunchBuddy.id === currentUser.userId
                     ? 'You'
                     : lunchBuddy.name}
                 </span>
               </div>
             )
           }
+          return (<div />)
         })}
       </div>
     )

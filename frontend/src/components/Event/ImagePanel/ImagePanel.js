@@ -1,41 +1,38 @@
-import React from 'react'
+import React from "react";
 
 export class ImagePanel extends React.Component {
   constructor() {
-    super()
-    this.state = { data: false }
+    super();
+    this.state = { data: false };
   }
 
   componentDidMount() {
-    const { images } = this.props
+    const { images } = this.props;
 
     images.then(result => {
-      this.setState({ data: result.data.images })
-    })
+      this.setState({ data: result.data.images });
+    });
   }
 
   render() {
     if (this.state.data) {
-      var items = []
+      var items = [];
 
       this.state.data.map(image => {
-        items.push(
+        const result = (
           <img
             key={image.id}
-            width="100"
-            src={
-              'data:' +
-              image.mimeType +
-              ';base64,' +
-              Buffer.from(image.blob).toString('utf8')
-            }
+            width="100" alt="Obrázek oběda"
+            src={"data:" + image.mimeType + ";base64," + Buffer.from(image.blob).toString("utf8")}
           />
-        )
-      })
+        );
+        items.push(result);
+        return result;
+      });
 
-      return <div>{items}</div>
+      return <div>{items}</div>;
     } else {
-      return <div>Načítání</div>
+      return <div>Načítání</div>;
     }
   }
 }

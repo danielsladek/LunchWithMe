@@ -1,5 +1,4 @@
-import { delay } from 'redux-saga'
-import { all, take } from 'redux-saga/effects'
+import { all } from 'redux-saga/effects'
 
 import eventFeedPageFetchSaga from './pages/EventFeedPage/Saga'
 import eventPanelSaga from './components/EventPanel/Saga'

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Button } from 'reactstrap'
-import { Link } from 'react-router'
+import { Container  } from 'reactstrap'
 import { FBLogin } from '../components/FBLogin/FBLogin'
 import mockImg from '../lwm-mock.png'
 
@@ -19,7 +18,7 @@ class Landing extends Component {
             className="hero-img"
             width="700px"
             src={mockImg}
-            alt="Mock image"
+            alt="Mock"
           />
         </Container>
       </div>

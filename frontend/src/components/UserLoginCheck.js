@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { getUserInfo } from './FBLogin/Reducer'
-import { Redirect, Route, browserHistory } from 'react-router'
+import {  browserHistory } from 'react-router'
 import { connect } from 'react-redux'
 
 class UserLoginCheckContainer extends React.Component {
   render() {
-    if (this.props.userInfo.isLogged == true) {
+    if (this.props.userInfo.isLogged === true) {
       return this.props.children
       /* Stav routeru při přihlačování uživatele.
      * Zde se čeká na ověření přihlašovacích údajů (Facebook).

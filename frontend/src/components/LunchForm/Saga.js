@@ -1,7 +1,5 @@
-import { takeLatest, take, put, select } from 'redux-saga/effects'
-import Api from '../../Api'
+import { takeLatest,  put } from 'redux-saga/effects'
 import { UPDATE_EVENT, UPDATE_EVENT_FAIL } from './Actions'
-import { assign, isEmpty } from 'ramda'
 import { EVENTS_FEED_FETCH } from '../../pages/EventFeedPage/Actions'
 
 function* lunchFormSaga(action) {
@@ -10,7 +8,7 @@ function* lunchFormSaga(action) {
 
 function* updateEvent() {
   try {
-    const api = new Api()
+  
 
     yield put({
       type: EVENTS_FEED_FETCH,

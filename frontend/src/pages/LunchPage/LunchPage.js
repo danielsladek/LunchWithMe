@@ -20,7 +20,7 @@ export class LunchPage extends React.Component {
       const api = new Api(),
         _this = this
 
-      const getEventFromDb = api
+      api
         .getEventById(this.props.params.eventId)
         .then(function(res) {
           _this.setState({ editEvent: res, isLoading: false })

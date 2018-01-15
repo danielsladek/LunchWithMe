@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
 import { Row, Col, Card, CardBody } from 'reactstrap'
-import axios from 'axios'
 import Api from '../../Api'
-import { getEventById } from '../EventFeedPage/Reducer'
 import { getUserInfo } from '../../components/FBLogin/Reducer'
 import { connect } from 'react-redux'
-import { LunchBuddyIcon } from '../../components/LunchBuddyIcon'
-import { switchEventAttendance } from '../EventFeedPage/Actions'
 import { getEvent, getEventState } from './Reducer'
 import { EventFetch } from './Actions'
 
@@ -23,7 +19,6 @@ export class EventDetail extends Component {
     super(props)
 
     const { EventFetch } = this.props
-    const { event } = this.props
     this.handleImageSubmit = this.handleImageSubmit.bind(this)
 
     EventFetch(this.props.params.eventId)
@@ -49,7 +44,6 @@ export class EventDetail extends Component {
         bytes[i] = binary_string.charCodeAt(i)
       }
 
-      var blob = binary_string
 
       const api = new Api()
       const image = {
@@ -115,8 +109,8 @@ export class EventDetail extends Component {
               <CardBody>
                 <Map
                   isMarkerShown="false"
-                  lat={parseInt(event.place.lat)}
-                  lng={parseInt(event.place.lng)}
+                  lat={parseInt(event.place.lat,10)}
+                  lng={parseInt(event.place.lng,10)}
                 />
               </CardBody>
             </Card>

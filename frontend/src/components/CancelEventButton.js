@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Form } from 'reactstrap'
-import { connect } from 'react-redux'
-import { getUserInfo } from './FBLogin/Reducer'
+import { Button} from 'reactstrap'
 
 export class CancelEventButton extends Component {
   render() {

@@ -1,5 +1,4 @@
-import { takeLatest, take, put, select, call } from 'redux-saga/effects'
-import Api from '../../Api'
+import { takeLatest, put } from 'redux-saga/effects'
 import {
   EVENT_FETCH,
   EVENT_FETCH_SUCCESS,
