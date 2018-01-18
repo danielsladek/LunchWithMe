@@ -26,7 +26,12 @@ export class ImagePanel extends React.Component {
                 items.push(<img key={image.id} width="45%" src={'data:'+image.mimeType+';base64,'+Buffer.from(image.blob).toString('utf8')} />);
             })
 
-            return <div>{items}</div>;
+            return <div>
+              {items.length < 1 &&
+                <div>No images uploaded yet.</div>
+              }
+                    {items}
+                  </div>;
 
         } else {
 

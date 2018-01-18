@@ -12,6 +12,7 @@ import { CancelEventButton } from "../CancelEventButton";
 import { EditEventButton } from "../EditEventButton";
 import { Redirect, Route, browserHistory } from "react-router";
 import Moment from 'moment';
+import { format } from "date-fns";
 
 export class EventPanelContainer extends Component {
   constructor(props) {
@@ -156,7 +157,7 @@ export class EventPanelContainer extends Component {
                   <a href={googleMapsLink} target="_blank" onClick={ (e) => this.handleStopPropagation(e) }>{place.name}</a>
                 </h2>
                 <div className="date">
-                  {timeStart}
+                  at {format(timeStart, "H:mm")}
                   {/* {timeStart} - {timeEnd} */}
                 </div>
                 {/* <div className="description">

@@ -9,6 +9,7 @@ import { LunchBuddyIcon } from "../../components/LunchBuddyIcon";
 import { switchEventAttendance } from "../EventFeedPage/Actions";
 import { getEvent, getEventState } from './Reducer'
 import { EventFetch } from './Actions'
+import { format } from "date-fns";
 
 // Komponenty Eventu
 import { Title } from '../../components/Event/Title';
@@ -120,7 +121,11 @@ export class EventDetail extends Component {
                             <Title name={event.place.name} />
 
                             <div className="date">
-                                {event.timeStart}
+                                {format(event.timeStart, "DD. MM. YYYY H:mm")}
+                            </div>
+
+                            <div className="description">
+                              {event.description}
                             </div>
 
                         </div>
