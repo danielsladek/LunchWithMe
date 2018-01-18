@@ -135,12 +135,14 @@ export class EventDetail extends Component {
 
                     <Card className="mt-4">
                         <CardBody>
+                            <h4>Image upload</h4>
                             <ImageUpload handleSubmit={this.handleImageSubmit} />
                         </CardBody>
                     </Card>
 
                     <Card className="mt-4">
-                        <CardBody>
+                        <CardBody className="image-gallery">
+                            <h4>Image gallery</h4>
                             <ImagePanel images={this.state.images}/>
                         </CardBody>
                     </Card>
