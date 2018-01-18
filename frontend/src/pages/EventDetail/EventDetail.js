@@ -95,6 +95,18 @@ export class EventDetail extends Component {
 
         if(Object.keys(event).length !== 0) {
 
+        let attendeesHelper;
+        if  (eventAttendees.filter((val) => val.Attendance.willAttend ).length > 0 ) {
+              attendeesHelper = <div><div>with</div><div className="empty">No lunch budies yet</div></div>;
+
+         }
+         else {
+          attendeesHelper = <div className="empty-attendees">
+            with
+            <div className="empty">No lunch budies yet</div>
+          </div>
+         }
+
         return (
             <Row className="eventDetailsPage">
                 <Col>
@@ -113,7 +125,7 @@ export class EventDetail extends Component {
 
                         </div>
                         <div className="feed-event-buddies">
-                        <div>with</div>
+                        {attendeesHelper}
                         <EventLunchBuddiesList eventAttendees={eventAttendees} currentUser={this.props.userInfo} organizator={event.organizator} />
                         </div>
                         <div className="buttonPanel">
