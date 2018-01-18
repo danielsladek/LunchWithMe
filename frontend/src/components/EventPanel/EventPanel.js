@@ -62,7 +62,7 @@ export class EventPanelContainer extends Component {
   getWillAttend() {
     const { eventAttendees } = this.props.event,
           { userId } = this.props.userInfo;
-        
+
 
     var willAttend = false;
 
@@ -118,7 +118,8 @@ export class EventPanelContainer extends Component {
 
     let attendeesHelper;
     if  (eventAttendees.filter((val) => val.Attendance.willAttend ).length > 0 ) {
-          attendeesHelper = <div>with</div>;
+          attendeesHelper = <div><div>with</div><div className="empty">No lunch budies yet</div></div>;
+
      }
      else {
       attendeesHelper = <div className="empty-attendees">
@@ -129,12 +130,12 @@ export class EventPanelContainer extends Component {
 
 
     return (
-      
-      
+
+
       <Col md="3"
           onClick={(e) => this.handleClick(id, e)}
           >
-            
+
 
           <div className="feed-event-box">
             <div className="organizatorPanel">
