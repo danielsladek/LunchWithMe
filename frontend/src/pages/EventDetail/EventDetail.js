@@ -27,19 +27,19 @@ export class EventDetail extends Component {
 
         const {EventFetch} = this.props;
         const { event } = this.props;
-        this.handleImageSubmit = this.handleImageSubmit.bind(this); 
+        this.handleImageSubmit = this.handleImageSubmit.bind(this);
 
         EventFetch(this.props.params.eventId);
     }
-    
+
     images = {};
 
     handleImageSubmit = function (e) {
         e.preventDefault();
-        
+
         /*
-        * Takhle se to dělat nemá, 
-        * ale chtěl jsem si vyzkoušet querySelectory 
+        * Takhle se to dělat nemá,
+        * ale chtěl jsem si vyzkoušet querySelectory
         */
         let reader = new FileReader();
         let file = e.currentTarget.parentNode.querySelector('.fileInput').files[0];
@@ -47,7 +47,7 @@ export class EventDetail extends Component {
 
         reader.onloadend = () => {
 
-    
+
 
             var binary_string = atob(reader.result.split(',')[1]);
             var len = binary_string.length;
@@ -129,19 +129,19 @@ export class EventDetail extends Component {
                         <Map isMarkerShown="false" lat={parseInt(event.place.lat)} lng={parseInt(event.place.lng)} />
                         </CardBody>
                     </Card>
-                </Col>  
+                </Col>
                 <Col>
                     <Comments id={event.id}/>
 
                     <Card className="mt-4">
                         <CardBody>
-                            <ImagePanel images={this.state.images}/>
+                            <ImageUpload handleSubmit={this.handleImageSubmit} />
                         </CardBody>
                     </Card>
 
                     <Card className="mt-4">
                         <CardBody>
-                            <ImageUpload handleSubmit={this.handleImageSubmit} />
+                            <ImagePanel images={this.state.images}/>
                         </CardBody>
                     </Card>
                 </Col>
@@ -160,7 +160,7 @@ export class EventDetail extends Component {
 
 const mapStateToProps = storeState => {
     const eventState = getEventState(storeState);
-    return { 
+    return {
         event: getEvent(eventState),
         userInfo: getUserInfo(storeState)
     };

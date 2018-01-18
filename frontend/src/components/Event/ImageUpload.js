@@ -11,7 +11,7 @@ export class ImageUploadRaw extends React.Component {
             imagePreviewUrl: ''
         };
     }
-  
+
     _handleImageChange(e) {
         e.preventDefault();
 
@@ -27,7 +27,7 @@ export class ImageUploadRaw extends React.Component {
 
         reader.readAsDataURL(file)
     }
-  
+
     render() {
         let imagePreviewUrl = this.props.url;
         let $imagePreview = null;
@@ -36,18 +36,21 @@ export class ImageUploadRaw extends React.Component {
         if (imagePreviewUrl) {
         $imagePreview = (<img src={imagePreviewUrl} />);
         } else {
-        $imagePreview = (<div className="event-image">Zde se zobrazí náhled obrázku</div>);
+        $imagePreview = (<div className="event-image">Your uploaded image will be shown here.</div>);
         }
 
         return (
-        <div className="previewComponent">
+        <div className="previewComponent img-upload-box">
             <form onSubmit={(e) => handleSubmit(e)}>
-            <input className="fileInput" 
-                type="file" 
+            <input className="fileInput"
+                type="file"
                 onChange={(e)=>this._handleImageChange(e)} />
-            <button className="submitButton" 
-                type="submit" 
-                onClick={(e)=>this.props.handleSubmit(e)}>Nahrát fotku</button>
+
+              {this.props.url.length > 0 &&
+                <button className="submitButton btn btn-success btn-sm"
+                    type="submit"
+                    onClick={(e)=>this.props.handleSubmit(e)}>Post image</button>
+              }
             </form>
             <div className="imgPreview">
             {$imagePreview}
@@ -58,12 +61,12 @@ export class ImageUploadRaw extends React.Component {
 }
 
 const mapStateToProps = (storeState, props) => {
-    return { 
+    return {
         file: getImageFile(storeState),
         url: getImageUrl(storeState)
     };
   };
-  
+
 export function mapDispatchToProps(dispatch) {
     return {
         imageUploadChange: (state) => dispatch(imageUploadChange(state)),
@@ -71,4 +74,3 @@ export function mapDispatchToProps(dispatch) {
 }
 
 export const ImageUpload = connect(mapStateToProps,mapDispatchToProps)(ImageUploadRaw);
-
