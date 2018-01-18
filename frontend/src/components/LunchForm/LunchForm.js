@@ -41,7 +41,7 @@ export class LunchFormContainer extends React.Component {
     handleChange(event) {
         if (isMoment(event)) {
             this.setState({
-                timeStart: event.format()
+                timeStart: event.format("YYYY/MM/DD H:mm")
             });
         } else {
             const target = event.target;
