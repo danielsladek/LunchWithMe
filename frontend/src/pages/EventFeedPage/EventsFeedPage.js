@@ -42,14 +42,17 @@ export class EventsFeedPage extends Component {
 
                 if (date.getDay() !== eventDayDividePivot && eventDayDividePivot !== 0) {
                   return (
-                    
+
                     <div className="w-100" key={event.id}>
-                      <span key={event.id} className="eventfeed-newdate">
-                        {format(date, "DD. MM. YYYY")}
-                      </span>
+
+                        <div key={event.id} className="day-separator">
+                          <span>{format(date, "DD. MM. YYYY")}</span>
+                          Going with <a href="#">?</a>
+                        </div>
+
                       <EventPanel eventId={event.id} event={event}  />
                     </div>
-                    
+
                   );
                 }
                 eventDayDividePivot = date.getDay();

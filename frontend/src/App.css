@@ -1,12 +1,21 @@
 body {
-  background: url("hero.jpg");
+  background: url("hero.jpg") no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   color: #fff;
 }
 
+.App {
+  padding-bottom: 30px;
+}
+
 a {
   color: #ecc30a;
+}
+
+.w-100 .day-separator {
+  margin: 30px 20px;
 }
 
 .rdtPicker {
@@ -273,6 +282,7 @@ a {
 }
 
 footer {
+  display: none;
   position: fixed;
   margin-left: 10px;
   bottom: 10px;
